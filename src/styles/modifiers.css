@@ -1,0 +1,142 @@
+/* Utilities */
+.block {
+  display: block;
+}
+.center {
+  text-align: center;
+}
+.space--top {
+  margin-top: .618rem;
+}
+
+/* Typography Sizes */
+.black {
+  font-weight: var(--font-weight-black);
+}
+.display {
+  margin-bottom: 1rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 7vw, 7rem);
+  font-variation-settings: 'wght' 390, 'SPAC' 120;
+  line-height: .95;
+  word-spacing: .1em;
+  letter-spacing: -.05em;
+  animation: 3.2s infinite alternate heartBeat ease-in-out;
+}
+@keyframes heartBeat {
+  from {
+    font-variation-settings: 'wght' 390, 'SPAC' 110;
+  }
+  to {
+    font-variation-settings: 'wght' 420, 'SPAC' 125;
+  }
+}
+@media (min-width: 1024px) {
+  .display {
+    margin: 0 -12vw 1rem;
+    font-variation-settings: 'wght' 260, 'SPAC' 120;
+  }
+  @keyframes heartBeat {
+    from {
+      font-variation-settings: 'wght' 260, 'SPAC' 110;
+    }
+    to {
+      font-variation-settings: 'wght' 300, 'SPAC' 120;
+    }
+  }
+}
+.eyebrow {
+  margin: 0 0 .5rem;
+  font-size: .6rem;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: .03em;
+  text-transform: uppercase;
+}
+.eyebrow a {
+  margin-left: .3em;
+  text-transform: none;
+}
+.largest {
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+@media (min-width: 1024px) {
+  .largest {
+    margin-left: -.04em;
+    font-size: clamp(3rem, 4vw, 7rem);
+    line-height: 1.1;
+    letter-spacing: -.04em;
+  }
+}
+.larger {
+  font-size: 1.618rem;
+  line-height: 1.3;
+  letter-spacing: -.02em;
+}
+@media (min-width: 1024px) {
+  .larger {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    letter-spacing: -.03em;
+  }
+}
+.large {
+  font-size: 1.4rem;
+  line-height: 1.3;
+}
+@media (min-width: 1024px) {
+  .large {
+    font-size: 1.618rem;
+    letter-spacing: -.02em;
+  }
+}
+.mediumer {
+  font-size: 1.2rem;
+}
+@media (min-width: 1024px) {
+  .mediumer {
+    font-size: 1.4rem;
+    line-height: 1.3;
+  }
+}
+.medium {
+  font-size: 1rem;
+}
+@media (min-width: 1024px) {
+  .medium {
+    font-size: 1.2rem;
+    line-height: 1.3;
+  }
+}
+.movement {
+  font-family: var(--font-display);
+  font-variation-settings: 'wght' 400, 'SPAC' 115;
+}
+.quote {
+  text-indent: -.25em;
+}
+.small {
+  font-size: .8618rem;
+}
+.smaller {
+  font-size: .7rem;
+  letter-spacing: .01em;
+}
+.small--extra {
+  font-size: .6rem;
+  letter-spacing: .02em;
+}
+
+/* Typography Weights */
+.black {
+  font-weight: var(--font-weight-black);
+}
+.bold {
+  font-weight: var(--font-weight-bold);
+}
+.light {
+  font-weight: var(--font-weight-light);
+}
+.regular {
+  font-weight: var(--font-weight-regular);
+}

@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap');
+@font-face {
+  font-family: 'Movement';
+  src: url('/MovementV.ttf') format('truetype');
+  font-weight: 125 950;
+  font-stretch: 75% 125%;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Variables */
+:root {
+  --bp-tablet: 768px;
+  --bp-desktop: 1024px;
+  --color-black: #353535;
+  --color-black-faded: rgba(53,53,53,.6);
+  --color-grey: rgba(53,53,53,.3);
+  --color-white: white;
+  --color-active: #DE3C4B;
+  --transition: all 240ms ease-in-out;
+  --font-regular: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-display: 'Movement', 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-weight-light: 100;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+}
+
+/* Global */
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 20px;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  font-family: var(--font-regular);
+  font-size: 1rem;
+  font-weight: var(--font-weight-regular);
+  line-height: 1.5;
+}
+
+/* Typography */
+h1 {
+  margin: 0 0 2rem;
+  font-weight: unset;
+}
+h2 {
+  margin: 0 0 .5rem;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+p a,
+a.standalone {
+  transition: var(--transition);
+  background-image: linear-gradient(to right, var(--color-black), var(--color-black)), linear-gradient(to right, var(--color-active), var(--color-active));
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 0% .1em, 100% .1em;
+  color: var(--color-active);
+  text-decoration: none;
+}
+p a:hover,
+a.standalone:hover {
+  background-size: 100% .1em, 100% .1em;
+  color: var(--color-black);
+}
+a.standlone {
+  display: block;
+}
+
+ul {
+  margin: 0 0 2rem;
+  padding-left: 1rem;
+}
+@media (min-width: 1024px) {
+  ul {
+    padding-left: 2rem;
+  }
+}
+ul li {
+  margin: .61803rem 0;
+}
+
+/* Structure */
+.container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 60rem;
+}
+@media (min-width: 1024px) {
+  .container {
+    width: 61.803%;
+  }
+}
+
+hr {
+  margin: 2rem 0;
+  height: 1px;
+  border: none;
+  background-color: var(--color-black);
+}
+hr.compact {
+  margin: 1rem 0;
+}
+
+section {
+  padding: 8vw 0;
+  border-top: 1px solid var(--color-black);
+}
+section:first-of-type {
+  border-top: none;
+}
+section.compact {
+  padding: 4vw 0;
+}
+section.case-study {
+  border-top: none;
+}

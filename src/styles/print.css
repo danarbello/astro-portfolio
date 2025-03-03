@@ -1,0 +1,26 @@
+@media print {
+  header,
+  footer,
+  details summary::after {
+    display: none;
+  }
+
+  details summary::-webkit-details-marker {
+    display: none;
+  }
+
+  section {
+    padding: 2rem 0 0;
+  }
+
+  .print-columns {
+    column-count: 3;
+  }
+  .print-columns > *:first-of-type {
+    margin-top: 0;
+  }
+
+  .resume__header button {
+    display: none;
+  }
+}

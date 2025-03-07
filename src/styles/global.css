@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap');
 @font-face {
   font-family: 'Movement';
-  src: url('/MovementV.ttf') format('truetype');
+  src: url('/fonts/MovementV.ttf') format('truetype');
   font-weight: 125 950;
   font-stretch: 75% 125%;
   font-style: normal;

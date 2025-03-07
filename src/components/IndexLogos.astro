@@ -1,0 +1,75 @@
+---
+import '../styles/row.css';
+import { Image } from 'astro:assets';
+import localARC from '../assets/images/logos/american-red-cross.svg';
+import localAARP from '../assets/images/logos/aarp.svg';
+import localBBDO from '../assets/images/logos/bbdo.svg';
+import localLOC from '../assets/images/logos/library-of-congress.svg';
+import localSKYN from '../assets/images/logos/skyn.svg';
+import localAwardStevies from '../assets/images/awards/awards__stevies.png';
+import localAwardDotComm from '../assets/images/awards/awards__dotcomm.png';
+import localAwardAIGA from '../assets/images/awards/awards__aiga.svg';
+import localAwardCommArts from '../assets/images/awards/awards__commarts.png';
+import localAwardDesignMatters from '../assets/images/awards/awards__designmatters.svg';
+import localAwardStep from '../assets/images/awards/awards__step.png';
+import localAwardW3 from '../assets/images/awards/awards__w3.png';
+---
+
+<section>
+  <div class="container">
+    <h1 class="movement larger center">Just a handful of others I've helped over the years</h1>
+    <div class="row row--five">
+      <div class="column">
+        <Image loading="lazy" src={localARC} alt="American Red Cross logo" />
+      </div>
+      <div class="column">
+        <Image loading="lazy" src={localLOC} alt="Library of Congress logo" />
+      </div>
+      <div class="column">
+        <Image loading="lazy" src={localBBDO} alt="BBDO logo" />
+      </div>
+      <div class="column">
+        <Image loading="lazy" src={localSKYN} alt="SKYN logo" />
+      </div>
+      <div class="column">
+        <Image loading="lazy" src={localAARP} alt="AARP logo" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h1 class="movement larger center">Awards & Recognition Garnered</h1>
+    <div class="row row--five center">
+      <div class="column">
+        <Image loading="lazy" src={localAwardStevies} alt="International Business Awards (Stevies) logo" />
+        <p class="small--extra block space--top">Bronze</p>
+      </div>
+      <div class="column">
+        <Image loading="lazy" src={localAwardDotComm} alt="dotComm Awards logo" />
+        <p class="small--extra block space--top">Platinum and Gold</p>
+      </div>
+      <div class="column">
+        <Image loading="lazy" src={localAwardAIGA} alt="AIGA 365 logo" />
+        <p class="small--extra block space--top">AIGA 365 (twice)</p>
+      </div>
+      <div class="column">
+        <Image loading="lazy" src={localAwardCommArts} alt="Communication Arts logo" />
+        <p class="small--extra block space--top">Comm Arts "Site of the Week" (twice)</p>
+      </div>
+      <div class="column">
+        <Image loading="lazy" src={localAwardDesignMatters} alt="Design Matters logo">
+        <p class="small--extra block space--top">Brochures (Category)</p>
+      </div>
+      <div class="column">
+        <Image loading="lazy" src={localAwardStep} alt="STEP Inside Design logo">
+        <p class="small--extra block space--top">"Best of the Web" and "Design 100"</p>
+      </div>
+      <div class="column">
+        <Image loading="lazy" src={localAwardW3} alt="W3 Awards logo">
+        <p class="small--extra block space--top">Silver and Gold (several times)</p>
+      </div>
+    </div>
+  </div>
+</section>

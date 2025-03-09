@@ -4,6 +4,7 @@ import { defineConfig } from "astro/config";
 // https://astro.build/config
 export default defineConfig({
   redirects: {
+    "/prototypes/aerospace/": "/prototypes/aerospace/index.html",
     "/prototypes/apollo/": "/prototypes/apollo/index.html",
     "/prototypes/apollo2/": "/prototypes/apollo2/index.html",
     "/prototypes/apollo3/": "/prototypes/apollo3/index.html",

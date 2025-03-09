@@ -1,10 +1,10 @@
 ---
 name: Basic Issue
-description: File a bug report, new task, or feature request.
+about: File a bug report, new task, or feature request.
 title: ''
 labels: ''
-assignees:
-  - danarbello
+assignees: danarbello
+
 ---
 
 ## Description

@@ -4,13 +4,18 @@ import '../../styles/patterns.css';
 import { Image } from 'astro:assets';
 import imageInline01 from '../../assets/images/inline__sunpower_leadgenfunneling.gif';
 import imageInline02 from '../../assets/images/inline__sunpower_map.gif';
+
+const metadata = {
+  title: 'Enlightening SunPower’s Key Lead Generation Funnel',
+  description: 'As the Design Lead on this project, I conducted an in-depth analysis, identify opportunities for improvement, and implement a comprehensive solution tailored to meet SunPower‘s business requirements and SEO/marketing goals.'
+};
 ---
 
-<Basic>
+<Basic {metadata}>
   <section class="case-study">
     <div class="container">
       <p class="eyebrow small--extra">Case Study</p>
-      <h1 class="largest">Enlightening SunPower’s Key Lead Generation Funnel</h1>
+      <h1 class="largest">{metadata.title}</h1>
       <div class="case-study__details small--extra row left-align row--four row--compact">
         <p class="column">Agency: <a href="https://thirdandgrove.com" target="_blank">Third & Grove</a></p>
         <p class="column">Role: Design Lead</p>

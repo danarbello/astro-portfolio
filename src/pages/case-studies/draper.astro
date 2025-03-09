@@ -1,13 +1,18 @@
 ---
 import Basic from '../../layouts/Basic.astro';
 import '../../styles/patterns.css';
+
+const metadata = {
+  title: 'Bestowing Draper Labs With a History-Driven Web Experience',
+  description: 'The renowned R&D organization, collaborated with us to undertake a comprehensive redesign and overhaul of their website and celebrate their assitance in getting us to the moon 50 years ago.'
+};
 ---
 
-<Basic>
+<Basic {metadata}>
   <section class="case-study">
     <div class="container">
       <p class="eyebrow small--extra">Case Study</p>
-      <h1 class="largest">Bestowing Draper Labs With a History-Driven Web Experience</h1>
+      <h1 class="largest">{metadata.title}</h1>
       <div class="site-viewer" style="background-image: url('/images/siteviewers/siteviewer__draper.webp')" aria-label="Screen capture of Draper.com"></div>
       <div class="case-study__details small--extra row left-align row--four row--compact">
         <p class="column">Agency: <a href="https://thirdandgrove.com" target="_blank">Third & Grove</a></p>

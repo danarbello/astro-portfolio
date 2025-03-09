@@ -1,6 +1,6 @@
 ---
 name: Basic Issue
-description: File a bug report, new task, or feature request.
+description: 'File a bug report, new task, or feature request.'
 title: ''
 labels: ''
 assignees:

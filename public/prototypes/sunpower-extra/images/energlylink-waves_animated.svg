@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 199 198" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 1.5;">
+    <g transform="matrix(1,0,0,1,-3.66236,-4.47107)">
+        <g transform="matrix(1,0,0,1,29.5,30.5)">
+            <path d="M144.405,168.291C150.157,158.235 158.559,149.886 168.656,144.198" style="fill:none;stroke:rgb(247,146,30);stroke-width:7px;" class="jcVnKnQs_0"></path>
+        </g>
+        <g transform="matrix(1.61718,0,0,1.61718,-93.9357,-92.9357)">
+            <path d="M139.079,180.343C145.429,160.674 161.048,145.154 180.778,138.941" style="fill:none;stroke:rgb(247,146,30);stroke-width:4.33px;" class="jcVnKnQs_1"></path>
+        </g>
+        <g transform="matrix(2.27933,0,0,2.27933,-226.367,-225.367)">
+            <path d="M137.53,186.034C142.932,161.802 162.09,142.732 186.369,137.456" style="fill:none;stroke:rgb(247,146,30);stroke-width:3.07px;" class="jcVnKnQs_2"></path>
+        </g>
+        <g transform="matrix(2.89621,0,0,2.89621,-349.741,-348.741)">
+            <path d="M136.934,189.048C141.541,162.375 162.682,141.333 189.405,136.874" style="fill:none;stroke:rgb(247,146,30);stroke-width:2.42px;" class="jcVnKnQs_3"></path>
+        </g>
+        <g transform="matrix(3.50948,0,0,3.50948,-472.396,-471.396)">
+            <path d="M136.647,190.87C140.675,162.718 163.053,140.451 191.26,136.592" style="fill:none;stroke:rgb(247,146,30);stroke-width:1.99px;" class="jcVnKnQs_4"></path>
+        </g>
+    </g>
+    <style>.jcVnKnQs_0{stroke-dasharray:35 37;stroke-dashoffset:36;animation:jcVnKnQs_draw_0 2920ms ease-in-out 0ms infinite,jcVnKnQs_fade 2920ms linear 0ms infinite;}.jcVnKnQs_1{stroke-dasharray:62 64;stroke-dashoffset:63;animation:jcVnKnQs_draw_1 2920ms ease-in-out 0ms infinite,jcVnKnQs_fade 2920ms linear 0ms infinite;}.jcVnKnQs_2{stroke-dasharray:73 75;stroke-dashoffset:74;animation:jcVnKnQs_draw_2 2920ms ease-in-out 0ms infinite,jcVnKnQs_fade 2920ms linear 0ms infinite;}.jcVnKnQs_3{stroke-dasharray:79 81;stroke-dashoffset:80;animation:jcVnKnQs_draw_3 2920ms ease-in-out 0ms infinite,jcVnKnQs_fade 2920ms linear 0ms infinite;}.jcVnKnQs_4{stroke-dasharray:83 85;stroke-dashoffset:84;animation:jcVnKnQs_draw_4 2920ms ease-in-out 0ms infinite,jcVnKnQs_fade 2920ms linear 0ms infinite;}@keyframes jcVnKnQs_draw{100%{stroke-dashoffset:0;}}@keyframes jcVnKnQs_fade{0%{stroke-opacity:1;}87.67123287671232%{stroke-opacity:1;}100%{stroke-opacity:0;}}@keyframes jcVnKnQs_draw_0{12.32876712328767%{stroke-dashoffset: 36}16.718832567781796%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes jcVnKnQs_draw_1{16.718832567781796%{stroke-dashoffset: 63}24.401447095646514%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes jcVnKnQs_draw_2{24.40144709564652%{stroke-dashoffset: 74}33.42547050932889%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes jcVnKnQs_draw_3{33.42547050932889%{stroke-dashoffset: 80}43.181171497093615%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes jcVnKnQs_draw_4{43.181171497093615%{stroke-dashoffset: 84}53.42465753424658%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}</style>
+</svg>

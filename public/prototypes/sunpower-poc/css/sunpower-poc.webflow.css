@@ -1,0 +1,1149 @@
+body {
+  padding-top: 20px;
+  background-color: #f7f7f7;
+  font-family: Roboto, sans-serif;
+  color: #231f20;
+  font-size: 15px;
+  line-height: 1.35;
+}
+
+h1 {
+  max-width: 800px;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  font-family: 'Open Sans', sans-serif;
+  color: #39607a;
+  font-size: 50px;
+  line-height: 105%;
+  font-weight: 100;
+}
+
+h2 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-family: 'Open Sans', sans-serif;
+  color: #39607a;
+  font-size: 30px;
+  line-height: 0.9;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+h3 {
+  margin-top: 0px;
+  margin-bottom: 7px;
+  -webkit-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+  color: #39607a;
+  font-size: 24px;
+  line-height: 1.1;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+}
+
+h5 {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  color: #f7921e;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+h6 {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  color: #39607a;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+p {
+  max-width: 800px;
+  margin-bottom: 10px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.page {
+  width: 100%;
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #fff;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .2);
+  font-family: 'Open Sans', sans-serif;
+}
+
+.brand {
+  width: 175px;
+  height: 24px;
+  margin-top: 20px;
+  background-image: url('../images/sunpower-logo.svg');
+  background-position: 0px 0px;
+  background-size: 175px 24px;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+  background-color: transparent;
+}
+
+.menu-block-level-1 {
+  margin-top: 26px;
+  margin-left: 20px;
+  padding: 0px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.menu-block-level-1:hover {
+  color: #559ef2;
+}
+
+.row.nav-sticky {
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.row.panel {
+  padding: 40px 40px 30px;
+  border-top: 1px solid #9cbccd;
+  border-bottom: 1px solid #9cbccd;
+  background-color: rgba(156, 188, 205, .1);
+}
+
+.row.panel.white {
+  border-top-style: none;
+  border-bottom-style: none;
+  background-color: #fff;
+}
+
+.row.flexbox {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.row.mobile-state-selector {
+  display: none;
+}
+
+.row.more-details {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(76, 158, 205, .2);
+}
+
+.call-wrap {
+  float: right;
+  color: #a9b6c4;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.call-text {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 20px;
+  float: left;
+}
+
+.my-sunpower {
+  padding: 10px 30px;
+  float: left;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #90b7e5;
+  color: #fff;
+}
+
+.get-started {
+  margin-top: 20px;
+  margin-bottom: -9px;
+  margin-left: 60px;
+  padding: 6px 35px 7px;
+  float: right;
+  border: 1px solid #e6851d;
+  border-radius: 25px;
+  background-color: #ff9320;
+  background-image: -webkit-linear-gradient(270deg, #ff9320, #ff7e1a);
+  background-image: linear-gradient(180deg, #ff9320, #ff7e1a);
+  font-size: 13px;
+}
+
+.container {
+  max-width: 1280px;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.grid-container {
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.grid-container.contents {
+  margin-top: 50px;
+}
+
+.intro {
+  max-width: 800px;
+  margin-bottom: 20px;
+  color: #5e6367;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+.intro.ddp {
+  margin-bottom: 20px;
+}
+
+.map-wrap {
+  display: block;
+  margin-bottom: 40px;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.dealer-tile {
+  margin-right: 5%;
+  margin-bottom: 25px;
+  padding: 25px 30px 30px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, .05);
+  border-bottom-right-radius: 60px;
+  background-color: #fff;
+  box-shadow: 0 11px 20px 0 rgba(0, 0, 0, .05);
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.dealer-tile:hover {
+  border-color: rgba(0, 0, 0, .07);
+  box-shadow: 0 11px 30px 0 rgba(0, 0, 0, .1);
+}
+
+.rating-wrap {
+  color: rgba(94, 99, 103, .7);
+  font-size: 11px;
+}
+
+.rating-wrap.floater {
+  float: left;
+  color: #333;
+  font-size: 14px;
+}
+
+.rating-wrap.ddp-version {
+  display: block;
+  color: rgba(94, 99, 103, .7);
+  text-align: center;
+}
+
+.arrows {
+  margin-right: 5px;
+  float: left;
+}
+
+.arrows.ddp-header {
+  margin-top: -6px;
+  float: none;
+}
+
+.location {
+  margin-bottom: 10px;
+  color: #5e6367;
+}
+
+.location.ddp-version {
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 0em;
+}
+
+.button {
+  margin-top: 15px;
+  padding: 12px 25px;
+  border-radius: 25px;
+  background-color: rgba(0, 118, 190, .7);
+  -webkit-transition: all 360ms ease;
+  transition: all 360ms ease;
+  font-family: 'Open Sans', sans-serif;
+  color: hsla(0, 0%, 100%, .95);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.button:hover {
+  background-color: #0076be;
+  color: #fff;
+}
+
+.button.orange {
+  margin-top: 0px;
+  background-color: #f7921e;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.button.orange:hover {
+  background-color: #f26a36;
+}
+
+.company-name {
+  display: inline-block;
+  margin-bottom: 5px;
+  color: #559ef2;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+}
+
+.rating-text {
+  margin-right: 5px;
+  margin-bottom: 15px;
+  float: left;
+  line-height: 1.1;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+}
+
+.rating-text.ddp-version {
+  display: inline-block;
+  margin-bottom: 0px;
+  float: none;
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.tile-row {
+  margin-right: -9px;
+  margin-left: -9px;
+}
+
+.footer-phone {
+  margin-top: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f7f7f7;
+}
+
+.top-button {
+  width: 35px;
+  height: 65px;
+  margin-top: -70px;
+  float: left;
+  border: 1px solid #e3e3e3;
+  border-radius: 25px;
+  background-color: #fff;
+  background-image: url('../images/arrow-up-from-sprite.png');
+  background-position: 50% 50%;
+  background-size: 14px;
+  background-repeat: no-repeat;
+}
+
+.phonenumber {
+  font-size: 160%;
+  line-height: 190%;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.phone-icon {
+  padding: 8px 13px;
+  background-image: url('../images/phoneIcon--orange-44x47.png');
+  background-position: 50% 50%;
+  background-size: 44px 47px;
+  background-repeat: no-repeat;
+  color: transparent;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #262631;
+  color: #616375;
+}
+
+.breadcrumbs {
+  font-size: 11px;
+}
+
+.return-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  clear: none;
+  -webkit-transition: color 360ms ease;
+  transition: color 360ms ease;
+  color: #0076be;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.return-link:hover {
+  color: #39607a;
+}
+
+.company-logos {
+  display: block;
+  max-height: 40px;
+  margin-bottom: 15px;
+}
+
+.one-third {
+  width: 33%;
+  margin-right: 3.3333%;
+  float: left;
+}
+
+.one-third.review-tile {
+  width: 31%;
+  padding: 20px;
+  background-color: #9cbccd;
+  color: #fff;
+}
+
+.one-third.review-tile.end {
+  margin-right: 0%;
+}
+
+.one-third.highlights-column {
+  width: 31.333%;
+  margin-right: 3%;
+  padding-right: 3%;
+  border-right: 1px solid hsla(0, 0%, 100%, .2);
+}
+
+.one-third.highlights-column.end {
+  margin-right: 0%;
+  border-right-style: none;
+}
+
+.two-thirds {
+  position: relative;
+  width: 63.666%;
+  float: left;
+}
+
+.contact-links {
+  display: block;
+  margin-bottom: 10px;
+  -webkit-transition: color 360ms ease;
+  transition: color 360ms ease;
+  color: #0076be;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-links:hover {
+  color: #39607a;
+  text-decoration: none;
+}
+
+.contact-links.inline-block {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.panel.highlights {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 40px;
+  padding-bottom: 45px;
+  background-color: #9cbccd;
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+}
+
+.white {
+  color: #fff;
+}
+
+.one-fourth {
+  width: 22.75%;
+  margin-right: 3%;
+  padding-right: 3%;
+  float: left;
+  border-right: 1px solid hsla(0, 0%, 100%, .2);
+}
+
+.one-fourth.end {
+  margin-right: 0%;
+  border-right-color: hsla(0, 0%, 100%, 0);
+}
+
+.highlight-header {
+  margin-top: 0px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.highlight-panel-title {
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 26px;
+}
+
+.centered {
+  max-width: 100%;
+  text-align: center;
+}
+
+.half {
+  width: 46%;
+  margin-right: 3.5%;
+  float: left;
+}
+
+.half.end {
+  width: 48%;
+  margin-right: 0%;
+}
+
+.state-link {
+  display: block;
+}
+
+.content-block {
+  margin-top: 0px;
+}
+
+.col1 {
+  width: 33%;
+  padding-right: 20px;
+  padding-left: 20px;
+  float: left;
+}
+
+.col2 {
+  width: 33%;
+  padding-right: 20px;
+  padding-left: 20px;
+  float: left;
+  border-left: 1px solid rgba(76, 158, 205, .2);
+}
+
+.details {
+  margin-bottom: 10px;
+  color: #5e6367;
+  font-weight: 400;
+}
+
+.rating-title {
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.35;
+  letter-spacing: 0em;
+}
+
+.rating-detail {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+}
+
+.separator {
+  height: 1px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: rgba(157, 188, 206, .3);
+}
+
+.rating-location-wrap {
+  margin-bottom: 20px;
+}
+
+.chevron {
+  background-image: url('../images/arrow-left.svg');
+  background-position: 0px 50%;
+  background-size: 6px;
+  background-repeat: no-repeat;
+  color: transparent;
+}
+
+.dealer-info-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-top: 1px solid rgba(76, 158, 205, .2);
+  border-bottom: 1px solid rgba(76, 158, 205, .2);
+}
+
+.logo-col {
+  width: 20%;
+  margin-right: 3.333%;
+  float: left;
+}
+
+.dealer-info-copy {
+  margin-bottom: 10px;
+  color: #5e6367;
+  font-weight: 300;
+}
+
+.webform {
+  margin-top: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #9cbccd;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.h1-webform {
+  color: #fff;
+  font-size: 24px;
+  line-height: 0.9;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.form {
+  margin-top: 30px;
+}
+
+.field {
+  width: 33%;
+  margin-right: 25px;
+  margin-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  float: left;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.field.dropdown {
+  background-image: url('../images/arrow-down.svg');
+  background-position: 94% 50%;
+  background-size: auto 10px;
+  background-repeat: no-repeat;
+}
+
+.field.full {
+  width: 69%;
+}
+
+.small-text {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 20px;
+  clear: both;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+}
+
+.orange-webform {
+  padding: 15px 23px;
+  border-radius: 10px;
+  background-color: #f69322;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.field-label {
+  width: 33%;
+  margin-right: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  float: left;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.logo {
+  width: 100%;
+}
+
+.dealer-main-info {
+  display: inline-block;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+}
+
+.col3 {
+  width: 33%;
+  padding-right: 20px;
+  padding-left: 20px;
+  float: left;
+  border-left: 1px solid rgba(76, 158, 205, .2);
+}
+
+.more-details {
+  margin-top: 20px;
+}
+
+.h3-ddp {
+  margin-bottom: 20px;
+  font-size: 30px;
+  text-align: left;
+}
+
+.map-embed {
+  z-index: 10;
+  height: 600px;
+}
+
+.address-col-wrap {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(76, 158, 205, .2);
+  text-align: left;
+}
+
+.current-button {
+  padding: 4px 20px;
+  border: 1px solid #4d8fda;
+  border-radius: 15px;
+  background-image: -webkit-linear-gradient(270deg, #559ef2, #458bf0);
+  background-image: linear-gradient(180deg, #559ef2, #458bf0);
+  font-family: Roboto, sans-serif;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.current-button.orange-version {
+  border-color: #e6851d;
+  background-image: -webkit-linear-gradient(270deg, #ff9320, #ff7e1a);
+  background-image: linear-gradient(180deg, #ff9320, #ff7e1a);
+}
+
+.scrolljacking-overlay {
+  position: absolute;
+  z-index: 30;
+  display: none;
+  width: 100%;
+  height: 600px;
+  background-color: rgba(247, 146, 30, .5);
+  background-image: url('../images/pointer-icon.svg');
+  background-position: 50% 50%;
+  background-size: 75px 75px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.dealer-logo {
+  border-right: 1px solid rgba(76, 158, 205, .2);
+}
+
+.dealer-intro__wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.three-fourths {
+  width: 74.25%;
+  float: left;
+}
+
+.ddp-hidden-header {
+  overflow: hidden;
+  height: 0px;
+  color: transparent;
+}
+
+.ddp__company-logo {
+  margin-bottom: 20px;
+  color: #5e6367;
+  font-size: 19px;
+  text-align: center;
+  letter-spacing: 0.01em;
+}
+
+.ddp__company-sunpower {
+  width: 104%;
+  max-width: 104%;
+  margin-bottom: 12px;
+  margin-left: -1px;
+}
+
+.ddp__dealery-name {
+  padding-top: 10px;
+  border-top: 2px solid rgba(94, 99, 103, .3);
+  color: rgba(94, 99, 103, .8);
+  font-weight: 300;
+}
+
+@media (max-width: 991px) {
+  .brand.w--current {
+    margin-top: 16px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .navbar {
+    padding-bottom: 0px;
+  }
+  .row.nav-sticky {
+    display: none;
+  }
+  .row.panel {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .row.more-details {
+    margin-bottom: 20px;
+  }
+  .get-started {
+    margin-top: 12px;
+    margin-left: 0px;
+  }
+  .container {
+    margin-left: 40px;
+  }
+  .menu-button {
+    margin-right: 25%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 0px;
+    float: left;
+  }
+  .dealer-tile {
+    padding-right: 20px;
+    padding-left: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, .05);
+  }
+  .rating-wrap.ddp-version {
+    text-align: left;
+  }
+  .location.ddp-version {
+    text-align: left;
+  }
+  .button {
+    text-align: center;
+  }
+  .one-third {
+    width: 48%;
+  }
+  .two-thirds {
+    width: 48%;
+  }
+  .one-fourth.dealer-logo {
+    width: 40%;
+    margin-bottom: 20px;
+    float: none;
+    border-right-style: none;
+  }
+  .half {
+    width: 100%;
+  }
+  .half.end {
+    width: 100%;
+  }
+  .logo-col {
+    width: 33%;
+  }
+  .field {
+    width: 46%;
+  }
+  .field.full {
+    width: 96%;
+  }
+  .field-label {
+    width: 46%;
+  }
+  .dealer-intro__wrap {
+    display: block;
+  }
+  .three-fourths.ddp-version {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 35px;
+  }
+  .row.panel {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .row.flexbox {
+    display: block;
+  }
+  .row.mobile-state-selector {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .get-started {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .container {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .menu-button {
+    margin-right: 10%;
+  }
+  .grid-container {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .grid-container.contents {
+    margin-top: 30px;
+  }
+  .intro {
+    font-size: 16px;
+  }
+  .intro.ddp {
+    width: 100%;
+    max-width: 100%;
+  }
+  .map-wrap {
+    display: none;
+    padding-right: 0%;
+    padding-left: 0%;
+  }
+  .dealer-tile {
+    margin-right: 0%;
+  }
+  .phonenumber {
+    font-size: 130%;
+  }
+  .one-third {
+    width: 100%;
+  }
+  .one-third.review-tile {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .two-thirds {
+    width: 100%;
+  }
+  .panel.highlights {
+    display: inline-block;
+    background-color: #4c9ecd;
+    font-size: 13px;
+  }
+  .one-fourth {
+    width: 46%;
+    margin-right: 4%;
+    margin-bottom: 15px;
+    padding-right: 0%;
+    border-right-style: none;
+  }
+  .one-fourth.dealer-logo {
+    width: 75%;
+  }
+  .highlight-header {
+    font-size: 16px;
+  }
+  .centered {
+    font-size: 40px;
+  }
+  .half {
+    display: block;
+    margin-right: 0%;
+    float: left;
+  }
+  .state-link {
+    display: block;
+    margin-bottom: 20px;
+    color: #559ef2;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  .col1 {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .col2 {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(76, 158, 205, .2);
+    border-left-style: none;
+  }
+  .details {
+    margin-bottom: 15px;
+  }
+  .separator {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .dealer-info-wrap {
+    display: block;
+  }
+  .logo-col {
+    width: 100%;
+    margin-right: 0%;
+    margin-bottom: 20px;
+    padding-right: auto;
+    padding-left: auto;
+    float: none;
+    text-align: center;
+  }
+  .field {
+    width: 100%;
+  }
+  .field.full {
+    width: 100%;
+    margin-right: 0px;
+  }
+  .field-label {
+    width: 100%;
+  }
+  .logo {
+    display: block;
+    width: auto;
+    max-height: 100px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .col3 {
+    width: 100%;
+    padding-top: 20px;
+    border-top: 1px solid rgba(76, 158, 205, .2);
+    border-left-style: none;
+  }
+  .map-embed {
+    height: 400px;
+  }
+  .scrolljacking-overlay {
+    right: 0px;
+    bottom: 0px;
+    display: block;
+    height: 400px;
+    background-image: url('../images/pointer-icon.svg');
+    background-position: 50% 50%;
+    background-size: 45px 45px;
+    background-repeat: no-repeat;
+  }
+  .dealer-intro__wrap {
+    display: block;
+  }
+  .three-fourths {
+    width: 100%;
+  }
+}
+
+@media (max-width: 479px) {
+  .brand.w--current {
+    width: 130px;
+    height: 18px;
+    margin-top: 19px;
+    background-size: 130px 18px;
+  }
+  .get-started {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .menu-button {
+    margin-right: 0%;
+  }
+  .dealer-tile:hover {
+    box-shadow: 0 11px 30px 0 rgba(0, 0, 0, .1);
+  }
+  .location {
+    font-size: 15px;
+    line-height: 1.35;
+  }
+  .rating-text {
+    font-size: 11px;
+  }
+  .rating-text.ddp-version {
+    font-size: 14px;
+  }
+  .phonenumber {
+    font-size: 90%;
+    line-height: 150%;
+  }
+  .phone-icon {
+    padding: 5px 10px;
+    background-size: 29px;
+  }
+  .one-third.highlights-column {
+    width: 100%;
+    margin-right: 0%;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-right: 0%;
+    border-top: 1px solid hsla(0, 0%, 100%, .2);
+    border-right-style: none;
+  }
+  .panel.highlights {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .white {
+    font-size: 26px;
+    line-height: 1;
+  }
+  .one-fourth {
+    width: 100%;
+    margin-right: 0%;
+    margin-bottom: 15px;
+    padding-right: 0%;
+    border-right-color: hsla(0, 0%, 100%, 0);
+  }
+  .one-fourth.dealer-logo {
+    width: 100%;
+  }
+  .col1 {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  .col2 {
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 0%;
+    border-top: 1px solid rgba(76, 158, 205, .2);
+    border-left-style: none;
+  }
+}
+

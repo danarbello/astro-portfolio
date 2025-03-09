@@ -1,0 +1,661 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
+<!--  Last Published: Mon Mar 04 2024 17:14:39 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="5fa1b0d6e8494e94473d12a4" data-wf-site="5fa1af2292a39f5b7d677ca5">
+<head>
+  <meta charset="utf-8">
+  <title>Style Guide | TLH Designs</title>
+  <meta content="Style Guide | TLH Designs" property="og:title">
+  <meta content="Style Guide | TLH Designs" property="twitter:title">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/tlh-4k.webflow.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Poppins:200,200italic,regular,italic,700,700italic,900"]  }});</script>
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+</head>
+<body>
+  <div class="global-styles w-embed">
+    <style>
+	/* 
+   * Additional Global Styles
+   * - Globally assumes font-size inherits default value: html { font-size: 16px }.
+  */
+  /* Full font stack fallback */
+  body {
+  	font-family: Poppins, Futura, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+    -webkit-font-smoothing: antialiased; /* FE note: we don't HAVE to do this, but it does help clean up the bad alias mapping for Poppins, especially for the 700 font-weight. */ 
+		-moz-osx-font-smoothing: grayscale;
+  }
+  /* Heading Element Variants */
+  .heading--uppercase {
+  	word-spacing: .1em;
+  }
+  /* Paragraph Styles */
+  *::selection {
+  	background: rgba(20,20,19,.9); /* Black color variable */
+    color: #fefbf2; /* Creme color variable */
+  }
+  .p__a {
+	  /* background-image: linear-gradient(to bottom, transparent 0%, rgba($tertiary-color, .3) 0%); */
+    background-image: linear-gradient(to bottom, transparent 0%, rgba(106,160,136,.3) 0%);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+  	background-size: 100% .1em;
+  }
+  .p--small .p__a,
+  .submenu--basic__item.p__a {
+  	background-size: 100% 2px;
+  }
+  .p__a:focus,
+  .p__a:hover {
+  	background-size: 100% 100%;
+  }
+  /* Modifier for links on dark backgrounds */
+  .p__a--secondary {
+  	/* background-image: linear-gradient(to bottom, transparent 0%, rgba($white-medium, .15) 0%); */
+  	background-image: linear-gradient(to bottom, transparent 0%, rgba(242,219,187,.15) 0%);
+  }
+  /* Button Styles */
+  .button--secondary,
+  .topic-array__item-a {
+  	/* background-image: linear-gradient(to right, transparent 0%, rgba($tertiary-color, .3) 0%); */
+    background-image: linear-gradient(to right, transparent 0%, rgba(106,160,136,.3) 0%); 
+    background-position: center left;
+    background-repeat: no-repeat;
+  	background-size: 2ch 100%;
+  }
+  .button--secondary:focus,
+  .button--secondary:hover {
+  	background-size: 100% 100%; /* Would normally &:not(.button--disabled), see below for hack */
+  }
+  .button--secondary.button--disabled:focus,
+  .button--secondary.button--disabled:hover {
+  	background-size: 2ch 100%;
+  }
+  .button--print {
+  	display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* Form Styles */
+  .form__input {
+  	max-width: 100%;
+  }
+  .dropdown__options {
+  	top: calc(100% + 2px);
+  }
+  /* Hero Styles */
+  .block--hero {
+  	background-blend-mode: multiply;
+  }
+  /* Card Teaser Styles */
+  /* Animated line under the faux button */
+  .card__cta::after {
+  	content: "";
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 0;
+    transition: all 360ms ease-in-out;
+    border-radius: 1px;
+    background-color: #b2500d;
+    height: 2px;
+    transform-origin: left center;
+    transform: scale(0,1);
+    opacity: 0;
+  }
+  /* Shift the line to the left to layer beneath badge */
+  .card__cta--with-badge::after {
+  	left: -1rem;
+  }
+  .cards__card:hover .card__cta::after {
+  	transform: scale(1,1);
+    opacity: 1;
+  }
+  /* Event Cards */
+  /* Change shadow on event card hover */
+  .card--event:hover .card--event__content {
+  	box-shadow: 0 0 2px 2px rgba(0,0,0,.4), 0 0 6px 6px rgba(0,0,0,.4);
+  }
+  .page-title--event:hover .card--event__content {
+  	box-shadow: none;
+  }
+  /* Bar beneath month label */
+  .card--event__date-month::after {
+  	content: "";
+    position: absolute;
+    top: calc(100% + 6px);
+    right: 19.0965%;
+    left: 19.0965%;
+    height: 2px;
+    background-color: rgba(249,240,228,.3); /* rgba($creme-fraiche, .3) */
+    border-radius: 1px;
+  }
+  /* Partner Cards */
+  .card__marquee {
+  	display: inline-flex;
+  }
+  /* Tabs Styles */
+  /* Gradient overlay "fade" for tabs menu when it overflows */
+  .page-tabs::before {
+  	content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%);
+    height: 3.3333rem;
+    width: 10%;
+    z-index: 1;
+  }
+  @media (max-width: 991px) {
+  	.page-tabs::before {
+	  	height: 3.13rem;
+    }
+  }
+  @media (max-width: 767px) {
+  	.page-tabs::before {
+	  	height: 3rem;
+    }
+  }
+  .topic-array__item-a {
+    background-image: linear-gradient(to right, transparent 0%, rgba(255,255,255,.3) 0%); 
+    background-position: center left;
+    background-repeat: no-repeat;
+  	background-size: 1.25ch 100%;
+  }
+  .topic-array__item-a:focus,
+  .topic-array__item-a:hover {
+  	background-size: 100% 100%;
+    background-image: linear-gradient(to right, transparent 0%, rgba(255,255,255,1) 0%);
+  }
+</style>
+  </div>
+  <div class="container">
+    <h6 id="headings" class="styleguide__eyebrow">Heading Styles</h6>
+    <h1>Heading One</h1>
+    <h2>Heading Two</h2>
+    <h3>Heading Three</h3>
+    <h4>Heading Four</h4>
+    <h5>Heading Five</h5>
+    <h6>Heading Six</h6>
+    <h6 class="heading--uppercase">Uppercase modifier: Must be limited to strings of phrase length (~160 characters)</h6>
+    <h6 id="paragraphs" class="styleguide__eyebrow">Paragraph Styles</h6>
+    <p class="p--small">This font is called Poppins and is free through <a href="https://fonts.google.com/specimen/Poppins" target="_blank" class="p__a">Google Fonts</a>.<strong></strong></p>
+    <p class="p--large"><strong>Large paragraph style,</strong> all typography exceeds or meets WCAG 2.1 AA standards by setting (1) a maximum width on text so that it is never wider than eighty (80) characters, (2) a font-size and color combination that<em></em> <em>always</em> ensures text is high in color contrast, and (3) adheres to the WCAG recommended line-height. <a href="#" class="p__a">Inline links</a> are easy to see in large bodies of text and a clear interaction is shown to identify it as an actionable item.</p>
+    <p><strong>Default paragraph style,</strong> to be used as the base typographic style, more commonly for large bodies of paragraph text. This should, however, by default apply to ALL text unless specified by unique declaration. <em>Italic styles</em> are provided, as well as <span class="p__underline">underlines</span> and <strong>bold</strong>. All of which inherit base styling to minimize code. <a href="#" class="p__a">Inline links</a> are also available in most bodies of text.</p>
+    <p class="p--small"><strong>Small paragraph style,</strong> to be used for content of low importance in the page hierarchy. For instance, the footer, legal copy, captions, and so on. Note that this font-size does not meet WCAG 2.1 suggested minimum font-size of 18px, or 14px <strong>and bold</strong>.</p>
+    <blockquote><strong>Block Quote,</strong> exercising the rights granted by Recipient relating to Licensed Product directly or indirectly, from Original Code or portions thereof, but solely to the Program in a reasonable manner on or through a hyperlink (where possible) or <a href="#" class="p__a blockquote__a">URL to an alternative</a>, stable online copy which is implemented by public license is granted</blockquote>
+    <ul role="list">
+      <li><strong>Bulleted list item,</strong> where such notations are visible in the Source form of legal association between or among countries not thus excluded. In such a Package if it has not been modified, or has been modified.</li>
+      <li><strong>Bulleted list item,</strong> where such notations are visible in the Source form of legal association between or among countries not thus excluded. In such a Package if it has not been modified, or has been modified.</li>
+      <li><strong>Bulleted list item,</strong> where such notations are visible in the Source form of legal association between or among countries not thus excluded. In such a Package if it has not been modified, or has been modified.</li>
+    </ul>
+    <ol role="list">
+      <li><strong>Ordered list item,</strong> where such notations are visible in the Source form of legal association between or among countries not thus excluded. In such a Package if it has not been modified, or has been modified. Complete the <a href="#" class="p__a">Form Title [PDF]</a> or <a href="#" class="p__a">Form Title [Online Portal]</a>.</li>
+      <li><strong>Ordered list item,</strong> where such notations are visible in the Source form of legal association between or among countries not thus excluded. In such a Package if it has not been modified, or has been modified.</li>
+      <li><strong>Ordered list item,</strong> where such notations are visible in the Source form of legal association between or among countries not thus excluded. In such a Package if it has not been modified, or has been modified.</li>
+    </ol>
+    <h6 id="buttons" class="styleguide__eyebrow">Buttons</h6>
+    <p>Browser-declared focus styles (like Chrome&#x27;s blue outline) should remain as those are key to meeting basic accessibility standards.</p>
+    <p class="p--small">The accented button style should be used very sparingly and/if contrast needs require it.</p>
+    <div class="styleguide__grid">
+      <a href="#" class="button">Primary Button</a>
+      <a href="#" class="button button--secondary">Secondary Button</a>
+      <a href="#" class="button button--accent">Accent Button</a>
+    </div>
+    <div class="styleguide__grid styleguide__grid--dark">
+      <a href="#" class="button button--white">Primary - White</a>
+      <a href="#" class="button button--secondary button--secondary--white">Secondary - White</a>
+    </div>
+    <div class="styleguide__grid">
+      <a href="#" class="button button--small">Primary - Small</a>
+      <a href="#" class="button button--small button--secondary">Secondary - Small</a>
+      <a href="#" class="button button--small button--accent">Accent - Small</a>
+    </div>
+    <div class="styleguide__grid">
+      <a href="#" class="button button--disabled">Primary - Disabled</a>
+      <a href="#" class="button button--secondary button--disabled">Secondary - Disabled</a>
+      <a href="#" class="button button--accent button--disabled">Accent - Disabled</a>
+    </div>
+    <h6 id="tables" class="styleguide__eyebrow">Tables</h6>
+    <p>Below are very simple table styles — as would be content available in full HTML formatted fields (e.g., Body field, the new Legacy Body field, etc.). Tables, out of the box, do not work in narrow browser widths (i.e., mobile devices). Further enhancements to optimize smaller browser widths (like mobile devices) should be done when/if time permits. An example library that can provide solutions for better functioning tables for mobile see <a href="https://fooplugins.github.io/FooTable/" target="_blank" class="p__a">FooTable.JS</a>.</p>
+    <div class="table">
+      <div class="thead">
+        <div class="tr">
+          <div class="td thead__td">
+            <div>Table Heading Cell</div>
+          </div>
+          <div class="td thead__td">
+            <div>Table Heading Cell</div>
+          </div>
+          <div class="td thead__td td--last-child">
+            <div>Table Heading Cell</div>
+          </div>
+        </div>
+      </div>
+      <div class="tbody">
+        <div class="tr">
+          <div class="td">
+            <div>Table cell</div>
+          </div>
+          <div class="td">
+            <div>Table cell</div>
+          </div>
+          <div class="td td--last-child">
+            <div>Table cell</div>
+          </div>
+        </div>
+        <div class="tr tr--nth-child-even">
+          <div class="td">
+            <div>Table cell</div>
+          </div>
+          <div class="td">
+            <div>Table cell</div>
+          </div>
+          <div class="td td--last-child">
+            <div>Table cell</div>
+          </div>
+        </div>
+        <div class="tr">
+          <div class="td">
+            <div>Table cell</div>
+          </div>
+          <div class="td">
+            <div>Table cell</div>
+          </div>
+          <div class="td td--last-child">
+            <div>Table cell</div>
+          </div>
+        </div>
+        <div class="tr tr--nth-child-even">
+          <div class="td">
+            <div>Table cell</div>
+          </div>
+          <div class="td">
+            <div>Table cell</div>
+          </div>
+          <div class="td td--last-child">
+            <div>Table cell</div>
+          </div>
+        </div>
+      </div>
+      <div class="caption">
+        <div>Table with a horizontal header</div>
+      </div>
+    </div>
+    <div class="table">
+      <div class="thead">
+        <div class="tr">
+          <div class="td thead__td thead__th">
+            <div>Table Heading Row Cell</div>
+          </div>
+          <div class="td thead__td">
+            <div>Table Heading Row Cell</div>
+          </div>
+          <div class="td thead__td td--last-child">
+            <div>Table Heading Row Cell</div>
+          </div>
+        </div>
+      </div>
+      <div class="tbody">
+        <div class="tr">
+          <div class="td th">
+            <div>Table Heading Column Cell</div>
+          </div>
+          <div class="td">
+            <div>Table cell</div>
+          </div>
+          <div class="td td--last-child">
+            <div>Table cell</div>
+          </div>
+        </div>
+        <div class="tr tr--nth-child-even">
+          <div class="td th">
+            <div>Table Heading Column Cell</div>
+          </div>
+          <div class="td">
+            <div>Table cell</div>
+          </div>
+          <div class="td td--last-child">
+            <div>Table cell</div>
+          </div>
+        </div>
+        <div class="tr">
+          <div class="td th">
+            <div>Table Heading Column Cell</div>
+          </div>
+          <div class="td">
+            <div>Table cell</div>
+          </div>
+          <div class="td td--last-child">
+            <div>Table cell</div>
+          </div>
+        </div>
+        <div class="tr tr--nth-child-even">
+          <div class="td th">
+            <div>Table Heading Column Cell</div>
+          </div>
+          <div class="td">
+            <div>Table cell</div>
+          </div>
+          <div class="td td--last-child">
+            <div>Table cell</div>
+          </div>
+        </div>
+      </div>
+      <div class="caption">
+        <div>Table with both horizontal and verticle headers.</div>
+      </div>
+    </div>
+    <h6 id="forms" class="styleguide__eyebrow">Forms (WIP)</h6>
+    <p>Included below are form styles when/if there proves a need for user-facing webforms.<a href="https://joshuajohnson.co.uk/Choices/" target="_blank" class="p__a"></a>
+    </p>
+    <p>It is suggested that an accessible form customization tool to be added to allow for the refinement of input styles, as well as provisioning features that will be helpful for various listing page filtering options (like multi-select). <a href="https://joshuajohnson.co.uk/Choices/" target="_blank" class="p__a">Example library (Choices.js) »</a>
+    </p>
+    <p>This section will continue to provide iteration for various form types as components/pages require them.<a href="https://joshuajohnson.co.uk/Choices/" target="_blank" class="p__a"></a>
+    </p>
+    <div class="form">
+      <div class="form__group">
+        <div class="form__input">
+          <div class="input__label">Input Label</div>
+          <div data-w-id="29c648e3-63c9-32a3-f2af-600a436a3b66" class="input__field">
+            <div class="input__placeholder">Input Placeholder</div>
+            <div class="input__value">Input Value</div>
+          </div>
+        </div>
+      </div>
+      <div class="form__group">
+        <div class="form__input">
+          <div class="input__label">Inline form validation</div>
+          <div class="input__field input__field--error">
+            <div class="input__value input__value--active">Input Value</div>
+          </div>
+          <div class="input__input-messaging input-messaging--error"><span class="icons"></span> Form message handling for an error.</div>
+        </div>
+        <div class="form__input">
+          <div class="input__label">Input Label</div>
+          <div data-w-id="6de8b2e3-d6b5-3677-cda7-80a51f530159" class="input__field">
+            <div class="input__placeholder">Input Placeholder</div>
+            <div class="input__value">Input Value</div>
+          </div>
+        </div>
+        <div class="form__input">
+          <div class="input__label">Input Label</div>
+          <div data-w-id="11a9b469-5769-b671-acad-36e08be928ad" class="input__field">
+            <div class="input__placeholder">Input Placeholder</div>
+            <div class="input__value">Input Value</div>
+          </div>
+        </div>
+      </div>
+      <div class="form__group">
+        <div class="form__input">
+          <div data-w-id="e5f764d7-32fc-2f96-5c6b-0f7f457afc18" class="input__field input--dropdown">
+            <div class="input__placeholder">Dropdown Input</div>
+            <div class="icons dropdown__icon"></div>
+            <div style="height:0px;opacity:0" class="dropdown__options">
+              <a href="#" class="dropdown__options-value dropdown__options-value--current dropdown__options-value--first-child">Dropdown Input Current</a>
+              <a href="#" class="dropdown__options-value">Choice</a>
+              <a href="#" class="dropdown__options-value dropdown__options-value--last-child">Choice</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form__group">
+        <div class="form__input">
+          <div class="input__label">Multi-Select Dropdown</div>
+          <div data-w-id="0278c188-7a4d-8354-c968-a2cd25116862" class="input__field input--dropdown input--multiselect">
+            <div class="input__multiselect-wrapper">
+              <a href="#" class="dropdown__options-value options-value--multiselected"><span class="options-value--multiselected__label">Choice Selected</span><span class="options-value--multiselected__icon"></span></a>
+              <a href="#" class="dropdown__options-value options-value--multiselected"><span class="options-value--multiselected__label">Choice Selected</span><span class="options-value--multiselected__icon"></span></a>
+              <a href="#" class="dropdown__options-value options-value--multiselected"><span class="options-value--multiselected__label">Choice Selected</span><span class="options-value--multiselected__icon"></span></a>
+              <a href="#" class="dropdown__options-value options-value--multiselected"><span class="options-value--multiselected__label">Choice Selected</span><span class="options-value--multiselected__icon"></span></a>
+              <a href="#" class="dropdown__options-value options-value--multiselected"><span class="options-value--multiselected__label">Choice Selected</span><span class="options-value--multiselected__icon"></span></a>
+              <a href="#" class="dropdown__options-value options-value--multiselected"><span class="options-value--multiselected__label">Choice Selected</span><span class="options-value--multiselected__icon"></span></a>
+            </div>
+            <div class="icons dropdown__icon"><span class="dropdown__icon-span"></span></div>
+            <div style="height:0px;opacity:0" class="dropdown__options">
+              <a href="#" class="dropdown__options-value dropdown__options-value--first-child">Multi-Select Choice</a>
+              <a href="#" class="dropdown__options-value">Multi-Select Choice</a>
+              <a href="#" class="dropdown__options-value dropdown__options-value--last-child">Multi-Select Choice</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="collapsing-form">
+      <div class="collapsing-form__heading">
+        <h3 class="collapsing-form__label">Filter Group</h3>
+        <h3 data-w-id="9780e348-d029-eccd-b82d-100b2cf515d3" class="collapsing-form__button"><span class="collapsing-form__button-label">Filter Results</span> <span class="icons collapsing-form__button-icon"></span></h3>
+      </div>
+      <div style="display:none" class="form form--filters">
+        <div class="form__group">
+          <div class="form__input form__input--filters">
+            <div class="input__label">Input Label</div>
+            <div data-w-id="286f7757-ae29-e311-9a69-5dc8af38887f" class="input__field input--dropdown">
+              <div class="input__placeholder">Dropdown Input</div>
+              <div class="icons dropdown__icon"></div>
+              <div style="height:0px;opacity:0" class="dropdown__options">
+                <a href="#" class="dropdown__options-value dropdown__options-value--current dropdown__options-value--first-child">Dropdown Input Current</a>
+                <a href="#" class="dropdown__options-value">Choice</a>
+                <a href="#" class="dropdown__options-value dropdown__options-value--last-child">Choice</a>
+              </div>
+            </div>
+          </div>
+          <div class="form__input form__input--filters input--narrow">
+            <div class="input__label switch__label"><span title="Sort alphabetically" class="switch__label-option"></span><span title="Sort numerically" class="switch__label-option-b"></span></div>
+            <div class="switch">
+              <div class="switch__button"></div>
+            </div>
+          </div>
+          <div class="form__input form__input--filters input--narrow">
+            <div class="input__label switch__label"><span title="Sort by ascending order" class="switch__label-option"></span><span title="Sort by descending order" class="switch__label-option-b"></span></div>
+            <div class="switch">
+              <div class="switch__button"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h6 id="logos" class="styleguide__eyebrow">Logos</h6>
+    <div class="styleguide__grid">
+      <a href="#" class="logo w-inline-block"><img src="images/logo.svg" loading="lazy" alt="" class="logo__img">
+        <div class="logo__img-after"></div>
+        <div class="w-embed">
+          <style>
+	.logo:focus .logo__img-after,
+  .logo:hover .logo__img-after {
+  	width: 100%;
+  }
+</style>
+        </div>
+      </a>
+    </div>
+    <div class="styleguide__grid styleguide__grid--dark">
+      <a href="#" class="logo w-inline-block"><img src="images/logo--light.svg" loading="eager" alt="TexasLawHelp.org Logo" class="logo__img">
+        <div class="logo__img-after logo__img-after--secondary"></div>
+        <div class="w-embed">
+          <style>
+	.logo:focus .logo__img-after,
+  .logo:hover .logo__img-after {
+  	width: 100%;
+  }
+</style>
+        </div>
+      </a>
+    </div>
+    <h6 id="iconography" class="styleguide__eyebrow">Iconography (Iterative WIP) • Updated 12/22/20</h6>
+    <p>An abridged collection of mostly <a href="https://feathericons.com/" target="_blank" class="p__a">Feather</a> with some <a href="https://material.io/resources/icons/" target="_blank" class="p__a">Material Icons</a> filling in for Topic terms. Both Feather and Material are licensed under <a href="https://en.wikipedia.org/wiki/MIT_License" target="_blank" class="p__a">MIT</a> (i.e., they are free to use even sans attribution). The star and language icons are custom made and do not require licensing.</p>
+    <p class="icons styleguide__icons">                                                    </p>
+    <h4>Topic Icons</h4>
+    <p class="p--small"><span class="icons"></span> = New replacements (Jan 27)<br>‡ = Materials Icon<br>* = Could use a better, custom icon</p>
+    <ul role="list" class="submenu__nav submenu__nav--maxi-list">
+      <li class="submenu__nav-item">
+        <a href="#" class="submenu__nav-item-a w-inline-block">
+          <div class="submenu__nav-item-icon"></div>
+          <div class="submenu__nav-item-title">Family Divorce &amp; Children <span class="icons"></span></div>
+        </a>
+      </li>
+      <li class="submenu__nav-item">
+        <a href="#" class="submenu__nav-item-a w-inline-block">
+          <div class="submenu__nav-item-icon"></div>
+          <div class="submenu__nav-item-title">Coronavirus COVID-19 <span class="icons"></span></div>
+        </a>
+      </li>
+      <li class="submenu__nav-item">
+        <a href="#" class="submenu__nav-item-a w-inline-block">
+          <div class="submenu__nav-item-icon"></div>
+          <div class="submenu__nav-item-title">Health &amp; Benefits <span class="icons"></span></div>
+        </a>
+      </li>
+      <li class="submenu__nav-item">
+        <a href="#" class="submenu__nav-item-a w-inline-block">
+          <div class="submenu__nav-item-icon"></div>
+          <div class="submenu__nav-item-title">Court Basics ‡</div>
+        </a>
+      </li>
+      <li class="submenu__nav-item">
+        <a href="#" class="submenu__nav-item-a w-inline-block">
+          <div class="submenu__nav-item-icon"></div>
+          <div class="submenu__nav-item-title">Name Change ‡</div>
+        </a>
+      </li>
+      <li class="submenu__nav-item">
+        <a href="#" class="submenu__nav-item-a w-inline-block">
+          <div class="submenu__nav-item-icon"></div>
+          <div class="submenu__nav-item-title">Criminal Records &amp; Traffic <span class="icons"></span></div>
+        </a>
+      </li>
+      <li class="submenu__nav-item">
+        <a href="#" class="submenu__nav-item-a w-inline-block">
+          <div class="submenu__nav-item-icon"></div>
+          <div class="submenu__nav-item-title">House &amp; Apartment *</div>
+        </a>
+      </li>
+      <li class="submenu__nav-item">
+        <a href="#" class="submenu__nav-item-a w-inline-block">
+          <div class="submenu__nav-item-icon"></div>
+          <div class="submenu__nav-item-title">Money &amp; Debt <span class="icons"></span></div>
+        </a>
+      </li>
+      <li class="submenu__nav-item">
+        <a href="#" class="submenu__nav-item-a w-inline-block">
+          <div class="submenu__nav-item-icon"></div>
+          <div class="submenu__nav-item-title">School &amp; Work ‡</div>
+        </a>
+      </li>
+      <li class="submenu__nav-item">
+        <a href="#" class="submenu__nav-item-a w-inline-block">
+          <div class="submenu__nav-item-icon"></div>
+          <div class="submenu__nav-item-title">Veterans &amp; Military ‡</div>
+        </a>
+      </li>
+      <li class="submenu__nav-item">
+        <a href="#" class="submenu__nav-item-a w-inline-block">
+          <div class="submenu__nav-item-icon"></div>
+          <div class="submenu__nav-item-title">Disaster Relief ‡</div>
+        </a>
+      </li>
+      <li class="submenu__nav-item last-child">
+        <a href="#" class="submenu__nav-item-a w-inline-block">
+          <div class="submenu__nav-item-icon"></div>
+          <div class="submenu__nav-item-title">Individual Rights <span class="icons"></span></div>
+        </a>
+      </li>
+    </ul>
+    <h6 id="colors" class="styleguide__eyebrow">Colors</h6>
+    <p>Color swatches are presented below in the order of their intended usage/application: from common (top) to rare/sparingly (bottom).</p>
+    <p class="p--small">† = does not pass accessibility<br>‡ = only passes when used over white background for font-size 18px+<br>≠ = only passes over white or very light colors/backgrounds<br>≈ = only passes over black or very dark colors/backgrounds<br>
+      <a href="https://abc.useallfive.com/?colors[]=FFFFFF,141413,1F5766,538084,122E3A,6AA088,F2DBBB,B2500D,772604,DB7B3A" target="_blank" class="p__a">Accessibility Checkerboard »</a>
+    </p>
+    <div class="styleguide__colors">
+      <div class="styleguide__color-swatch styleguide__color-swatch--black">
+        <div>Black</div>
+        <div>#141413</div>
+      </div>
+      <div class="styleguide__color-swatch styleguide__color-swatch--primary">
+        <div>Primary</div>
+        <div>#1f5766</div>
+      </div>
+      <div class="styleguide__color-swatch styleguide__color-swatch--primary-light">
+        <div>Primary - Light ≈</div>
+        <div>#538084</div>
+      </div>
+      <div class="styleguide__color-swatch styleguide__color-swatch--primary-dark">
+        <div>Primary - Dark</div>
+        <div>#122e3a</div>
+      </div>
+      <div class="styleguide__color-swatch styleguide__color-swatch--tertiary">
+        <div>Secondary ≈</div>
+        <div>#6aa088</div>
+      </div>
+      <div class="styleguide__color-swatch styleguide__color-swatch--white--medium">
+        <div>Creme Pat ≈</div>
+        <div>#f2dbbb</div>
+      </div>
+      <div class="styleguide__color-swatch styleguide__color-swatch--white--light">
+        <div>Creme Fraiche</div>
+        <div>#f9f0e4</div>
+      </div>
+      <div class="styleguide__color-swatch styleguide__color-swatch--white">
+        <div>Creme</div>
+        <div>#fefbf2</div>
+      </div>
+      <div class="styleguide__color-swatch styleguide__color-swatch--accent">
+        <div>Accent ‡</div>
+        <div>#b2500d</div>
+      </div>
+      <div class="styleguide__color-swatch styleguide__color-swatch--accent-dark">
+        <div>Accent - Dark</div>
+        <div>#772604</div>
+      </div>
+      <div class="styleguide__color-swatch styleguide__color-swatch--accent-light">
+        <div>Accent - Light ≈</div>
+        <div>#db7b3a</div>
+      </div>
+    </div>
+  </div>
+  <div class="sticky-menu">
+    <a href="#headings" class="sticky-menu__button w-inline-block">
+      <div></div>
+      <div class="sticky-menu__button-label">back to top</div>
+    </a>
+    <div class="w-embed">
+      <style>
+	.escape__icon::after {
+  	content: "";
+    position: absolute;
+    top: -5%;
+    right: .175rem;
+    bottom: -5%;
+    width: 2px;
+    background: white;
+    border-radius: 1px;
+    transition: all 240ms ease-in-out;
+  }
+  .escape__button:hover .escape__icon::after {
+    background: #772604;
+  }
+</style>
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=5fa1af2292a39f5b7d677ca5" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script><!--  Switch Toggle Input Element  -->
+  <style>
+	.switch__button--toggled {
+  	left: calc(100% - 32px);
+  }
+</style>
+  <script>
+	$('.switch').click(function() {
+  	$(this).find('.switch__button').toggleClass('switch__button--toggled');
+  });
+</script>
+</body>
+</html>

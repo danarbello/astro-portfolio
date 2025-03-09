@@ -1,0 +1,7 @@
+<!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
+
+<svg width="100%" height="100%" viewBox="0 0 70 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 1.5;">
+    <g transform="matrix(1,0,0,1,-4.8353,-21.7693)">
+        <path d="M13.835,40.777L13.835,33.569C13.835,32.024 12.581,30.769 11.035,30.769L8.635,30.769C7.09,30.769 5.835,32.024 5.835,33.569L5.835,55.769L13.835,55.769L13.835,32.569C13.835,27.16 18.227,22.769 23.635,22.769L56.035,22.769C61.444,22.769 65.835,27.16 65.835,32.569L65.815,40.769L13.835,40.769L13.835,50.769L65.03,50.769L65.835,50.775L65.835,55.769L73.835,55.769L73.835,33.569C73.835,32.024 72.581,30.769 71.035,30.769L68.635,30.769C67.09,30.769 65.835,32.024 65.835,33.569L65.835,50.775" style="fill:none;stroke:rgb(74,74,74);stroke-width:2px;" class="ZkumnFXl_0"></path>
+    </g>
+<style>.ZkumnFXl_0{stroke-dasharray:321 323;stroke-dashoffset:322;animation:ZkumnFXl_draw_0 9860ms ease-in 0ms infinite,ZkumnFXl_fade 9860ms linear 0ms infinite;}@keyframes ZkumnFXl_draw{100%{stroke-dashoffset:0;}}@keyframes ZkumnFXl_fade{0%{stroke-opacity:1;}95.94320486815415%{stroke-opacity:1;}100%{stroke-opacity:0;}}@keyframes ZkumnFXl_draw_0{4.665314401622718%{stroke-dashoffset: 322}65.51724137931035%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}</style></svg>

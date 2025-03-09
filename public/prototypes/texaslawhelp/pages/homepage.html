@@ -1,0 +1,819 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
+<!--  Last Published: Mon Mar 04 2024 17:14:39 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="5fce795d489a667e33b1c562" data-wf-site="5fa1af2292a39f5b7d677ca5">
+<head>
+  <meta charset="utf-8">
+  <title>Homepage | TLH Designs</title>
+  <meta content="Homepage | TLH Designs" property="og:title">
+  <meta content="Homepage | TLH Designs" property="twitter:title">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="../css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="../css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="../css/tlh-4k.webflow.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Poppins:200,200italic,regular,italic,700,700italic,900"]  }});</script>
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="../images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="../images/webclip.png" rel="apple-touch-icon">
+</head>
+<body>
+  <div class="global-styles w-embed">
+    <style>
+	/* 
+   * Additional Global Styles
+   * - Globally assumes font-size inherits default value: html { font-size: 16px }.
+  */
+  /* Full font stack fallback */
+  body {
+  	font-family: Poppins, Futura, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+    -webkit-font-smoothing: antialiased; /* FE note: we don't HAVE to do this, but it does help clean up the bad alias mapping for Poppins, especially for the 700 font-weight. */ 
+		-moz-osx-font-smoothing: grayscale;
+  }
+  /* Heading Element Variants */
+  .heading--uppercase {
+  	word-spacing: .1em;
+  }
+  /* Paragraph Styles */
+  *::selection {
+  	background: rgba(20,20,19,.9); /* Black color variable */
+    color: #fefbf2; /* Creme color variable */
+  }
+  .p__a {
+	  /* background-image: linear-gradient(to bottom, transparent 0%, rgba($tertiary-color, .3) 0%); */
+    background-image: linear-gradient(to bottom, transparent 0%, rgba(106,160,136,.3) 0%);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+  	background-size: 100% .1em;
+  }
+  .p--small .p__a,
+  .submenu--basic__item.p__a {
+  	background-size: 100% 2px;
+  }
+  .p__a:focus,
+  .p__a:hover {
+  	background-size: 100% 100%;
+  }
+  /* Modifier for links on dark backgrounds */
+  .p__a--secondary {
+  	/* background-image: linear-gradient(to bottom, transparent 0%, rgba($white-medium, .15) 0%); */
+  	background-image: linear-gradient(to bottom, transparent 0%, rgba(242,219,187,.15) 0%);
+  }
+  /* Button Styles */
+  .button--secondary,
+  .topic-array__item-a {
+  	/* background-image: linear-gradient(to right, transparent 0%, rgba($tertiary-color, .3) 0%); */
+    background-image: linear-gradient(to right, transparent 0%, rgba(106,160,136,.3) 0%); 
+    background-position: center left;
+    background-repeat: no-repeat;
+  	background-size: 2ch 100%;
+  }
+  .button--secondary:focus,
+  .button--secondary:hover {
+  	background-size: 100% 100%; /* Would normally &:not(.button--disabled), see below for hack */
+  }
+  .button--secondary.button--disabled:focus,
+  .button--secondary.button--disabled:hover {
+  	background-size: 2ch 100%;
+  }
+  .button--print {
+  	display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* Form Styles */
+  .form__input {
+  	max-width: 100%;
+  }
+  .dropdown__options {
+  	top: calc(100% + 2px);
+  }
+  /* Hero Styles */
+  .block--hero {
+  	background-blend-mode: multiply;
+  }
+  /* Card Teaser Styles */
+  /* Animated line under the faux button */
+  .card__cta::after {
+  	content: "";
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 0;
+    transition: all 360ms ease-in-out;
+    border-radius: 1px;
+    background-color: #b2500d;
+    height: 2px;
+    transform-origin: left center;
+    transform: scale(0,1);
+    opacity: 0;
+  }
+  /* Shift the line to the left to layer beneath badge */
+  .card__cta--with-badge::after {
+  	left: -1rem;
+  }
+  .cards__card:hover .card__cta::after {
+  	transform: scale(1,1);
+    opacity: 1;
+  }
+  /* Event Cards */
+  /* Change shadow on event card hover */
+  .card--event:hover .card--event__content {
+  	box-shadow: 0 0 2px 2px rgba(0,0,0,.4), 0 0 6px 6px rgba(0,0,0,.4);
+  }
+  .page-title--event:hover .card--event__content {
+  	box-shadow: none;
+  }
+  /* Bar beneath month label */
+  .card--event__date-month::after {
+  	content: "";
+    position: absolute;
+    top: calc(100% + 6px);
+    right: 19.0965%;
+    left: 19.0965%;
+    height: 2px;
+    background-color: rgba(249,240,228,.3); /* rgba($creme-fraiche, .3) */
+    border-radius: 1px;
+  }
+  /* Partner Cards */
+  .card__marquee {
+  	display: inline-flex;
+  }
+  /* Tabs Styles */
+  /* Gradient overlay "fade" for tabs menu when it overflows */
+  .page-tabs::before {
+  	content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%);
+    height: 3.3333rem;
+    width: 10%;
+    z-index: 1;
+  }
+  @media (max-width: 991px) {
+  	.page-tabs::before {
+	  	height: 3.13rem;
+    }
+  }
+  @media (max-width: 767px) {
+  	.page-tabs::before {
+	  	height: 3rem;
+    }
+  }
+  .topic-array__item-a {
+    background-image: linear-gradient(to right, transparent 0%, rgba(255,255,255,.3) 0%); 
+    background-position: center left;
+    background-repeat: no-repeat;
+  	background-size: 1.25ch 100%;
+  }
+  .topic-array__item-a:focus,
+  .topic-array__item-a:hover {
+  	background-size: 100% 100%;
+    background-image: linear-gradient(to right, transparent 0%, rgba(255,255,255,1) 0%);
+  }
+</style>
+  </div>
+  <header id="top" class="header">
+    <div class="w-embed">
+      <style>
+	/* When a main menu item is just a link without a submenu */
+	.menu-item__parent-span::after {
+  	content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all 220ms ease-in-out;
+    transform-origin: left center;
+    transform: scale(0,1);
+    background: rgba(106,160,136,0); /* rgba($tertiary-color, 0) */
+    height: 2px;
+  }
+  .menu-item__parent--active:focus .menu-item__parent-span::after,
+  .menu-item__parent--active:hover .menu-item__parent-span::after {
+  	transform: scale(1,1);
+    background: rgba(106,160,136,.5); /* rgba($tertiary-color, .5) */
+  }
+  /* Submenu flex items */
+  .submenu__nav-item--promoted:nth-child(2n) {
+    border-right: none;
+  }
+</style>
+    </div>
+    <nav class="container header__nav">
+      <ul role="list" class="nav__menu">
+        <li class="nav__menu-item menu-item--brand">
+          <a href="../pages/homepage.html" aria-current="page" class="logo nav__brand w-inline-block w--current"><img src="../images/logo.svg" loading="eager" alt="TexasLawHelp.org Logo" class="logo__img">
+            <div class="logo__img-after"></div>
+            <div class="w-embed">
+              <style>
+	.logo:focus .logo__img-after,
+  .logo:hover .logo__img-after {
+  	width: 100%;
+  }
+</style>
+            </div>
+          </a>
+        </li>
+        <li data-w-id="765c351e-cca5-7f8a-ece7-706e3a9113bd" class="nav__menu-item nav__menu-item--has-submenu">
+          <div class="menu-item__parent">
+            <div class="menu-item__parent-label">Topics</div>
+            <div class="icons menu-item__parent-icon"></div>
+          </div>
+          <div class="menu-item__submenu">
+            <div class="container submenu__container">
+              <div class="submenu__section submenu__section--promoted">
+                <div class="submenu__section-heading">
+                  <h6 class="submenu__section-heading-title">Common Topics</h6>
+                  <div class="heading-with-stroke__after"></div>
+                </div>
+                <ul role="list" class="submenu__nav submenu__nav--promoted">
+                  <li class="submenu__nav-item submenu__nav-item--promoted">
+                    <a href="../pages/topic-v2.html" class="submenu__nav-item-a submenu__nav-item-a--promoted w-inline-block">
+                      <div class="submenu__nav-item-icon submenu__nav-item-icon--promoted"></div>
+                      <div class="submenu__nav-item-title">Family, Divorce &amp; Children</div>
+                      <div class="submenu__nav-item-summary">Going through a divorce can be arduous, but getting help shouldn&#x27;t be.</div>
+                    </a>
+                  </li>
+                  <li class="submenu__nav-item submenu__nav-item--promoted">
+                    <a href="../pages/topic-v2.html" class="submenu__nav-item-a submenu__nav-item-a--promoted w-inline-block">
+                      <div class="submenu__nav-item-icon submenu__nav-item-icon--promoted"></div>
+                      <div class="submenu__nav-item-title">Coronavirus (COVID-19)</div>
+                      <div class="submenu__nav-item-summary">Finds ways to ease the legal troubles caused by this year&#x27;s pandemic.</div>
+                    </a>
+                  </li>
+                  <li class="submenu__nav-item submenu__nav-item--promoted">
+                    <a href="../pages/topic-v2.html" class="submenu__nav-item-a submenu__nav-item-a--promoted w-inline-block">
+                      <div class="submenu__nav-item-icon submenu__nav-item-icon--promoted"></div>
+                      <div class="submenu__nav-item-title">Health &amp; Benefits</div>
+                      <div class="submenu__nav-item-summary">Protect yourself from medical bills and more.</div>
+                    </a>
+                  </li>
+                  <li class="submenu__nav-item submenu__nav-item--promoted">
+                    <a href="../pages/topic-v2.html" class="submenu__nav-item-a submenu__nav-item-a--promoted w-inline-block">
+                      <div class="submenu__nav-item-icon submenu__nav-item-icon--promoted"></div>
+                      <div class="submenu__nav-item-title">Court Basics</div>
+                      <div class="submenu__nav-item-summary">Learn the basic rules, procedures, and etiquette of the courts.</div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="submenu__section">
+                <div class="submenu__section-heading">
+                  <h6 class="submenu__section-heading-title">All Topics</h6>
+                  <div class="heading-with-stroke__after"></div>
+                </div>
+                <ul role="list" class="submenu__nav">
+                  <li class="submenu__nav-item">
+                    <a href="../pages/topic-v2.html" class="submenu__nav-item-a w-inline-block">
+                      <div class="submenu__nav-item-icon"></div>
+                      <div class="submenu__nav-item-title">Protection from Violence or Abuse</div>
+                    </a>
+                  </li>
+                  <li class="submenu__nav-item">
+                    <a href="../pages/topic-v2.html" class="submenu__nav-item-a w-inline-block">
+                      <div class="submenu__nav-item-icon"></div>
+                      <div class="submenu__nav-item-title">Name Change</div>
+                    </a>
+                  </li>
+                  <li class="submenu__nav-item">
+                    <a href="../pages/topic-v2.html" class="submenu__nav-item-a w-inline-block">
+                      <div class="submenu__nav-item-icon"></div>
+                      <div class="submenu__nav-item-title">Criminal Records &amp; Traffic</div>
+                    </a>
+                  </li>
+                  <li class="submenu__nav-item">
+                    <a href="../pages/topic-v2.html" class="submenu__nav-item-a w-inline-block">
+                      <div class="submenu__nav-item-icon"></div>
+                      <div class="submenu__nav-item-title">House &amp; Apartment</div>
+                    </a>
+                  </li>
+                  <li class="submenu__nav-item">
+                    <a href="../pages/topic-v2.html" class="submenu__nav-item-a w-inline-block">
+                      <div class="submenu__nav-item-icon"></div>
+                      <div class="submenu__nav-item-title">Money &amp; Debt</div>
+                    </a>
+                  </li>
+                  <li class="submenu__nav-item">
+                    <a href="../pages/topic-v2.html" class="submenu__nav-item-a w-inline-block">
+                      <div class="submenu__nav-item-icon"></div>
+                      <div class="submenu__nav-item-title">School &amp; Work</div>
+                    </a>
+                  </li>
+                  <li class="submenu__nav-item">
+                    <a href="../pages/topic-v2.html" class="submenu__nav-item-a w-inline-block">
+                      <div class="submenu__nav-item-icon"></div>
+                      <div class="submenu__nav-item-title">Veterans &amp; Military</div>
+                    </a>
+                  </li>
+                  <li class="submenu__nav-item">
+                    <a href="../pages/topic-v2.html" class="submenu__nav-item-a w-inline-block">
+                      <div class="submenu__nav-item-icon"></div>
+                      <div class="submenu__nav-item-title">Disaster Relief</div>
+                    </a>
+                  </li>
+                  <li class="submenu__nav-item last-child">
+                    <a href="../pages/topic-v2.html" class="submenu__nav-item-a w-inline-block">
+                      <div class="submenu__nav-item-icon"></div>
+                      <div class="submenu__nav-item-title">Individual Rights</div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li data-w-id="765c351e-cca5-7f8a-ece7-706e3a911427" class="nav__menu-item nav__menu-item--has-submenu">
+          <div class="menu-item__parent">
+            <div class="menu-item__parent-label">Self Help</div>
+            <div class="icons menu-item__parent-icon"></div>
+          </div>
+          <div class="menu-item__submenu">
+            <div class="container submenu__container">
+              <div class="submenu__section submenu__section--promoted">
+                <ul role="list" class="submenu__nav submenu__nav--promoted">
+                  <li class="submenu__nav-item submenu__nav-item--thirds">
+                    <a href="#" class="submenu__nav-item-a submenu__nav-item-a--promoted w-inline-block">
+                      <div class="submenu__nav-item-title">Self Help Guides</div>
+                      <div class="submenu__nav-item-summary">Don&#x27;t go it alone, find an all-in-one kit that meets your needs from case open to case closed.</div>
+                    </a>
+                  </li>
+                  <li class="submenu__nav-item submenu__nav-item--thirds">
+                    <a href="#" class="submenu__nav-item-a submenu__nav-item-a--promoted w-inline-block">
+                      <div class="submenu__nav-item-title">Informative Articles</div>
+                      <div class="submenu__nav-item-summary">Composed and compiled by professionals in the region, these articles will help with a variety of objectives.</div>
+                    </a>
+                  </li>
+                  <li class="submenu__nav-item submenu__nav-item--thirds">
+                    <a href="#" class="submenu__nav-item-a submenu__nav-item-a--promoted w-inline-block">
+                      <div class="submenu__nav-item-title">Ask a Question</div>
+                      <div class="submenu__nav-item-summary">When the going gets tough sometimes is better to just ask a professional.</div>
+                    </a>
+                  </li>
+                  <li class="submenu__nav-item submenu__nav-item--thirds">
+                    <a href="#" class="submenu__nav-item-a submenu__nav-item-a--promoted w-inline-block">
+                      <div class="submenu__nav-item-title">Court Info</div>
+                      <div class="submenu__nav-item-summary">Get basic information about the court.</div>
+                    </a>
+                  </li>
+                  <li class="submenu__nav-item submenu__nav-item--thirds">
+                    <a href="../pages/forms.html" class="submenu__nav-item-a submenu__nav-item-a--promoted w-inline-block">
+                      <div class="submenu__nav-item-title">Forms</div>
+                      <div class="submenu__nav-item-summary">Don&#x27;t go empty handed, find all of the forms you&#x27;ll need.</div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li data-w-id="765c351e-cca5-7f8a-ece7-706e3a91145f" class="nav__menu-item nav__menu-item--has-submenu">
+          <div class="menu-item__parent">
+            <div class="menu-item__parent-label">Legal Assistance</div>
+            <div class="icons menu-item__parent-icon"></div>
+          </div>
+          <div class="menu-item__submenu">
+            <div class="container submenu__container">
+              <div class="submenu__section submenu__section--promoted">
+                <div class="submenu__section-heading">
+                  <h6 class="submenu__section-heading-title">Find Help</h6>
+                  <div class="heading-with-stroke__after"></div>
+                </div>
+                <ul role="list" class="submenu__nav submenu__nav--promoted">
+                  <li class="submenu__nav-item submenu__nav-item--promoted">
+                    <a href="../pages/directory.html" class="submenu__nav-item-a submenu__nav-item-a--promoted w-inline-block">
+                      <div class="submenu__nav-item-title">Legal Help Directory</div>
+                      <div class="submenu__nav-item-summary">Sometimes you can&#x27;t do it alone. Find the legal assistance that is right for you.</div>
+                    </a>
+                  </li>
+                  <li class="submenu__nav-item submenu__nav-item--promoted">
+                    <a href="#" class="submenu__nav-item-a submenu__nav-item-a--promoted w-inline-block">
+                      <div class="submenu__nav-item-title">Legal Events &amp; Clinics</div>
+                      <div class="submenu__nav-item-summary">Join others for legal help events tailored to specific topics and tasks.</div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="submenu__section">
+                <div class="submenu__section-heading">
+                  <h6 class="submenu__section-heading-title">Find Specific Help</h6>
+                  <div class="heading-with-stroke__after"></div>
+                </div>
+                <ul role="list" class="submenu__nav">
+                  <li class="submenu__nav-item">
+                    <a href="#" class="submenu__nav-item-a submenu__nav-item-a--iconless w-inline-block">
+                      <div class="submenu__nav-item-title">How to Ask Questions</div>
+                    </a>
+                  </li>
+                  <li class="submenu__nav-item">
+                    <a href="#" class="submenu__nav-item-a submenu__nav-item-a--iconless w-inline-block">
+                      <div class="submenu__nav-item-title">Types of Help</div>
+                    </a>
+                  </li>
+                  <li class="submenu__nav-item">
+                    <a href="#" class="submenu__nav-item-a submenu__nav-item-a--iconless w-inline-block">
+                      <div class="submenu__nav-item-title">Helpful Organizations</div>
+                    </a>
+                  </li>
+                  <li class="submenu__nav-item">
+                    <a href="#" class="submenu__nav-item-a submenu__nav-item-a--iconless w-inline-block">
+                      <div class="submenu__nav-item-title">Legal Advice</div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li title="Change language settings" data-w-id="765c351e-cca5-7f8a-ece7-706e3a9114a7" class="nav__menu-item nav__menu-item--has-submenu nav__menu-item--languages">
+          <div class="menu-item__parent menu-item__parent--languages">
+            <div class="menu-item__parent-label menu-item__parent-label--translations"></div>
+          </div>
+          <div class="menu-item__submenu submenu--basic submenu--languages">
+            <a href="#" class="submenu__nav-item-a submenu__nav-item-a--iconless w-inline-block">
+              <div class="submenu__nav-item-title">English</div>
+            </a>
+            <a href="#" class="submenu__nav-item-a submenu__nav-item-a--iconless w-inline-block">
+              <div class="submenu__nav-item-title">Español</div>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="header__search">
+    <div class="w-embed">
+      <style>
+	/* Search Styles */
+  .search__input-placeholder,
+  .search__input-value {
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .search__menu {
+  	top: calc(100% - 2px); /* Ensures search elements overlay menu due to border-radii */
+  }
+  .search__menu-list-item-link {
+  	/* background-image: linear-gradient(to bottom, transparent 0%, rgba($tertiary-color, .5) 0%); */
+    background-image: linear-gradient(to bottom, transparent 0%, rgba(106,160,136,.5) 0%);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+  	background-size: 100% 2px;
+  }
+	.search__menu-list-item-link:focus,
+	.search__menu-list-item-link:hover {
+  	background-size: 100% 100%;
+  }
+</style>
+    </div>
+    <div class="container search__container">
+      <div data-w-id="20b8488d-dcea-7b59-91a2-d3e644de678b" class="search__input">
+        <div class="search__input-placeholder">Search for help…</div>
+        <div class="search__input-value">how to write last will testament</div>
+      </div>
+      <a title="Submit search query" href="#" class="search__action w-inline-block">
+        <div></div>
+      </a>
+      <a title="Toggle visibility of search suggestions" data-w-id="20b8488d-dcea-7b59-91a2-d3e644de6793" href="#" class="search__action search__action--menu w-inline-block">
+        <div class="search__action-icon--initial"></div>
+        <div class="search__action-icon--close"></div>
+      </a>
+      <div class="search__menu">
+        <div class="search__menu-container">
+          <h4>Frequently searched terms</h4>
+          <div class="search__menu-group-row">
+            <div class="search__menu-group">
+              <div class="submenu__section-heading">
+                <h6 class="submenu__section-heading-title">Common Topics</h6>
+                <div class="heading-with-stroke__after"></div>
+              </div>
+              <ul role="list" class="search__menu-list">
+                <li class="search__menu-list-item">
+                  <a href="../pages/topic.html" class="p__a">Promoted Topic Term</a>
+                </li>
+                <li class="search__menu-list-item">
+                  <a href="../pages/topic.html" class="p__a">Divorce</a>
+                </li>
+                <li class="search__menu-list-item">
+                  <a href="../pages/topic.html" class="p__a">Wills</a>
+                </li>
+                <li class="search__menu-list-item">
+                  <a href="../pages/topic.html" class="p__a">Power of Attorney</a>
+                </li>
+                <li class="search__menu-list-item">
+                  <a href="../pages/topic.html" class="p__a">Promoted Topic Term</a>
+                </li>
+              </ul>
+              <a href="#" class="button button--secondary button--small button--not-full">More Topics</a>
+            </div>
+            <div class="search__menu-group search__menu-group--columned">
+              <div class="submenu__section-heading">
+                <h6 class="submenu__section-heading-title">Common Guides</h6>
+                <div class="heading-with-stroke__after"></div>
+              </div>
+              <ul role="list" class="search__menu-list search__menu-list--columned">
+                <li class="search__menu-list-item">
+                  <a href="../pages/guide.html" class="p__a">Promoted Guide Title</a>
+                </li>
+                <li class="search__menu-list-item">
+                  <a href="../pages/guide.html" class="p__a">Divorce With Children</a>
+                </li>
+                <li class="search__menu-list-item">
+                  <a href="../pages/guide.html" class="p__a">Divorce Without Children</a>
+                </li>
+                <li class="search__menu-list-item">
+                  <a href="../pages/guide.html" class="p__a">Promoted Guide Title</a>
+                </li>
+                <li class="search__menu-list-item">
+                  <a href="../pages/guide.html" class="p__a">Promoted Guide Title</a>
+                </li>
+                <li class="search__menu-list-item">
+                  <a href="../pages/guide.html" class="p__a">Promoted Guide Title</a>
+                </li>
+                <li class="search__menu-list-item">
+                  <a href="../pages/guide.html" class="p__a">Promoted Guide Title</a>
+                </li>
+                <li class="search__menu-list-item">
+                  <a href="../pages/guide.html" class="p__a">Promoted Guide Title</a>
+                </li>
+                <li class="search__menu-list-item">
+                  <a href="../pages/guide.html" class="p__a">Promoted Guide Title</a>
+                </li>
+                <li class="search__menu-list-item">
+                  <a href="../pages/guide.html" class="p__a">Promoted Guide Title</a>
+                </li>
+              </ul>
+              <a href="#" class="button button--secondary button--small button--not-full">More Guides</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="block block--hero">
+    <div class="container hero__container">
+      <h1 class="hero__title">The law, made clear.</h1>
+      <p class="p--large hero__summary">TexasLawHelp.org is a website dedicated to providing free and reliable legal information to all Texans. We are a joint effort of legal aid, courts, and nonprofit organizations throughout Texas.</p>
+      <div class="hero__buttons">
+        <a href="#" class="button button--white">Find Help</a>
+      </div>
+    </div>
+  </div>
+  <div class="block">
+    <div class="container container--centered">
+      <h2 class="block__title container--centered__block-title">Important Notices</h2>
+      <p class="p--large block__summary container--centered__block-summary">There&#x27;s a lot on our minds of late. Below are some of the more recent notices and informative articles that can help alleviate the stress and answer questions.</p>
+      <div class="cards__row">
+        <div class="cards__card card--basic"><img src="../images/cdc-F98Mv9O6LfI-unsplash.jpg" loading="lazy" sizes="(max-width: 479px) 88vw, (max-width: 767px) 30vw, 20vw" srcset="../images/cdc-F98Mv9O6LfI-unsplash-p-1080.jpeg 1080w, ../images/cdc-F98Mv9O6LfI-unsplash-p-1600.jpeg 1600w, ../images/cdc-F98Mv9O6LfI-unsplash-p-2000.jpeg 2000w, ../images/cdc-F98Mv9O6LfI-unsplash-p-2600.jpeg 2600w, ../images/cdc-F98Mv9O6LfI-unsplash-p-3200.jpeg 3200w, ../images/cdc-F98Mv9O6LfI-unsplash.jpg 4096w" alt="" class="image--cover card__image">
+          <div class="card__title card--basic__title">Having trouble affording rent? We can help!</div>
+          <p class="card__summary card--basic__summary">Stop TX Eviction can help you understand your rights and the eviction process, as well acquiring rent assistance.</p>
+          <a href="https://stoptxeviction.org/" target="_blank" class="button button--small card__button">Access Stop TX Eviction</a>
+        </div>
+        <div class="cards__card card--basic"><img src="../images/benjamin-faust-xOUs1VJnIP0-unsplash.jpg" loading="lazy" sizes="(max-width: 479px) 88vw, (max-width: 767px) 30vw, 20vw" srcset="../images/benjamin-faust-xOUs1VJnIP0-unsplash-p-500.jpeg 500w, ../images/benjamin-faust-xOUs1VJnIP0-unsplash-p-800.jpeg 800w, ../images/benjamin-faust-xOUs1VJnIP0-unsplash-p-1080.jpeg 1080w, ../images/benjamin-faust-xOUs1VJnIP0-unsplash-p-1600.jpeg 1600w, ../images/benjamin-faust-xOUs1VJnIP0-unsplash-p-2000.jpeg 2000w, ../images/benjamin-faust-xOUs1VJnIP0-unsplash-p-2600.jpeg 2600w, ../images/benjamin-faust-xOUs1VJnIP0-unsplash-p-3200.jpeg 3200w, ../images/benjamin-faust-xOUs1VJnIP0-unsplash.jpg 3460w" alt="" class="image--cover card__image">
+          <div class="card__title card--basic__title">You served us, now let us serve you.</div>
+          <p class="card__summary card--basic__summary">Find information that uniquely impacts veterans from rights to benefits and how to gain access to them in your area.</p>
+          <a href="https://stoptxeviction.org/" target="_blank" class="button button--small card__button">Learn More</a>
+        </div>
+        <div class="cards__card card--basic"><img src="../images/engin-akyurt-yr6hjbmSfLs-unsplash-1.jpg" loading="lazy" sizes="(max-width: 479px) 88vw, (max-width: 767px) 30vw, 20vw" srcset="../images/engin-akyurt-yr6hjbmSfLs-unsplash-1-p-1080.jpeg 1080w, ../images/engin-akyurt-yr6hjbmSfLs-unsplash-1-p-1600.jpeg 1600w, ../images/engin-akyurt-yr6hjbmSfLs-unsplash-1-p-2000.jpeg 2000w, ../images/engin-akyurt-yr6hjbmSfLs-unsplash-1-p-2600.jpeg 2600w, ../images/engin-akyurt-yr6hjbmSfLs-unsplash-1-p-3200.jpeg 3200w, ../images/engin-akyurt-yr6hjbmSfLs-unsplash-1.jpg 6720w" alt="" class="image--cover card__image">
+          <div class="card__title card--basic__title">Coronavirus Omnibus Information Article</div>
+          <p class="card__summary card--basic__summary">A one-stop collection of COVID-19 related legal documents, notices, and information to help make the pandemic a little less horrible.</p>
+          <a href="https://stoptxeviction.org/" target="_blank" class="button button--small card__button">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="block block--alternate">
+    <div class="container container--centered">
+      <h2 class="block__title container--centered__block-title">Common Guides</h2>
+      <p class="p--large block__summary container--centered__block-summary">We&#x27;ve seen it all, and that means we can sort of guess what you might be looking for. Below are six of the most commonly searched for legal tasks.</p>
+      <div class="cards__row">
+        <a href="../pages/guide.html" class="cards__card w-inline-block">
+          <div class="card__eyebrow"><span class="icons card__badge block--alternate__card__badge card__badge--guide"> </span>Parent Topic Term</div>
+          <div class="card__title">Guide Title</div>
+          <div class="p--small card__summary">Guide summary if available, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+          <div class="card__cta">Explore Guide</div>
+        </a>
+        <a href="../pages/guide.html" class="cards__card w-inline-block">
+          <div class="card__eyebrow"><span class="icons card__badge block--alternate__card__badge card__badge--guide"> </span>Family, Divorce &amp; Children</div>
+          <div class="card__title">I need a divorce. We do not have minor children.</div>
+          <div class="p--small card__summary">Card summary if available, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+          <div class="card__cta">Explore Guide</div>
+        </a>
+        <a href="../pages/guide.html" class="cards__card w-inline-block">
+          <div class="card__eyebrow"><span class="icons card__badge block--alternate__card__badge card__badge--guide"> </span>Family, Divorce &amp; Children</div>
+          <div class="card__title">I need a divorce. We have minor children.</div>
+          <div class="p--small card__summary">Card summary if available, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+          <div class="card__cta">Explore Guide</div>
+        </a>
+        <a href="../pages/guide.html" class="cards__card w-inline-block">
+          <div class="card__eyebrow"><span class="icons card__badge block--alternate__card__badge card__badge--guide"> </span>Protection from violence or abuse</div>
+          <div class="card__title">I need a protective order</div>
+          <div class="p--small card__summary">Card summary if available, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+          <div class="card__cta">Explore Guide</div>
+        </a>
+        <a href="../pages/guide.html" class="cards__card w-inline-block">
+          <div class="card__eyebrow"><span class="icons card__badge block--alternate__card__badge card__badge--guide"> </span>Criminal Records &amp; Traffic</div>
+          <div class="card__title">I need to clear an arrest from my record (expunction)</div>
+          <div class="p--small card__summary">Card summary if available, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+          <div class="card__cta">Explore Guide</div>
+        </a>
+        <a href="../pages/guide.html" class="cards__card w-inline-block">
+          <div class="card__eyebrow"><span class="icons card__badge block--alternate__card__badge card__badge--guide"> </span>House &amp; Apartment</div>
+          <div class="card__title">COVID-19 Eviction Answer Toolkit</div>
+          <div class="p--small card__summary">Card summary if available, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+          <div class="card__cta">Explore Guide</div>
+        </a>
+      </div>
+      <div class="button-container">
+        <a href="#" class="button button--inline">View More Guides</a>
+      </div>
+    </div>
+  </div>
+  <div class="block">
+    <div class="container container--centered">
+      <h2 class="block__title container--centered__block-title">Upcoming Legal Events &amp; Clinics</h2>
+      <p class="p--large block__summary container--centered__block-summary">There are plenty of virtual events to provide legal aid and assistance and answer you questions, even during quarantine.</p>
+      <div class="cards__row cards--events">
+        <a href="../pages/guide.html" class="cards__card card--event w-inline-block">
+          <div class="card--event__date">
+            <div class="card--event__date-month">Dec</div>
+            <div class="card--event__date-days">8</div>
+          </div>
+          <div class="card--event__content">
+            <div class="card__title">Event Title</div>
+            <div class="p--small card__subtitle">8am-11am • Virtual OR Location Name • Street Address</div>
+            <div class="p--small card__summary">Event summary if available, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            <div class="card__cta">Learn More</div>
+          </div>
+        </a>
+        <a href="../pages/guide.html" class="cards__card card--event w-inline-block">
+          <div class="card--event__date">
+            <div class="card--event__date-month">Dec</div>
+            <div class="card--event__date-days">11</div>
+          </div>
+          <div class="card--event__content">
+            <div class="card__title">Texas Legal Services Center - Hardin County Virtual Legal Clinic</div>
+            <div class="p--small card__subtitle">11am-12:30pm • Virtual</div>
+            <div class="p--small card__summary">Free Family Law Clinic for low-income patrons. Meet face to face with a licensed attorney over video chat.</div>
+            <div class="card__cta">Learn More</div>
+          </div>
+        </a>
+        <a href="../pages/guide.html" class="cards__card card--event w-inline-block">
+          <div class="card--event__date">
+            <div class="card--event__date-month">Dec</div>
+            <div class="card--event__date-days">20-23</div>
+          </div>
+          <div class="card--event__content">
+            <div class="card__title">Houston Volunteer Lawyers - Legal Clinic for U.S. Veterans</div>
+            <div class="p--small card__subtitle">7pm-8pm • Kountze Public Library • 800 S Redwood Ave</div>
+            <div class="card__cta">Learn More</div>
+          </div>
+        </a>
+        <a href="../pages/guide.html" class="cards__card card--event w-inline-block">
+          <div class="card--event__date">
+            <div class="card--event__date-month">Mar</div>
+            <div class="card--event__date-days">3</div>
+          </div>
+          <div class="card--event__content">
+            <div class="card__title">Lone Star Legal Aid - Face Live Presentations</div>
+            <div class="p--small card__subtitle">3:30pm-5:30pm • Virtual</div>
+            <div class="p--small card__summary">Guide summary if available, Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+            <div class="card__cta">Learn More</div>
+          </div>
+        </a>
+      </div>
+      <div class="button-container">
+        <a href="#" class="button button--inline">View More Events</a>
+      </div>
+    </div>
+  </div>
+  <div class="block block--hero hero--basic">
+    <div class="container hero__container">
+      <h1 class="hero__title">Support the cause.</h1>
+      <p class="p--large hero__summary">Help TexasLawHelp in its mission to bring legal aid and assistance to those without the financial means to do so. Every little bit counts.</p>
+      <div class="hero__buttons">
+        <a href="https://tlsc.kindful.com/" target="_blank" class="button button--white button--inline">Donate Now</a>
+      </div>
+    </div>
+  </div>
+  <footer id="footer" class="footer">
+    <div class="container">
+      <ul role="list" class="footer__menu">
+        <li class="footer__menu-item menu-item--brand">
+          <a href="../pages/homepage.html" aria-current="page" class="logo footer__brand w-inline-block w--current"><img src="../images/logo--light.svg" loading="eager" alt="TexasLawHelp.org Logo" class="logo__img">
+            <div class="logo__img-after logo__img-after--secondary"></div>
+            <div class="w-embed">
+              <style>
+	.logo:focus .logo__img-after,
+  .logo:hover .logo__img-after {
+  	width: 100%;
+  }
+</style>
+            </div>
+          </a>
+          <div class="footer__donate">
+            <a href="https://tlsc.kindful.com/" target="_blank" class="button button--white">Donate</a>
+            <p class="footer__donate-label">TLSC provides free legal services to underserved Texans in need of education, advice, and representation.</p>
+          </div>
+        </li>
+        <li class="footer__menu-item">
+          <ul role="list" class="menu-item__submenu--footer p--small">
+            <li class="menu-item__submenu-item--footer">
+              <a href="#" class="p__a p__a--secondary footer__menu-item-link">About Us</a>
+            </li>
+            <li class="menu-item__submenu-item--footer">
+              <a href="#" class="p__a p__a--secondary footer__menu-item-link">Disclaimer</a>
+            </li>
+            <li class="menu-item__submenu-item--footer">
+              <a href="#" class="p__a p__a--secondary footer__menu-item-link">Privacy</a>
+            </li>
+            <li class="menu-item__submenu-item--footer">
+              <a href="#" class="p__a p__a--secondary footer__menu-item-link">Library Printing Policy</a>
+            </li>
+            <li class="menu-item__submenu-item--footer">
+              <a href="#" class="p__a p__a--secondary footer__menu-item-link">Accessibility</a>
+            </li>
+          </ul>
+        </li>
+        <li class="footer__menu-item">
+          <ul role="list" class="menu-item__submenu--footer p--small">
+            <li class="menu-item__submenu-item--footer">
+              <a href="#" class="p__a p__a--secondary footer__menu-item-link">Live Chat</a>
+            </li>
+            <li class="menu-item__submenu-item--footer">
+              <a href="#" class="p__a p__a--secondary footer__menu-item-link">Tell Us What You Think</a>
+            </li>
+            <li class="menu-item__submenu-item--footer">
+              <a href="#" class="p__a p__a--secondary footer__menu-item-link">Order Outreach Materials</a>
+            </li>
+          </ul>
+        </li>
+        <li class="footer__menu-item footer__legal">
+          <p class="p--small">The information and forms available on this website are free. They are not for sale. By using this website, you agree not to sell or make a profit in any way from any information or forms that you obtained through this website.</p>
+          <p class="p--small">This website is supported by the Texas Access to Justice Foundation. The Texas Bar Foundation provided funding for website design.</p>
+          <p class="p--small">For more useful information go to <a href="#" class="p__a p__a--secondary">TexasCourtHelp</a>, a website of the Texas Office of Court Administration&#x27;s website.</p>
+          <p class="p--small">© 2001-2020. TexasLawHelp.org All Rights Reserved.</p>
+        </li>
+      </ul>
+    </div>
+    <div class="sticky-menu">
+      <a href="#top" class="sticky-menu__button w-inline-block">
+        <div></div>
+        <div class="sticky-menu__button-label">back to top</div>
+      </a>
+      <a href="https://www.dallaszoo.com/" class="sticky-menu__button escape__button w-inline-block">
+        <div class="escape__icon"><span class="escape__icon"></span></div>
+        <div class="sticky-menu__button-label escape__button-label">Quick Escape</div>
+      </a>
+      <div class="live-chat">
+        <a data-w-id="c2e69f2d-abd3-f49f-2287-28bee0d4be91" href="#" class="sticky-menu__button live-chat__button w-inline-block">
+          <div class="live-chat__bubble">
+            <div>Live Chat Available</div>
+            <div class="live-chat__bubble-stem"></div>
+          </div>
+          <div class="live-chat__icon"></div>
+          <div class="sticky-menu__button-label escape__button-label">Open Chat</div>
+        </a>
+      </div>
+      <div class="w-embed">
+        <style>
+	.escape__icon::after {
+  	content: "";
+    position: absolute;
+    top: -5%;
+    right: .175rem;
+    bottom: -5%;
+    width: 2px;
+    background: white;
+    border-radius: 1px;
+    transition: all 240ms ease-in-out;
+  }
+  .escape__button:hover .escape__icon::after {
+    background: #772604;
+  }
+  .live-chat:hover .live-chat__bubble-shadow {
+  	box-shadow: inset 0 0 10px 5px rgba(20, 20, 19, 0.5);
+  }
+</style>
+      </div>
+    </div>
+  </footer>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=5fa1af2292a39f5b7d677ca5" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="../js/webflow.js" type="text/javascript"></script><!--  Switch Toggle Input Element  -->
+  <style>
+	.switch__button--toggled {
+  	left: calc(100% - 32px);
+  }
+</style>
+  <script>
+	$('.switch').click(function() {
+  	$(this).find('.switch__button').toggleClass('switch__button--toggled');
+  });
+</script>
+</body>
+</html>

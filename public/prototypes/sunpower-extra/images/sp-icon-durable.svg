@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="109px" height="109px" viewBox="0 0 109 109" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>sp-icon-durable</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#2681CE" offset="0%"></stop>
+            <stop stop-color="#4194DB" offset="47.132095%"></stop>
+            <stop stop-color="#7EC0F7" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="set" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="sp-iconography" transform="translate(-767.000000, -4758.000000)">
+            <circle id="Oval-2" stroke="url(#linearGradient-1)" stroke-width="3" fill="#FFFFFF" cx="821.5" cy="4812.5" r="52.5"></circle>
+            <path d="M815.179943,4799.75364 L826.410706,4788.53253 L821.527001,4784 L809.205353,4787.19931 L792,4803.90489 L801.417344,4813.50441 L810.290616,4804.63876 L842.423902,4838.50352 C846.87473,4842.89295 854.602513,4836.75757 849.089121,4831.29173 L815.179943,4799.75364 Z" id="Combined-Shape-Copy" fill="#0076BF"></path>
+        </g>
+    </g>
+</svg>

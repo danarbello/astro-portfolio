@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="109px" height="109px" viewBox="0 0 109 109" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>sp-icon-flexible</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#2681CE" offset="0%"></stop>
+            <stop stop-color="#4194DB" offset="47.132095%"></stop>
+            <stop stop-color="#7EC0F7" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="set" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="sp-iconography" transform="translate(-167.000000, -4758.000000)">
+            <circle id="Oval-2" stroke="url(#linearGradient-1)" stroke-width="3" fill="#FFFFFF" cx="221.5" cy="4812.5" r="52.5"></circle>
+            <path d="M206.950088,4814.94589 L235.353369,4814.94358 C234.316537,4810.05995 229.909507,4805.65367 220.945669,4805.0432 L237.226135,4788.03394 C249.504878,4787.20044 259.340595,4801.88996 250.762115,4813.21467 L236.160523,4828.53496 C233.570323,4831.22507 230.293503,4832.71342 226.330063,4833 L189,4833 L206.950088,4814.94589 Z M229.694465,4802.21799 C237.614086,4804.86923 240.091112,4811.27162 240.312978,4817.39781 L246.51706,4810.95813 C252.930003,4803.13113 246.445142,4793.08914 239.127189,4792.80172 L229.694465,4802.21799 Z" id="Combined-Shape" fill="#0076BF"></path>
+        </g>
+    </g>
+</svg>

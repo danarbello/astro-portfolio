@@ -1,0 +1,5 @@
+The following files failed to download during site export. Please check them in the designer assets view (images) or dashboard (fonts).
+
+videos/Home-Page-Montage-42_V003-–-FPO-CUT-TAG-B-poster-00001.jpg
+videos/Home-Page-Montage-42_V003-–-FPO-CUT-TAG-poster-00001.jpg
+videos/sp-feature-video-bg-poster-00001.jpg

@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<!--  Last Published: Fri Oct 12 2018 15:57:59 GMT+0000 (UTC)  -->
+<html data-wf-page="5ac51f780b0d2f68026a92f5" data-wf-site="5ac51f780b0d2f75486a92f4">
+<head>
+  <meta charset="utf-8">
+  <title>Homepage Option 1</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="../css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="../css/components.css" rel="stylesheet" type="text/css">
+  <link href="../css/sxdapollo3.css" rel="stylesheet" type="text/css">
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="../images/icon__favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="../images/icon__webclip.png" rel="apple-touch-icon">
+</head>
+<body>
+  <div class="utility-embed">
+    <div id="global-styles" class="w-embed">
+      <style>
+	/* Global Styles */
+	html { font-size: 18px; -webkit-font-smoothing: antialiased; }
+  p a {
+  	font-weight: 700;
+    border-bottom: solid 3px rgba(71, 90, 183, 0.0);
+  }
+  p a:hover {
+  	color: #121c3d;
+    border-bottom-color: rgba(71, 90, 183, 0.5);
+  }
+  /* Story Elements */
+  .object__audio:last-child {
+  	border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .story-pager__label {
+  	text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .story-pager__trigger:hover .story-pager__icon {
+  	transform: scale(1.2, 1.2);
+  }
+  .sharing__triggers--like:hover .share-icon, .sharing__triggers--save:hover .share-icon, .sharing__triggers--social:hover .share-icon {
+  	transform: scale(1.16, 1.16);
+  }
+  .list-view__bg {
+  	z-index: -10;
+  }
+</style>
+    </div>
+    <div id="nav-styles" class="w-embed">
+      <style>  
+  /* Navigation & Menu Styling */
+  .nav__brand {
+  	background: -webkit-linear-gradient(229deg, #519aff 40%, #493e89 50%, #7a44b7 80%);
+    -webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+    background-size: 100%;
+    background-position: center right;
+  }
+  .nav__brand:hover {
+  	background-size: 300%;
+  }
+  @media (max-width: 991px) {
+  	.nav__brand {
+      background: none;
+      -webkit-background-clip: unset;
+  		-webkit-text-fill-color: unset;
+      color: #475ab7 !important;
+    }
+  }
+  @media (max-width: 1274px) {
+  	.nav__search {
+    	max-width: 20%;
+    }
+  }
+  .menu__item:hover .menu__item--text {
+  	border-bottom-color: rgba(61, 133, 231, 0.5);
+  }
+  .menu__item.w--current .menu__item--text {
+  	border-bottom-color: rgba(71, 90, 183, 0.6);
+  }
+  .menu__login:hover .menu__login--icon {
+  	color: #3d85e7;
+  }
+  /* Hamburger */
+  .trigger--line1, .trigger--line2, .trigger--line3, .trigger--line4 {
+  	content: "";
+    height: 2px;
+  	background-color: #4c4c4c;
+    transition: all 220ms ease-in-out;
+  }
+  .trigger--line2, .trigger--line3 {
+  	top: calc(50% - 1px);
+  }
+  .trigger--line4 {
+  	bottom: 0;
+  }
+  .menu__trigger:hover .trigger--line1, .menu__trigger:hover .trigger--line2, .menu__trigger:hover .trigger--line3, .menu__trigger:hover .trigger--line4 {
+  	background-color: #519aff;
+  }
+  .line-gone {
+  	width: 0%;
+    background-color: transparent !important;
+  }
+  .line-2 {
+  	transform: rotate(45deg);
+  }
+  .line-3 {
+  	transform: rotate(-45deg);
+  }
+  /* Search Styling */
+  .close--line:first-child {
+  	transform: rotate(45deg);
+  }
+  .close--line:last-child {
+  	transform: rotate(-45deg);
+  }
+  .search__header--placeholdeer {
+  	text-overflow: clip;
+    white-space: nowrap;
+  }
+  .search--trigger:hover .icon {
+  	transform: scale(1.2, 1.2);
+  }
+  @media (max-width: 991px) {
+  	.nav__search--label {
+    	visibility: hidden;
+    }
+    .search--trigger:hover .icon {
+      transform: scale(1.2, 1.2);
+      color: #5194ff;
+    }
+  }
+</style>
+    </div>
+    <div id="flexrow-tiles" class="w-embed">
+      <style>
+	.flex-row__tile:hover .tile--people__content, .flex-row__tile:hover .tile--technology__content {
+  	color: white;
+  }
+  .tile--people, .tile--technology {
+  	background-blend-mode: multiply;
+  }
+  /* Image Gallery + List View Tiles */
+  .tile--gallery:before {
+  	display: block; position: absolute; content: "";
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-color: transparent;
+    mix-blend-mode: multiply;
+    z-index: 10;
+    transition: all 220ms ease-in-out;
+  }
+  .tile--gallery:hover:before {
+    background-color: #493e89;
+  }
+  .gallery--people:hover:before { 
+  	background-color: #519aff;
+  }
+  .gallery--technology:hover:before { 
+  	background-color: #ffd685;
+  }
+  .tile--gallery:nth-child(5n) {
+  	margin-right: 0;
+  }
+  @media (max-width: 991px) {
+  	.tile--gallery:nth-child(4n) {
+    	margin-right: 0 !important;
+    }
+    .tile--gallery:nth-child(3n) {
+    	margin-right: 1.5%;
+    }
+    .tile--gallery:nth-child(5n) {
+  		margin-right: 1.5%;
+  	}
+  }
+  @media (max-width: 767px) {
+  	.tile--gallery:nth-child(4n) {
+    	margin-right: 1.5% !important;
+    }
+    .tile--gallery:nth-child(3n) {
+    	margin-right: 0 !important;
+    }
+  }
+  @media (max-width: 479px) {
+    .tile--gallery:nth-child(4n) {
+  		margin-right: 0 !important;
+  	}
+  }
+</style>
+    </div>
+  </div>
+  <nav id="top" class="nav">
+    <div class="nav__menu">
+      <div title="Login or Sign up" class="menu__login" data-ix="logintoggle">
+        <div class="menu__login--icon"></div>
+        <div class="menu__login--label">Login or Sign up</div>
+        <div class="login">
+          <div class="login__inner">
+            <div class="field">
+              <div class="field__input field__input--dark">
+                <div class="input--placeholder">Username</div>
+              </div>
+            </div>
+            <div class="field">
+              <div class="field__input field__input--dark">
+                <div class="input--placeholder">Password</div>
+              </div>
+            </div><a href="#" class="button button__full w-button">Login</a><a href="#" class="login__help-text">Forgot your password?</a></div>
+          <div class="login__text">Vote and save content. <a>Sign up</a> in seconds.</div>
+        </div>
+      </div><a href="../stories2.html" class="menu__item"><span class="menu__item--text">Stories</span></a><a href="../list.html" class="menu__item"><span class="menu__item--text">People</span></a><a href="#" class="menu__item"><span class="menu__item--text">Missions</span></a><a href="#" class="menu__item"><span class="menu__item--text">Technology</span></a><a href="#" class="menu__item"><span class="menu__item--text">Media</span></a></div>
+    <a href="../redacted/1.html" class="nav__brand w-inline-block w--current">
+      <div>Engineering Apollo</div>
+    </a>
+    <div class="nav__search">
+      <div class="search--trigger" data-ix="searchopen">
+        <div class="icon nav__search--icon"></div>
+        <div class="nav__search--label">Search</div>
+      </div>
+      <div class="search">
+        <div class="search__header">
+          <div class="icon nav__search--icon search--icon__open"></div>
+          <div class="search__header--placeholdeer">Try keywords, names, technology, missions, years…</div>
+          <div class="search__header--close" data-ix="searchclose">
+            <div class="search__close--button">
+              <div class="close--line"></div>
+              <div class="close--line"></div>
+            </div>
+          </div>
+        </div>
+        <div class="search__results--outer">
+          <h3 class="search__results--header">4 Results Found for &quot;jfk&quot;</h3>
+          <div class="search__results">
+            <a href="#" class="search__results--item w-inline-block">
+              <h6>Story</h6>
+              <h3>The First Contract</h3>
+              <p class="results--item__summary">Node summary, lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique…</p>
+            </a>
+            <a href="#" class="search__results--item text-color__blue w-inline-block">
+              <h6>Person</h6>
+              <h3>John F. Kennedy</h3>
+              <p class="results--item__summary">Node summary, lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique…</p>
+            </a>
+            <a href="#" class="search__results--item text-color__salmon w-inline-block">
+              <h6>Technology</h6>
+              <h3>Apollo Guidance Computer</h3>
+              <p class="results--item__summary">Node summary, lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique…</p>
+            </a>
+            <a href="#" class="search__results--item text-color__violet w-inline-block">
+              <h6>Mission</h6>
+              <h3>Mars Probe</h3>
+              <p class="results--item__summary">Node summary, lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique…</p>
+            </a>
+            <a href="#" class="search__results--item w-inline-block">
+              <h6>Category</h6>
+              <h3>Heading</h3>
+              <p class="results--item__summary">Node summary, lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique…</p>
+            </a>
+            <a href="#" class="search__results--item w-inline-block">
+              <h6>Category</h6>
+              <h3>Heading</h3>
+              <p class="results--item__summary">Node summary, lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique…</p>
+            </a>
+            <a href="#" class="search__results--item w-inline-block">
+              <h6>Category</h6>
+              <h3>Heading</h3>
+              <p class="results--item__summary">Node summary, lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique…</p>
+            </a>
+            <a href="#" class="search__results--item w-inline-block">
+              <h6>Category</h6>
+              <h3>Heading</h3>
+              <p class="results--item__summary">Node summary, lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique…</p>
+            </a>
+            <a href="#" class="search__results--item w-inline-block">
+              <h6>Category</h6>
+              <h3>Heading</h3>
+              <p class="results--item__summary">Node summary, lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique…</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu__trigger" data-ix="menutrigger">
+      <div class="trigger__inner">
+        <div class="trigger--line1"></div>
+        <div class="trigger--line2"></div>
+        <div class="trigger--line3"></div>
+        <div class="trigger--line4"></div>
+      </div>
+    </div>
+  </nav>
+  <div class="hero">
+    <a href="../story.html" class="hero__cta w-inline-block">
+      <h1 class="hero__cta--title">The Alarm That Nearly Aborted the Moon Landing</h1>
+      <div>Read more <span class="icon"></span></div>
+    </a>
+  </div>
+  <div class="block">
+    <div class="block__header">
+      <h2 class="text-color__bright-blue">Engineers</h2>
+    </div>
+    <div class="flex-row">
+      <a href="#" class="flex-row__tile tile--people w-inline-block">
+        <div class="tile--people__content">
+          <div>Margaret Hamilton</div>
+        </div>
+      </a>
+      <a href="#" class="flex-row__tile tile--people tile--people__houbolt w-inline-block">
+        <div class="tile--people__content">
+          <div>John Houbolt</div>
+        </div>
+      </a>
+      <a href="#" class="flex-row__tile tile--people tile--people__myers w-inline-block">
+        <div class="tile--people__content">
+          <div>Dale Myers</div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="block">
+    <div class="flex-row section-ctas">
+      <a href="../list.html" class="flex-row__tile tile--cta tile--cta__people w-inline-block">
+        <div class="tile--ctas__content">
+          <div>people</div>
+        </div>
+      </a>
+      <a href="#" class="flex-row__tile tile--cta tile--cta__missions w-inline-block">
+        <div class="tile--ctas__content">
+          <div>missions</div>
+        </div>
+      </a>
+      <a href="#" class="flex-row__tile tile--cta tile--cta__technology w-inline-block">
+        <div class="tile--ctas__content">
+          <div>technology</div>
+        </div>
+      </a>
+    </div>
+    <div class="w-embed">
+      <style>
+	.tile--cta__people {
+  	background-image: linear-gradient(315deg, #7A44B7, #493E89, #519AFF);
+  }
+  .tile--cta__missions {
+  	background-image: linear-gradient(315deg, #ED5353, #D54C4C, #7A44B7);
+  }
+  .tile--cta__technology {
+  	background-image: linear-gradient(315deg, #FFD585, #F98D46, #FA4747);
+  }
+  .tile--cta {
+  	background-position: top left;
+    background-size: 100%;
+  }
+  .tile--cta:hover {
+  	background-size: 300%;
+    color: white;
+  }
+</style>
+    </div>
+  </div>
+  <div class="block block__dots">
+    <div class="block__header">
+      <h2 class="text-color__violet">Missions</h2>
+    </div>
+    <div class="block__timeline">
+      <div class="timeline__controls">
+        <div class="controls__line1"></div>
+        <div class="controls__line2"></div>
+      </div>
+      <a href="#" class="timeline__entry w-inline-block" data-ix="timelinehoverimg">
+        <div class="timeline__entry--line"></div>
+        <div class="timeline__entry--popup"></div>
+        <div class="timeline__entry--circle">
+          <div class="entry--circle__inside"></div>
+        </div>
+        <div class="timeline__entry--label">Mars Probe</div>
+      </a>
+      <a href="#" class="timeline__entry w-inline-block" data-ix="timelinehoverimg">
+        <div class="timeline__entry--line"></div>
+        <div class="timeline__entry--popup popup2"></div>
+        <div class="timeline__entry--circle">
+          <div class="entry--circle__inside"></div>
+        </div>
+        <div class="timeline__entry--label">Polaris</div>
+      </a>
+      <a href="#" class="timeline__entry w-inline-block" data-ix="timelinehoverimg">
+        <div class="timeline__entry--line"></div>
+        <div class="timeline__entry--popup popup3"></div>
+        <div class="timeline__entry--circle">
+          <div class="entry--circle__inside"></div>
+        </div>
+        <div class="timeline__entry--label">Apollo 1</div>
+      </a>
+      <a href="#" class="timeline__entry w-inline-block" data-ix="timelinehoverimg">
+        <div class="timeline__entry--line"></div>
+        <div class="timeline__entry--popup popup4"></div>
+        <div class="timeline__entry--circle">
+          <div class="entry--circle__inside"></div>
+        </div>
+        <div class="timeline__entry--label">Apollo 7</div>
+      </a>
+      <div class="timeline__controls controls--reverse">
+        <div class="controls__line1"></div>
+        <div class="controls__line2"></div>
+      </div>
+    </div>
+    <div class="w-embed">
+      <style>
+	.controls__line1, .controls__line2 {
+  	content: "";
+    width: 1px; height: 50%;
+    background-color: #dad7d7;
+    transition: all 220ms ease-in-out;
+  }
+  @media (max-width: 479px) {
+  	.controls__line1, .controls__line2 {
+      width: 50%; height: 1px;
+    }
+  }
+  .timeline__controls:hover .controls__line1, .timeline__controls:hover .controls__line2 {
+  	background-color: #475ab7;
+  }
+  .timeline__entry:hover .entry--circle__inside {
+  	transform: scale(1.5, 1.5);
+  }
+  .timeline__entry:nth-child(2) .timeline__entry--line {
+  	height: 70%;
+  }
+  .timeline__entry:nth-child(4) .timeline__entry--line {
+  	height: 50%;
+  }
+  .timeline__entry:nth-child(5) .timeline__entry--line {
+  	height: 61.803%;
+  }
+  @media (max-width: 479px) {
+  	.timeline__entry:nth-child(2) .timeline__entry--line {
+      width: 70%;
+    }
+    .timeline__entry:nth-child(4) .timeline__entry--line {
+      width: 50%;
+    }
+    .timeline__entry:nth-child(5) .timeline__entry--line {
+      width: 61.803%;
+    }
+  }
+</style>
+    </div>
+  </div>
+  <div class="block">
+    <div class="block__header">
+      <h2 class="text-color__salmon">Technology</h2>
+    </div>
+    <div class="flex-row">
+      <a href="#" class="flex-row__tile tile--technology tile--technology__dsky w-inline-block">
+        <div class="tile--technology__content">
+          <div>DSKY</div>
+        </div>
+      </a>
+      <a href="#" class="flex-row__tile tile--technology tile--technology__lunar w-inline-block">
+        <div class="tile--technology__content">
+          <div>Lunar Lander</div>
+        </div>
+      </a>
+      <a href="#" class="flex-row__tile tile--technology tile--technology__sextant w-inline-block">
+        <div class="tile--technology__content">
+          <div>Sextant</div>
+        </div>
+      </a>
+    </div>
+    <div class="block__cta"><a href="../redacted/stories.html" class="button w-button">See All Stories</a></div>
+  </div>
+  <footer class="footer">
+    <div class="footer__header">
+      <h2>Help us engineer the next incredible feat.</h2>
+    </div>
+    <div id="ship" class="ship">
+      <div class="ship__inner">
+        <h3>What does engineering mean to you?</h3>
+        <p>Say hello, request a visit of the contemporary Draper labs, or inquire about internships and current job openings at Draper.</p>
+        <div class="form">
+          <div class="field field__half">
+            <div class="field__input">
+              <div>Name</div>
+            </div>
+          </div>
+          <div class="field field__half">
+            <div class="field__input">
+              <div>Email</div>
+            </div>
+          </div>
+          <div class="field field__half">
+            <div class="field__input">
+              <div>Phone</div>
+            </div>
+          </div>
+          <div class="field field__half">
+            <div class="field__input">
+              <div>Occupation or study</div>
+            </div>
+          </div>
+          <div class="field">
+            <div class="field__input input--message">
+              <div>Message</div>
+            </div>
+          </div><a href="#" class="button button__white button__solo w-button" data-ix="shipclose">Submit</a></div>
+      </div>
+    </div>
+    <div class="footer__peripheral">
+      <div class="footer__peripheral--column">
+        <div class="footer__signup">
+          <div>Stay in touch</div>
+          <div class="signup__form">
+            <div class="signup__form--field">
+              <div class="signup__form--placeholder">Your email</div>
+            </div>
+            <div class="signup__form--button">
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__peripheral--column">
+        <div class="footer__social"><a href="#" class="footer__social--item"></a><a href="#" class="footer__social--item"></a><a href="#" class="footer__social--item"></a><a href="#" class="footer__social--item"></a><a href="#" class="footer__social--item"></a><a href="#" class="footer__social--item"></a></div>
+      </div>
+      <div class="footer__peripheral--column"><a href="#ship" class="footer__ship w-inline-block" data-ix="shipopen"><img src="../images/spaceship.svg" alt="" class="ship--image"><div class="ship--label"><div>Interested in being an engineer?</div></div></a></div>
+    </div>
+    <div class="w-embed">
+      <style>
+	.footer__ship:hover .ship--image {
+  	transform: translateY(-.75rem);
+  }
+  .signup__form--placeholder {
+  	text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+</style>
+    </div>
+    <div class="footer__legal">
+      <div>Copyright © 2018-19 The Charles Stark Draper Laboratory, Inc. All rights reserved.</div><a href="#top" class="footer__top">Back to top</a></div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="../js/sxdapollo3.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+  <!--  Menu Mobile Hamburger Trigger  -->
+  <script>
+  $('.menu__trigger').click(function(){
+      $('.trigger--line1').toggleClass('line-gone');
+      $('.trigger--line4').toggleClass('line-gone');
+      $('.trigger--line2').toggleClass('line-2');
+      $('.trigger--line3').toggleClass('line-3');
+  });
+</script>
+</body>
+</html>

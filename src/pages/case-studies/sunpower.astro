@@ -1,0 +1,73 @@
+---
+import Basic from '../../layouts/Basic.astro';
+import '../../styles/patterns.css';
+import { Image } from 'astro:assets';
+import imageInline01 from '../../assets/images/inline__sunpower_leadgenfunneling.gif';
+import imageInline02 from '../../assets/images/inline__sunpower_map.gif';
+---
+
+<Basic>
+  <section class="case-study">
+    <div class="container">
+      <p class="eyebrow small--extra">Case Study</p>
+      <h1 class="largest">Enlightening SunPower’s Key Lead Generation Funnel</h1>
+      <div class="case-study__details small--extra row left-align row--four row--compact">
+        <p class="column">Agency: <a href="https://thirdandgrove.com" target="_blank">Third & Grove</a></p>
+        <p class="column">Role: Design Lead</p>
+        <p class="column">Year: 2015-2017</p>
+        <p class="column">Client: <a href="https://us.sunpower.com" target="_blank">SunPower, Corp.</a></p>
+      </div>
+      <details open>
+        <summary>Summary</summary>
+        <p>At Third & Grove I was tasked with the challenge of optimizing the website experience of one of its major retainer accounts, SunPower.com. As the Design Lead on this project, I collaborated closely with the Director of Strategy, Mark Lavoritano, to conduct an in-depth analysis, identify opportunities for improvement, and implement a comprehensive solution tailored to meet SunPower's business requirements and SEO/marketing goals.</p>
+      </details>
+      <details open>
+        <summary>Problem</summary>
+        <p>The primary objectives for SunPower.com were:</p>
+        <ul>
+          <li><strong>Optimizing Lead Generation:</strong> To enhance lead generation and conversion rates, the website needed to outperform its key competitor, Tesla's solar panel offerings.</li>
+          <li><strong>Simplifying Complex Product Offerings:</strong> SunPower's product offerings were intricate, and the challenge was to communicate the superiority of their offerings over competitors in a clear and compelling manner.</li>
+          <li><strong>Boosting Partner Engagement:</strong> The website aimed to strengthen partnerships by instilling confidence in SunPower's supply chain and empowering partners, dealers, and developers with personalized portals.</li>
+        </ul>
+      </details>
+      <details open>
+        <summary>Solution</summary>
+        <p>To tackle the challenges effectively, the following solution was devised:</p>
+        <ul>
+          <li><strong>SEO-Driven Enhancements: </strong> Insights from third-party SEO vendor, <a href="https://www.33sticks.com/" target="_blank">33 Sticks</a>, were translated into actionable improvements for the design system, theme, and website features. These enhancements were aligned with SEO best practices and SunPower's marketing objectives.</li>
+          <li><strong>User-Centric Design and Prototyping:</strong> Multiple versions of the website were ideated, designed, and prototyped for live user testing. This iterative approach allowed for fine-tuning the user experience, boosting partnership integrations, and optimizing lead generation.</li>
+          <li>
+            <strong>In-medium Design Deliverables:</strong> As part of the typical design process I established at Third & Grove, this project included in-medium design deliverables (creative designed and built with HTML, CSS, and JavaScript). Not only did this allow for all stakeholders — no matter technical skills or knowledge — to review creative immediately, it also served as more definitive and granular development materials
+            <ul>
+              <li><a href="/prototypes/sunpower" target="_blank">UX/UI Prototypes • SEO & UX Optimizations ➝</a></li>
+              <li><a href="/prototypes/sunpower-extra" target="_blank">UX/UI Prototypes • Dealer Optimizations ➝</a></li>
+              <li><a href="/prototypes/energy-portal" target="_blank">UX/UI Prototypes • Energy Portal ➝</a></li>
+            </ul>
+          </li>
+        </ul>
+      </details>
+      <details open>
+        <summary>Results</summary>
+        <p>The implementation of the solution yielded remarkable results:</p>
+        <ul>
+          <li><strong>Revamped User Experience:</strong> Countless sections, pages, templates, and features underwent a redesign and live-testing process. Notable improvements included a user-friendly header with streamlined navigation and search capabilities, a visually appealing homepage, an enhanced dealer search experience with detailed templates, and a completely overhauled and more engaging blog section.</li>
+          <li><strong>Personalization and Partnerships:</strong> The website now incorporated features like geoIP and personalization, providing visitors with tailored content based on their location and preferences. Individual portals for partners, dealers, and developers were integrated, fostering stronger partnerships and boosting confidence in SunPower's supply chain.</li>
+          <figure>
+            <Image src={imageInline01} alt="Screen capture of SunPower.com's header lead generation webform">
+            <figcaption class="small--extra">Lead generation was anchored to the header menu and provisioned for funnel splitting. Initial inputs then helped personalization settings throughout the rest of the site.</figcaption>
+          </figure>
+          <li><strong>Streamlined Design System:</strong> An entire design system was conceptualized, built, and maintained, ensuring consistency across the website and enabling efficient updates and optimizations.</li>
+          <li><strong>Continuous Innovation:</strong> The website's transformation enabled continuous ideation, discovery, and user experience improvements for new products and portals, keeping SunPower at the forefront of innovation in the industry.</li>
+          <figure>
+            <Image src={imageInline02} alt="Screen capture of a map element on SunPower.com">
+            <figcaption class="small--extra">One of the many patterns built for SunPower.com.</figcaption>
+          </figure>
+        </ul>
+      </details>
+      <details open>
+        <summary>Conclusion</summary>
+        <p>The strategic redesign and optimization of SunPower.com proved to be a game-changing move in the competitive solar energy market. Through a data-driven approach and user-centric design, Third & Grove successfully empowered SunPower to improve lead generation, effectively communicate product superiority, and strengthen partnerships with dealers and developers. The website's enhanced user experience, personalized content, and streamlined design system contributed to SunPower's continued success as a market leader in solar panel offerings, further solidifying its position as a formidable competitor to Tesla and other key players in the industry.</p>
+      </details>
+    </div>
+  </section>
+</Basic>

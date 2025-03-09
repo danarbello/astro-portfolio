@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="50px" viewBox="0 0 30 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#F9BF6B" offset="0%"></stop>
+            <stop stop-color="#F7A938" offset="32.5992506%"></stop>
+            <stop stop-color="#F99300" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#F18F02" offset="0%"></stop>
+            <stop stop-color="#BD5513" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="03g-home-page-with-hero-video" transform="translate(-671.000000, -1715.000000)">
+            <g id="Group-14" transform="translate(-241.000000, 1374.000000)">
+                <g id="Group-9" transform="translate(897.000000, 288.000000)">
+                    <g id="Group-4" transform="translate(15.000000, 53.000000)">
+                        <g id="Group">
+                            <path d="M15,50 C17.9868164,42.045166 30,23.2842712 30,15 C30,6.71572875 23.2842712,0 15,0 C6.71572875,0 0,6.71572875 0,15 C0,23.2842712 11.9489746,42.0375977 15,50 Z" id="Oval" fill="url(#linearGradient-1)"></path>
+                            <circle id="Oval-2" fill="url(#linearGradient-2)" cx="15" cy="15" r="7"></circle>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

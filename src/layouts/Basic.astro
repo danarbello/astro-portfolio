@@ -1,5 +1,7 @@
 ---
 import Head from '../components/Head.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 import '../styles/modifiers.css';
 ---
@@ -7,7 +9,9 @@ import '../styles/modifiers.css';
 <!doctype html>
 <html lang="en">
 	<Head />
+	<Header />
 	<body>
 		<slot />
 	</body>
+	<Footer />
 </html>

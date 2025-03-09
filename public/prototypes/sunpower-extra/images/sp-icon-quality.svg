@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="109px" height="109px" viewBox="0 0 109 109" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>sp-icon-quality</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#2681CE" offset="0%"></stop>
+            <stop stop-color="#4194DB" offset="47.132095%"></stop>
+            <stop stop-color="#7EC0F7" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="set" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="sp-iconography" transform="translate(-367.000000, -4358.000000)">
+            <circle id="Oval-2" stroke="url(#linearGradient-1)" stroke-width="3" fill="#FFFFFF" cx="421.5" cy="4412.5" r="52.5"></circle>
+            <g id="Group-63" transform="translate(393.000000, 4393.000000)" fill-rule="nonzero" fill="#0076BF">
+                <polygon id="Shape" points="40.1538462 0.347540984 29.9815385 0.347540984 29.9815385 9.37704918 43.6338462 9.37704918"></polygon>
+                <path d="M15.8830769,15.2196721 C15.8830769,15.2196721 19.9282051,25.7245902 28.0184615,46.7344262 L28.0184615,11.3245902 L14.4986572,11.3245902 L15.8830769,15.2196721 Z" id="Shape"></path>
+                <polygon id="Shape" points="12.1700439 11.2360656 0.446153846 11.2360656 25.4307692 45.3180328 14.6338462 17.6098361"></polygon>
+                <polygon id="Shape" points="14.6338462 3.09180328 15.7046154 0.259016393 7.04923077 0.259016393 0.446153846 9.37704918 11.7913208 9.37704918"></polygon>
+                <path d="M15.8830769,5.48196721 C15.8830769,5.48196721 15.3065931,6.80983607 14.1536255,9.46557377 L28.1076923,9.46557377 L28.1076923,0.347540984 L17.8461538,0.347540984 L15.8830769,5.48196721 Z" id="Shape"></path>
+                <polygon id="Shape" points="57.5538462 9.37704918 54.2523077 4.95081967 50.7230769 0.259016393 42.2061538 0.259016393 45.6861538 9.28852459 57.5538462 9.28852459"></polygon>
+                <polygon id="Shape" points="40.6 24.6032787 32.5692308 45.4065574 57.5538462 11.3245902 45.7753846 11.3245902"></polygon>
+                <polygon id="Shape" points="29.9815385 11.3245902 29.9815385 46.7344262 43.6338462 11.3245902"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

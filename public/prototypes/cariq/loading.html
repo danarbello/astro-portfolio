@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<!--  Last Published: Fri Oct 12 2018 16:20:16 GMT+0000 (UTC)  -->
+<html data-wf-page="5b295570ccef6bcdaa94d37f" data-wf-site="5a9463f20f17700001488935">
+<head>
+  <meta charset="utf-8">
+  <title>Loading Animations</title>
+  <meta content="Loading Animations" property="og:title">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/components.css" rel="stylesheet" type="text/css">
+  <link href="css/cariqp1.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">
+      WebFont.load({
+        google: {
+          families: ["Roboto:100,300,regular,italic,500,500italic,700,900"]
+        }
+      });
+    </script>
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">
+      ! function(o, c) {
+        var n = c.documentElement,
+          t = " w-mod-";
+        n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
+      }(window, document);
+    </script>
+  <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+</head>
+<body>
+  <div class="navbar__wrap">
+    <div class="navbar">
+      <a whenclicked="window.history.back();" class="navbar__button--back w-inline-block">
+        <div></div>
+      </a>
+      <div class="page-title">Page Title</div>
+      <a href="#" data-ix="toggle-menu-open" class="navbar__button--menu w-inline-block">
+        <div class="button--menu__line"></div>
+        <div class="button--menu__line"></div>
+        <div class="button--menu__line"></div>
+      </a>
+    </div>
+    <div class="navbar__menu w-clearfix"><a href="#" data-ix="toggle-menu-close" class="navbar__menu--close w-inline-block"><img src="images/navbar_menu--close-icon.svg" alt="" class="menu--close__icon"></a>
+      <div class="menu__wrap">
+        <a href="techs/rodney.html" class="menu__item w-inline-block">
+          <div class="menu__item--icon"></div>
+          <div class="menu__item--text">My Account</div>
+        </a>
+        <a href="index.html" class="menu__item w-inline-block">
+          <div class="menu__item--icon"></div>
+          <div class="menu__item--text">Dash</div>
+        </a>
+        <a href="techs/rodney.html" class="menu__item w-inline-block">
+          <div class="menu__item--icon"></div>
+          <div class="menu__item--text">My Tasks</div>
+        </a>
+        <a href="dash-alerts.html" class="menu__item w-inline-block">
+          <div class="menu__item--icon"></div>
+          <div class="menu__item--text">Alerts</div>
+        </a>
+        <a href="intel.html" class="menu__item w-inline-block">
+          <div class="menu__item--icon"></div>
+          <div class="menu__item--text">Intelligence Insights</div>
+        </a>
+        <a href="saves.html" class="menu__item w-inline-block">
+          <div class="menu__item--icon"></div>
+          <div class="menu__item--text">Report Data</div>
+        </a>
+        <a href="lots.html" class="menu__item w-inline-block">
+          <div class="menu__item--icon"></div>
+          <div class="menu__item--text">Lots &amp; Inventory</div>
+        </a>
+        <a href="staff.html" class="menu__item w-inline-block">
+          <div class="menu__item--icon"></div>
+          <div class="menu__item--text">Staff &amp; Resources</div>
+        </a>
+        <a class="menu__item w-inline-block">
+          <div class="menu__item--icon"></div>
+          <div class="menu__item--text">More</div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="w-embed">
+    <style>
+        /* Global Styles */
+        html {
+          -webkit-font-smoothing: antialiased;
+        }
+        .page-title {
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        .intel-report__container h1:first-of-type {
+          margin-top: 0;
+        }
+        /* Navigation */
+        .button--menu__line:nth-child(1) {
+          top: 15px;
+        }
+        .button--menu__line:nth-child(2) {
+          top: calc(50% - 1px);
+        }
+        .button--menu__line:nth-child(3) {
+          bottom: 15px;
+        }
+        /* Item List Styles */
+        .list-group-toggled {
+          height: auto;
+        }
+        .list-group-reversed {
+          flex-direction: column-reverse;
+        }
+        .enabled {
+          opacity: 1.0 !important;
+          filter: saturate(100%) !important;
+          cursor: pointer !important;
+        }
+        .list-group-trigger__already-open .icon--open__y {
+          transform: scale(1.0, 0.0);
+        }
+        .list__item--action:hover .list__item--action-icon {
+          transform: scale(1.17, 1.17);
+        }
+        /* Puts the faded hairline above double CTAs in a list item */
+        @media (max-width: 479px) {
+          .list__item--multi-tasks .list__item--actions {
+            border-top: solid 1px rgba(34, 34, 34, 0.05);
+          }
+        }
+        /* Map Pins & General Styles */
+        .lots:hover .lots__area {
+          opacity: 1.0;
+        }
+        .lots__vehicle--vehicle:after {
+          display: block;
+          position: absolute;
+          content: "";
+          top: 100%;
+          left: 5px;
+          right: 5px;
+          height: 2.5px;
+          z-index: 105;
+          background-color: rgba(0, 0, 0, .7);
+          filter: blur(3px);
+          border-radius: 50%;
+        }
+        .lots__vehicle--row:nth-child(2) {
+          padding-left: 4%;
+        }
+        .lots__vehicle--row:nth-child(3) {
+          padding-left: 7%;
+          padding-right: 15%;
+        }
+        .lots__vehicle--row:nth-child(4) {
+          padding-left: 10%;
+          padding-right: 10%;
+        }
+        /* Health & Data Details Block */
+        a.details__label {
+          color: #008acc;
+          cursor: pointer;
+        }
+        a.details__label:hover {
+          color: #222;
+        }
+        .health__header--info {
+          vertical-align: top;
+        }
+        @media (max-width: 767px) {
+          .details-vehicle .list--group__column {
+            padding-left: 0px;
+            padding-right: 0px;
+          }
+        }
+        .filter-fx__current .form-field__preset {
+          text-overflow: clip;
+          white-space: nowrap;
+        }
+      </style>
+  </div>
+  <div class="utility-loader">
+    <div class="utility-loader-header">Map Preloader</div>
+    <div class="loader__map">
+      <div class="w-embed"><svg width="100%" height="100%" viewbox="0 -120 416 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <path id="map" d="M139.668,78.826L276.728,116.319L406.052,78.855C409.845,78.368 413.83,80.021 414.976,83.615C415.202,84.323 415.205,85.084 415.319,85.819L415.319,366.24C414.933,368.616 414.095,370.89 412.188,372.206C411.55,372.647 410.787,372.871 410.087,373.203L278.84,411.235C276.88,411.521 276.867,411.521 274.903,411.263L138.268,373.773L9.272,411.234L7.06,411.519C4.038,410.967 1.235,409.271 0.343,406.476C0.117,405.767 0.114,405.006 0,404.272L0,123.85C0.385,121.477 1.221,119.206 3.124,117.889C3.761,117.448 4.522,117.223 5.222,116.89L135.726,78.858L137.695,78.569C138.352,78.654 139.01,78.74 139.668,78.826ZM130.968,95.348L14.5,129.289L14.5,394.617L136.191,359.277C138.152,358.991 138.165,358.991 140.131,359.248L276.768,396.739L400.819,360.792L400.819,95.467L283.768,129.376C283.71,130.206 283.645,131.038 283.608,131.861C283.383,136.885 277.334,140.796 272.733,138.14C270.53,136.868 269.223,134.402 269.108,131.861C269.096,131.582 269.04,130.553 269.012,129.241L145.313,95.403C144.826,98.489 142.41,101.2 139.404,101.73C135.503,102.418 131.576,99.409 130.968,95.348ZM279.983,372.082C280.626,372.622 281.373,373.058 281.912,373.701C284.687,377.008 283.797,381.42 283.608,385.611C283.383,390.635 277.334,394.546 272.733,391.89C270.53,390.618 269.223,388.152 269.108,385.611C269.073,384.832 268.701,378.202 269.546,375.881C270.424,373.469 272.64,371.655 275.1,371.221C276.74,370.932 278.393,371.504 279.983,372.082ZM279.983,335.832C280.626,336.372 281.373,336.808 281.912,337.451C284.687,340.758 283.797,345.17 283.608,349.361C283.383,354.385 277.334,358.296 272.733,355.64C270.53,354.368 269.223,351.902 269.108,349.361C269.073,348.582 268.701,341.952 269.546,339.631C270.424,337.219 272.64,335.405 275.1,334.971C276.74,334.682 278.393,335.254 279.983,335.832ZM141.77,334.811C142.413,335.351 143.159,335.787 143.699,336.43C146.474,339.737 145.583,344.149 145.395,348.34C145.169,353.364 139.12,357.275 134.52,354.619C132.317,353.347 131.009,350.881 130.895,348.34C130.86,347.561 130.487,340.931 131.332,338.61C132.21,336.198 134.426,334.384 136.886,333.95C138.526,333.661 140.18,334.233 141.77,334.811ZM279.983,299.582C280.626,300.122 281.373,300.558 281.912,301.201C284.687,304.508 283.797,308.92 283.608,313.111C283.383,318.135 277.334,322.046 272.733,319.39C270.53,318.118 269.223,315.652 269.108,313.111C269.073,312.332 268.701,305.702 269.546,303.381C270.424,300.969 272.64,299.155 275.1,298.721C276.74,298.432 278.393,299.004 279.983,299.582ZM141.77,298.561C142.413,299.101 143.159,299.537 143.699,300.18C146.474,303.487 145.583,307.899 145.395,312.09C145.242,315.501 142.671,318.654 139.404,319.23C135.264,319.96 131.094,316.526 130.895,312.09C130.86,311.311 130.487,304.681 131.332,302.36C132.21,299.948 134.426,298.134 136.886,297.7C138.526,297.411 140.18,297.983 141.77,298.561ZM279.983,263.332C280.626,263.872 281.373,264.308 281.912,264.951C284.687,268.258 283.797,272.67 283.608,276.861C283.383,281.885 277.334,285.796 272.733,283.14C270.53,281.868 269.223,279.402 269.108,276.861C269.073,276.082 268.701,269.452 269.546,267.131C270.424,264.719 272.64,262.905 275.1,262.471C276.74,262.182 278.393,262.754 279.983,263.332ZM141.77,262.311C142.413,262.851 143.159,263.287 143.699,263.93C146.474,267.237 145.583,271.649 145.395,275.84C145.169,280.864 139.12,284.775 134.52,282.119C132.317,280.847 131.009,278.381 130.895,275.84C130.86,275.061 130.487,268.431 131.332,266.11C132.21,263.698 134.426,261.884 136.886,261.45C138.526,261.161 140.18,261.733 141.77,262.311ZM279.983,227.082C280.626,227.622 281.373,228.058 281.912,228.701C284.687,232.008 283.797,236.42 283.608,240.611C283.383,245.635 277.334,249.546 272.733,246.89C270.53,245.618 269.223,243.152 269.108,240.611C269.073,239.832 268.701,233.202 269.546,230.881C270.424,228.469 272.64,226.655 275.1,226.221C276.74,225.932 278.393,226.504 279.983,227.082ZM141.77,226.061C142.413,226.601 143.159,227.037 143.699,227.68C146.474,230.987 145.583,235.399 145.395,239.59C145.242,243.001 142.671,246.154 139.404,246.73C135.264,247.46 131.094,244.026 130.895,239.59C130.86,238.811 130.487,232.181 131.332,229.86C132.21,227.448 134.426,225.634 136.886,225.2C138.526,224.911 140.18,225.483 141.77,226.061ZM279.983,190.832C280.626,191.372 281.373,191.808 281.912,192.451C284.687,195.758 283.797,200.17 283.608,204.361C283.383,209.385 277.334,213.296 272.733,210.64C270.53,209.368 269.223,206.902 269.108,204.361C269.073,203.582 268.701,196.952 269.546,194.631C270.424,192.219 272.64,190.405 275.1,189.971C276.74,189.682 278.393,190.254 279.983,190.832ZM141.77,189.811C142.413,190.351 143.159,190.787 143.699,191.43C146.474,194.737 145.583,199.149 145.395,203.34C145.242,206.751 142.671,209.904 139.404,210.48C135.264,211.21 131.094,207.776 130.895,203.34C130.86,202.561 130.487,195.931 131.332,193.61C132.21,191.198 134.426,189.384 136.886,188.95C138.526,188.661 140.18,189.233 141.77,189.811ZM279.983,154.582C280.626,155.122 281.373,155.558 281.912,156.201C284.687,159.508 283.797,163.92 283.608,168.111C283.383,173.135 277.334,177.046 272.733,174.39C270.53,173.118 269.223,170.652 269.108,168.111C269.073,167.332 268.701,160.702 269.546,158.381C270.424,155.969 272.64,154.155 275.1,153.721C276.74,153.432 278.393,154.004 279.983,154.582ZM141.77,153.561C142.413,154.101 143.159,154.537 143.699,155.18C146.474,158.487 145.583,162.899 145.395,167.09C145.242,170.501 142.671,173.654 139.404,174.23C135.264,174.96 131.094,171.526 130.895,167.09C130.86,166.311 130.487,159.681 131.332,157.36C132.21,154.948 134.426,153.134 136.886,152.7C138.526,152.411 140.18,152.983 141.77,153.561ZM141.77,117.311C142.413,117.851 143.159,118.287 143.699,118.93C146.474,122.237 145.583,126.649 145.395,130.84C145.242,134.251 142.671,137.404 139.404,137.98C135.264,138.71 131.094,135.276 130.895,130.84C130.86,130.061 130.487,123.431 131.332,121.11C132.21,118.698 134.426,116.884 136.886,116.45C138.526,116.161 140.18,116.733 141.77,117.311Z" style="fill-rule:nonzero;"></path>
+    <path id="pin" d="M207.66,201.646C207.66,201.646 268.356,102.981 268.356,60.697C268.356,27.197 241.159,0 207.66,0C174.16,0 146.963,27.197 146.963,60.697C146.963,102.981 207.66,201.646 207.66,201.646Z"></path>
+</svg>
+        <style>
+            .loader__map svg {
+              margin-top: -40px;
+            }
+            #map {
+              fill: rgba(255, 156, 81, 0.8);
+            }
+            #pin {
+              fill: #f26b21;
+              animation: pinBounce 1s cubic-bezier(.85, -1.1, .125, 1.5) infinite alternate;
+              transform-origin: 50% 50%;
+            }
+            @keyframes pinBounce {
+              0% {
+                transform: translateY(0px) scale(.8, .8);
+              }
+              100% {
+                transform: translateY(-40px) scale(1.2, 1.2);
+              }
+            }
+          </style>
+      </div>
+    </div>
+  </div>
+  <div class="utility-loader">
+    <div class="utility-loader-header">Vehicle Details Preloader</div>
+    <div class="loader__entity-details">
+      <div class="w-embed"><svg width="100%" height="100%" viewbox="0 0 513 378" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <path id="car" d="M136.952,341.218C134.579,349.571 130.087,357.325 123.826,363.367C110.146,376.566 88.556,380.925 70.593,373.451C55.579,367.205 44.119,353.074 41.014,337.099L12.676,324.335C4.975,320.913 0,313.256 0,304.83L0,234.19C0,218.284 11.299,204.372 26.867,201.112L37.339,198.919C55.586,195.097 72.212,186.122 85.42,172.963C106.293,152.168 134.015,140.715 163.481,140.715L252.031,140.715C274.182,140.715 295.59,147.269 313.945,159.668L362.189,192.259C370.825,198.094 383.85,206.157 397.21,208.814L463.78,222.051C480.279,225.333 494.722,235.479 503.405,249.888L505.709,253.712C509.824,260.542 512,268.366 512.002,276.34L512.002,314.172C512.002,329.084 499.87,341.217 484.956,341.218L472.452,341.218C470.079,349.571 465.587,357.325 459.326,363.367C445.646,376.566 424.056,380.925 406.093,373.451C392.384,367.748 381.638,355.471 377.51,341.218L136.952,341.218ZM424.818,294.42C409.813,294.564 395.741,305.79 392.446,320.472C387.742,341.426 407.133,364.958 430.959,360.697C444.523,358.271 455.958,346.593 458.05,332.918C460.881,314.417 445.908,294.873 425.689,294.426C425.399,294.421 425.109,294.419 424.818,294.42ZM89.319,294.42C74.337,294.564 60.242,305.79 56.945,320.473C52.242,341.426 71.633,364.958 95.459,360.697C109.112,358.256 120.566,346.465 122.581,332.712C125.288,314.238 110.295,294.87 90.189,294.426C89.899,294.421 89.609,294.419 89.319,294.42ZM252.034,155.301L163.484,155.301C137.903,155.302 113.838,165.244 95.719,183.296C80.505,198.453 61.353,208.792 40.333,213.195L29.861,215.388C21.012,217.242 14.589,225.149 14.589,234.19L14.589,304.83C14.589,307.497 16.164,309.921 18.602,311.005L40.723,321.217C43.208,304.863 53.973,289.681 69.214,282.786C75.669,279.866 82.761,278.398 89.855,278.421C112.416,278.635 133.577,295.905 137.993,318.171C138.546,320.961 138.84,323.795 138.885,326.632L375.709,326.632C376.4,308.294 387.801,290.438 404.714,282.786C411.169,279.866 418.261,278.398 425.355,278.421C447.916,278.635 469.077,295.905 473.493,318.171C474.046,320.961 474.339,323.794 474.385,326.631L484.954,326.631C491.824,326.631 497.413,321.042 497.413,314.172L497.415,314.172L497.415,276.34C497.415,271.019 495.964,265.797 493.217,261.24L490.913,257.416C484.344,246.516 473.419,238.841 460.937,236.358L394.367,223.12C378.422,219.948 363.707,210.886 354.026,204.345L305.782,171.754C289.849,160.991 271.265,155.301 252.034,155.301ZM359.07,248.746L80.967,248.746C70.501,248.746 61.987,240.232 61.987,229.766C61.987,222.659 65.908,216.208 72.22,212.93C82.893,207.388 92.645,200.254 101.205,191.725C117.859,175.135 139.975,165.998 163.48,165.998L252.031,165.998C269.701,165.998 286.781,171.226 301.423,181.118L349.668,213.71C352.652,215.726 355.766,217.628 358.922,219.365C365.72,223.102 369.944,230.194 369.944,237.872C369.944,243.868 365.066,248.746 359.07,248.746ZM252.032,180.586L197.894,180.586L197.894,234.159L354.159,234.159C353.581,233.346 352.812,232.652 351.894,232.147C348.348,230.197 344.853,228.061 341.503,225.798L293.258,193.206C281.037,184.95 266.781,180.586 252.032,180.586ZM183.304,180.585L163.479,180.585C143.86,180.585 125.4,188.211 111.5,202.059C101.888,211.636 90.933,219.65 78.942,225.876C77.481,226.634 76.574,228.124 76.574,229.765C76.574,232.187 78.545,234.158 80.967,234.158L183.304,234.158L183.304,180.585Z" style="fill-rule:nonzero;"></path>
+    <g id="signal">
+        <path id="signal_1" d="M233.363,96.308C217.559,80.504 191.844,80.504 176.04,96.308C173.191,99.156 173.191,103.774 176.04,106.623C178.888,109.472 183.507,109.471 186.355,106.623C196.472,96.507 212.932,96.507 223.049,106.623C224.473,108.048 226.34,108.759 228.206,108.759C230.072,108.759 231.939,108.047 233.363,106.623C236.212,103.774 236.212,99.157 233.363,96.308Z" style="fill-rule:nonzero;"></path>
+        <path id="signal_2" d="M262.978,66.694C230.844,34.56 178.559,34.56 146.426,66.694C143.577,69.542 143.577,74.161 146.426,77.009C149.274,79.857 153.893,79.857 156.741,77.009C183.187,50.564 226.217,50.564 252.663,77.009C254.087,78.433 255.953,79.145 257.82,79.145C259.686,79.145 261.553,78.433 262.978,77.009C265.826,74.161 265.826,69.542 262.978,66.694Z" style="fill-rule:nonzero;"></path>
+        <path id="signal_3" d="M293.069,36.603C269.465,12.999 238.083,0 204.702,0C171.321,0 139.939,12.999 116.335,36.603C113.486,39.451 113.486,44.069 116.335,46.918C119.183,49.766 123.801,49.766 126.649,46.918C147.498,26.07 175.217,14.588 204.701,14.588C234.185,14.588 261.905,26.07 282.753,46.918C284.178,48.342 286.045,49.054 287.911,49.054C289.777,49.054 291.644,48.342 293.069,46.918C295.917,44.07 295.917,39.451 293.069,36.603Z" style="fill-rule:nonzero;"></path>
+    </g>
+</svg>
+        <style>
+            #car {
+              fill: rgba(255, 156, 81, 0.8);
+            }
+            #signal_1,
+            #signal_2,
+            #signal_3 {
+              fill: #f26b21;
+            }
+            #signal_1 {
+              animation: signalFade1 2.3s ease-in-out infinite;
+            }
+            #signal_2 {
+              animation: signalFade2 2.3s ease-in-out infinite;
+            }
+            #signal_3 {
+              animation: signalFade3 2.3s ease-in-out infinite;
+            }
+            @keyframes signalFade1 {
+              0% {
+                fill: rgba(242, 107, 33, 0);
+              }
+              33.3333% {
+                fill: rgba(242, 107, 33, 1);
+              }
+              100% {
+                fill: rgba(242, 107, 33, 1);
+              }
+            }
+            @keyframes signalFade2 {
+              0% {
+                fill: rgba(242, 107, 33, 0);
+              }
+              33.3333% {
+                fill: rgba(242, 107, 33, 0);
+              }
+              66.6666% {
+                fill: rgba(242, 107, 33, 1);
+              }
+              100% {
+                fill: rgba(242, 107, 33, 1);
+              }
+            }
+            @keyframes signalFade3 {
+              0% {
+                fill: rgba(242, 107, 33, 0);
+              }
+              66.6666% {
+                fill: rgba(242, 107, 33, 0);
+              }
+              100% {
+                fill: rgba(242, 107, 33, 1);
+              }
+            }
+          </style>
+      </div>
+    </div>
+  </div>
+  <div class="utility-loader">
+    <div class="utility-loader-header">Reporting Graph Preloader</div>
+    <div class="loader__entity-details">
+      <div class="w-embed"><svg width="100%" height="100%" viewbox="0 0 430 308" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <rect id="bar_1" x="33.574" y="0" width="55" height="300"></rect>
+    <rect id="bar_2" x="108.574" y="0" width="55" height="300"></rect>
+    <rect id="bar_3" x="183.574" y="0" width="55" height="300"></rect>
+    <rect id="bar_4" x="258.574" y="0" width="55" height="300"></rect>
+    <rect id="bar_5" x="333.574" y="0" width="55" height="300"></rect>
+    <path id="base-bar" d="M424.881,293.187C426.779,294.283 427.532,294.386 428.68,296.375C430.341,299.252 429.654,303.378 427.062,305.554C425.302,307.03 424.559,306.869 422.401,307.25L7.082,307.25C4.924,306.869 4.181,307.03 2.422,305.554C-0.739,302.901 -0.875,297.213 2.422,294.446C4.181,292.97 4.924,293.131 7.082,292.75L422.401,292.75C423.228,292.896 424.055,293.041 424.881,293.187Z"></path>
+</svg>
+        <style>
+            #base-bar {
+              fill: #f26b21;
+            }
+            #bar_1,
+            #bar_2,
+            #bar_3,
+            #bar_4,
+            #bar_5 {
+              fill: rgba(255, 156, 81, 0.8);
+              transform-origin: 50% 100%;
+            }
+            #bar_1 {
+              animation: bar1 1.6s ease-in-out infinite alternate;
+            }
+            @keyframes bar1 {
+              0% {
+                transform: scale(1, 0);
+              }
+              100% {
+                transform: scale(1, .5);
+              }
+            }
+            #bar_2 {
+              animation: bar2 1.5s ease-in-out infinite alternate;
+            }
+            @keyframes bar2 {
+              0% {
+                transform: scale(1, 0);
+              }
+              100% {
+                transform: scale(1, .675);
+              }
+            }
+            #bar_3 {
+              animation: bar3 1.7s ease-in-out infinite alternate;
+            }
+            @keyframes bar3 {
+              0% {
+                transform: scale(1, 0);
+              }
+              100% {
+                transform: scale(1, .85);
+              }
+            }
+            #bar_4 {
+              animation: bar4 1.2s ease-in-out infinite alternate;
+            }
+            @keyframes bar4 {
+              0% {
+                transform: scale(1, 0);
+              }
+              100% {
+                transform: scale(1, .4);
+              }
+            }
+            #bar_5 {
+              animation: bar5 1.6s ease-in-out infinite alternate;
+            }
+            @keyframes bar5 {
+              0% {
+                transform: scale(1, 0);
+              }
+              100% {
+                transform: scale(1, .6);
+              }
+            }
+          </style>
+      </div>
+    </div>
+  </div>
+  <div class="list--group__content list-group-expanded">
+    <div class="utility-loader-header">List Item Preloader</div>
+    <div class="list__item list__item--preloader-wrap">
+      <div class="w-embed"><svg width="100%" height="100%" viewbox="0 0 300 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <circle id="circle" cx="50" cy="40" r="30"></circle>
+    <path id="text" d="M203,45L203,55L95,55L95,45L203,45ZM270,25L270,40L95,40L95,25L270,25Z"></path>
+</svg>
+        <style>
+            #circle,
+            #text {
+              fill: #eee;
+            }
+            #circle {
+              animation: circlePlump 2.5s ease-in-out infinite alternate;
+              transform-origin: 0% 50%;
+            }
+            @keyframes circlePlump {
+              0% {
+                transform: scale(.8, .8);
+                opacity: .25;
+              }
+              50% {
+                transform: scale(1, 1);
+                opacity: 1;
+              }
+              100% {
+                transform: scale(1, 1);
+                opacity: 1;
+              }
+            }
+            #text {
+              animation: listText 2.5s ease-in-out infinite alternate;
+              transform-origin: 75px 100%;
+            }
+            @keyframes listText {
+              0% {
+                transform: scale(0, 1);
+                opacity: 0;
+              }
+              50% {
+                transform: scale(1, 1);
+                opacity: 1;
+              }
+              100% {
+                transform: scale(1, 1);
+                opacity: 1;
+              }
+            }
+          </style>
+      </div>
+    </div>
+    <div class="list__item list__item--preloader-wrap">
+      <div class="w-embed"><svg width="100%" height="100%" viewbox="0 0 300 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <circle id="circle" cx="50" cy="40" r="30"></circle>
+    <path id="text" d="M203,45L203,55L95,55L95,45L203,45ZM270,25L270,40L95,40L95,25L270,25Z"></path>
+</svg></div>
+    </div>
+    <div class="list__item list__item--preloader-wrap">
+      <div class="w-embed"><svg width="100%" height="100%" viewbox="0 0 300 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <circle id="circle" cx="50" cy="40" r="30"></circle>
+    <path id="text" d="M203,45L203,55L95,55L95,45L203,45ZM270,25L270,40L95,40L95,25L270,25Z"></path>
+</svg></div>
+    </div>
+    <div class="list__item list__item--preloader-wrap">
+      <div class="w-embed"><svg width="100%" height="100%" viewbox="0 0 300 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <circle id="circle" cx="50" cy="40" r="30"></circle>
+    <path id="text" d="M203,45L203,55L95,55L95,45L203,45ZM270,25L270,40L95,40L95,25L270,25Z"></path>
+</svg></div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/cariqp1.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+  <script>
+      <!-- Prints title into taskbar -->
+      jQuery(document).ready(function($) {
+        console.log('The jQuery function is firing');
+        var $title = $(document).find('title').text();
+        $('.page-title').text($title);
+      });
+      <!-- Prints current date in select spots -->
+      jQuery(document).ready(function($) {
+        var myDate = new Date();
+        var day = myDate.getDate();
+        var month = myDate.getMonth();
+        var year = myDate.getFullYear();
+        var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        $('.date').text(monthNames[month] + " " + day + ", " + year);
+      });
+      <!-- Allows manual entry of onClick for Webflow GUI -->
+      window.onload = function() {
+        console.log('The window.onload function is firing');
+        var anchors = document.getElementsByTagName('*');
+        for (var i = 0; i < anchors.length; i++) {
+          var anchor = anchors[i];
+          anchor.onclick = function() {
+            code = this.getAttribute('whenClicked');
+            eval(code);
+          }
+        }
+      }
+      <!-- This changes the List Group Sorting button to enabled -->
+      $('.list-group-trigger').click(function() {
+        $(this).siblings('.taskbar--column__actions--button').toggleClass('enabled');
+      });
+      <!-- Faux sorting trigger for List Groups -->
+      $('.actions--sort').click(function() {
+        $('.list--group__content').toggleClass('list-group-reversed');
+      });
+    </script>
+</body>
+</html>

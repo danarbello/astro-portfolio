@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="sp-home-page_customer-stories" transform="translate(-909.000000, -1799.000000)" fill="#F7921E">
+            <g id="Group-31" transform="translate(727.000000, 1525.000000)">
+                <g id="Group-17">
+                    <g id="Likes" transform="translate(182.000000, 271.000000)">
+                        <path d="M11.7988281,6.54 C11.7988281,4.79375 10.4666482,3.405 8.86803228,3.405 C7.80228833,3.405 6.81266896,4.02375 6.29248441,5.0275 L6.29248441,5.0275 C5.77229987,4.02375 4.79536792,3.405 3.72962397,3.405 C2.13100806,3.405 0.798828125,4.79375 0.798828125,6.54 C0.798828125,6.98 0.88764012,7.365 1.02720183,7.7775 C1.17945096,8.19 1.40782466,8.6025 1.62351094,8.9875 C2.80344174,11.05 4.55430679,12.90625 6.29248441,14.405 C8.04334946,12.90625 9.79421451,11.05 10.9741453,8.9875 C11.1898316,8.6025 11.4182053,8.19 11.557767,7.7775 C11.6973287,7.365 11.7988281,6.98 11.7988281,6.54 L11.7988281,6.54 Z" id="Icon"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

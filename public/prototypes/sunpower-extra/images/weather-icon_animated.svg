@@ -1,0 +1,35 @@
+<!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
+
+<svg width="100%" height="100%" viewBox="0 0 189 151" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 1.5;">
+    <g transform="matrix(1,0,0,1,-5.70465,-0.941349)">
+        <g transform="matrix(1.0831,0,0,1.0831,-13.4291,-5.09673)">
+            <path d="M82.615,38.207C87.395,19.457 104.407,5.575 124.637,5.575C148.569,5.575 167.999,25.005 167.999,48.937C167.999,54.052 167.112,58.961 165.482,63.519C180.044,63.777 191.787,75.679 191.787,90.302C191.787,105.087 179.784,117.09 164.999,117.09C150.214,117.09 59.238,117.09 44.454,117.09C29.669,117.09 17.666,105.087 17.666,90.302C17.666,75.517 29.669,63.514 44.454,63.514C45.323,63.514 46.182,63.556 47.03,63.637L47.029,63.514C47.029,48.73 59.033,36.726 73.817,36.726C76.898,36.726 79.859,37.248 82.615,38.207Z" style="fill:rgb(247,146,30);fill-opacity:0.3;" class="iEmvaykj_0"></path>
+        </g>
+        <g id="rain" transform="matrix(1.19274,0.434122,-0.434122,1.19274,50.1132,-55.1573)">
+            <path d="M40.363,117.09C40.363,117.09 31.151,134.399 31.151,141.817C31.151,146.902 35.278,151.029 40.363,151.029C45.447,151.029 49.575,146.902 49.575,141.817C49.575,134.399 40.363,117.09 40.363,117.09Z" style="fill:none;stroke:rgb(247,146,30);stroke-width:5.51px;" class="iEmvaykj_1"></path>
+        </g>
+        <g id="snow" transform="matrix(1,0,0,1,-45,-32)">
+            <g transform="matrix(0.939974,0,0,0.939974,8.22475,11.2989)">
+                <path d="M137.02,126.792L137.02,173.817" style="fill:none;stroke:rgb(247,146,30);stroke-width:7.45px;" class="iEmvaykj_2"></path>
+            </g>
+            <g transform="matrix(5.75568e-17,0.939974,-0.939974,5.75568e-17,278.302,23.7862)">
+                <path d="M137.02,126.792L137.02,173.817" style="fill:none;stroke:rgb(247,146,30);stroke-width:7.45px;" class="iEmvaykj_3"></path>
+            </g>
+            <g transform="matrix(-0.664662,0.664662,-0.664662,-0.664662,327.994,161.411)">
+                <path d="M137.02,126.792L137.02,133.683" style="fill:none;stroke:rgb(247,146,30);stroke-width:7.45px;" class="iEmvaykj_4"></path>
+            </g>
+            <g transform="matrix(-0.664662,0.664662,-0.664662,-0.664662,327.994,161.411)">
+                <path d="M137.02,166.917L137.02,173.817" style="fill:none;stroke:rgb(247,146,30);stroke-width:7.45px;" class="iEmvaykj_5"></path>
+            </g>
+            <g transform="matrix(-0.664662,-0.664662,0.664662,-0.664662,128.19,343.555)">
+                <path d="M137.02,126.792L137.02,133.708" style="fill:none;stroke:rgb(247,146,30);stroke-width:7.45px;" class="iEmvaykj_6"></path>
+            </g>
+            <g transform="matrix(-0.664662,-0.664662,0.664662,-0.664662,128.19,343.555)">
+                <path d="M137.02,166.911L137.02,173.817" style="fill:none;stroke:rgb(247,146,30);stroke-width:7.45px;" class="iEmvaykj_7"></path>
+            </g>
+        </g>
+        <g id="lightening" transform="matrix(0.902974,0,0,0.902974,8.64069,-15.8845)">
+            <path d="M149.548,130.48L139.583,159.502L153.297,159.502L147.69,181.094L177.584,145.54L160.976,145.54L166.533,130.48L149.548,130.48Z" style="fill:none;stroke:rgb(247,146,30);stroke-width:7.75px;" class="iEmvaykj_8"></path>
+        </g>
+    </g>
+<style>.iEmvaykj_0{stroke-dasharray:483 485;stroke-dashoffset:484;animation:iEmvaykj_draw_0 7800ms ease-in-out 0ms infinite,iEmvaykj_fade 7800ms linear 0ms infinite;}.iEmvaykj_1{stroke-dasharray:83 85;stroke-dashoffset:84;animation:iEmvaykj_draw_1 7800ms ease-in-out 0ms infinite,iEmvaykj_fade 7800ms linear 0ms infinite;}.iEmvaykj_2{stroke-dasharray:48 50;stroke-dashoffset:49;animation:iEmvaykj_draw_2 7800ms ease-in-out 0ms infinite,iEmvaykj_fade 7800ms linear 0ms infinite;}.iEmvaykj_3{stroke-dasharray:48 50;stroke-dashoffset:49;animation:iEmvaykj_draw_3 7800ms ease-in-out 0ms infinite,iEmvaykj_fade 7800ms linear 0ms infinite;}.iEmvaykj_4{stroke-dasharray:7 9;stroke-dashoffset:8;animation:iEmvaykj_draw_4 7800ms ease-in-out 0ms infinite,iEmvaykj_fade 7800ms linear 0ms infinite;}.iEmvaykj_5{stroke-dasharray:7 9;stroke-dashoffset:8;animation:iEmvaykj_draw_5 7800ms ease-in-out 0ms infinite,iEmvaykj_fade 7800ms linear 0ms infinite;}.iEmvaykj_6{stroke-dasharray:7 9;stroke-dashoffset:8;animation:iEmvaykj_draw_6 7800ms ease-in-out 0ms infinite,iEmvaykj_fade 7800ms linear 0ms infinite;}.iEmvaykj_7{stroke-dasharray:7 9;stroke-dashoffset:8;animation:iEmvaykj_draw_7 7800ms ease-in-out 0ms infinite,iEmvaykj_fade 7800ms linear 0ms infinite;}.iEmvaykj_8{stroke-dasharray:163 165;stroke-dashoffset:164;animation:iEmvaykj_draw_8 7800ms ease-in-out 0ms infinite,iEmvaykj_fade 7800ms linear 0ms infinite;}@keyframes iEmvaykj_draw{100%{stroke-dashoffset:0;}}@keyframes iEmvaykj_fade{0%{stroke-opacity:1;}94.87179487179488%{stroke-opacity:1;}100%{stroke-opacity:0;}}@keyframes iEmvaykj_draw_0{5.128205128205128%{stroke-dashoffset: 484}33.922303527871975%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes iEmvaykj_draw_1{33.922303527871975%{stroke-dashoffset: 84}38.919626390624074%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes iEmvaykj_draw_2{38.919626390624074%{stroke-dashoffset: 49}41.83473139389613%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes iEmvaykj_draw_3{41.83473139389613%{stroke-dashoffset: 49}44.74983639716819%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes iEmvaykj_draw_4{44.74983639716818%{stroke-dashoffset: 8}45.22577190790648%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes iEmvaykj_draw_5{45.225771907906484%{stroke-dashoffset: 8}45.70170741864477%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes iEmvaykj_draw_6{45.70170741864477%{stroke-dashoffset: 8}46.17764292938307%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes iEmvaykj_draw_7{46.177642929383076%{stroke-dashoffset: 8}46.653578440121365%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}@keyframes iEmvaykj_draw_8{46.653578440121365%{stroke-dashoffset: 164}56.41025641025641%{ stroke-dashoffset: 0;}100%{ stroke-dashoffset: 0;}}</style></svg>

@@ -1,0 +1,77 @@
+---
+import Basic from '../../layouts/Basic.astro';
+import '../../styles/patterns.css';
+import { Image } from 'astro:assets';
+import imageInline01 from '../../assets/images/inline__aerospace_metabylines.gif';
+import imageInline02 from '../../assets/images/inline__aerospace_metateasers.gif';
+---
+
+<Basic>
+  <section class="case-study">
+    <div class="container">
+      <p class="eyebrow small--extra">Case Study</p>
+      <h1 class="largest">Guiding Aerospace’s Content Strategy and Procedures Into the Future</h1>
+      <div class="site-viewer" style="background-image: url('/images/siteviewers/siteviewer__aerospace.webp')" aria-label="Screen capture of Aerospace.org"></div>
+      <div class="case-study__details small--extra row left-align row--four row--compact">
+        <p class="column">Agency: <a href="https://thirdandgrove.com" target="_blank">Third & Grove</a></p>
+        <p class="column">Role: Design Lead</p>
+        <p class="column">Year: 2015</p>
+        <p class="column">Client: <a href="https://aerospace.com" target="_blank">Aerospace, Inc.</a></p>
+      </div>
+      <details open>
+        <summary>Summary</summary>
+        <p>Aerospace faced significant challenges with their outdated website, where disparate labs/entities published content without a proper editing process. Furthermore, the website's theme did not align with their brand guidelines or voice. To address these issues, a comprehensive overhaul of the digital style and information architecture was required. As part of the solution, we aimed to humanize Aerospace, focusing on highlighting their researchers, experts, and scientists to engage users with digestible and interesting content.</p>
+      </details>
+      <details open>
+        <summary>Problem</summary>
+        <p>Aerospace's website had the following issues:</p>
+        <ul>
+          <li><strong>Disparate Content Management:</strong> Content publishing lacked a streamlined process, leading to inconsistency and an ineffective communication of key messages.</li>
+          <li><strong>Outdated Theme:</strong> The website's theme did not represent Aerospace's brand guidelines or voice, diminishing their online presence.</li>
+          <li><strong>Lack of User-Friendly Content:</strong> The website lacked user-friendly content distribution for Aerospace's brilliant innovations.</li>
+          <li><strong>Poor Content Strategy & Manangement:</strong> The existing capabilities-first content approach needed to be shifted to prioritize humanizing the organization and highlighting the researchers behind the innovations.</li>
+        </ul>
+      </details>
+      <details open>
+        <summary>Solution</summary>
+        <p>To address the challenges and meet Aerospace, Inc.'s objectives, the following solutions were implemented:</p>
+        <ul>
+          <li><strong>Comprehensive Overhaul:</strong> We proposed several ideas, and Aerospace chose a deep transformation that required reorganizing their digital marketing workflow and hiring a copywriter.</li>
+          <li><strong>Humanizing Aerospace:</strong> Researchers, experts, and scientists were placed at the forefront of the website, emphasizing their work and innovations.</li>
+          <figure>
+            <Image src={imageInline01} alt="Screen capture of Aerospace.org's article bylines" />
+            <figcaption class="small--extra">Articles received complex bylines that encouraged expert exploration and deep-diving.</figcaption>
+          </figure>
+          <li><strong>Content Strategy Reboot:</strong> The information architecture and content strategy were revamped to focus on digestible and interesting content first, followed by services. Researchers were highlighted to encourage users to explore related innovations, labs, and papers.</li>
+          <figure class="figure--narrow">
+            <Image src={imageInline02} alt="Screen capture of Aerospace.org's article teasers" />
+            <figcaption class="small--extra">Teasers led to various paths, not just articles themselves. Users could navigate to authors/experts, types, and media entities in addition to the article itself.</figcaption>
+          </figure>
+          <li><strong>Taxonomy and Wayfinding:</strong> A service-objectives taxonomy group was created, termed "Topics of Interest," to fit all content, streamlining curation for the marketing staff and enhancing user wayfinding.</li>
+          <li><strong>Enhanced Search Functionality:</strong> A full-featured search module was implemented, showing users their past page views, most viewed pages globally, and content relevant to them based on their browsing history.</li>
+          <li><strong>Accessibility Compliance:</strong> The website was designed with Section 508 and WCAG accessibility compliance, without compromising the brand's aesthetic integrity.</li>
+        </ul>
+      </details>
+      <details open>
+        <summary>Results</summary>
+        <p>The website overhaul produced significant improvements:</p>
+        <ul>
+          <li><strong>User Engagement:</strong> The content-centric approach and humanization of Aerospace led to increased user engagement and exploration of researchers' work.</li>
+          <li><strong>Streamlined Navigation:</strong> The revamped information architecture and "Topics of Interest" taxonomy eased user navigation and content curation for Aerospace's marketing team.</li>
+          <li><strong>Enhanced Search:</strong> The search functionality improved user experience, allowing users to quickly access essential information while encouraging exploration of the site.</li>
+          <li><strong>Brand Alignment:</strong> The website's updated theme brought Aerospace closer to its original brand guidelines, contemporizing the brand's digital presence and aligning it with organizational objectives.</li>
+          <li>
+            <strong>In-medium Design Deliverables:</strong> As part of the typical design process I established at Third & Grove, this project included in-medium design deliverables (creative designed and built with HTML, CSS, and JavaScript). Not only did this allow for all stakeholders — no matter technical skills or knowledge — to review creative immediately, it also served as more definitive and granular development materials
+            <ul>
+              <li><a href="../prototypes/aerospace" target="_blank">UX/UI Prototypes ➝</a></li>
+            </ul>
+          </li>
+        </ul>
+      </details>
+      <details open>
+        <summary>Conclusion</summary>
+        <p>By undertaking a comprehensive website overhaul and implementing a humanized content strategy, Aerospace, Inc. successfully revitalized its online presence. The redesigned website not only improved user engagement and accessibility but also aligned the brand with its original guidelines and objectives. The focus on researchers and innovative content allowed Aerospace to effectively communicate its brilliance and expertise, elevating its position as a prominent player in the aerospace industry. The collaboration between Aerospace, Inc. and our team led to an aesthetically pleasing and user-friendly website, reflecting the organization's core values while facilitating meaningful interactions with users.</p>
+      </details>
+    </div>
+  </section>
+</Basic>

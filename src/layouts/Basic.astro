@@ -2,13 +2,16 @@
 import Head from '../components/Head.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+
 import '../styles/global.css';
 import '../styles/modifiers.css';
+
+const { metadata } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
-	<Head />
+	<Head {metadata} />
 	<Header />
 	<body>
 		<slot />

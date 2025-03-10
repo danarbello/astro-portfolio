@@ -1,9 +1,15 @@
+---
+const { metadata } = Astro.props;
+const title = metadata?.title || "Dan Arbello | Design | Engineering";
+const description = metadata?.description || "A unique breed of both visual and logical design: blending the role of a creative leader and bridging the gap between engineers and designers.";
+---
+
 <head>
   <meta charset="UTF-8" />
-  <title>Dan Arbello | Design | Engineering</title>
-  <meta content="A unique breed of both visual and logical design: blending the role of a creative leader and bridging the gap between engineers and designers." name="description">
-  <meta content="Dan Arbello | Design | Engineering" property="og:title">
-  <meta content="A unique breed of both visual and logical design: blending the role of a creative leader and bridging the gap between engineers and designers." property="og:description">
+  <title>{title}</title>
+  <meta content={description} name="description">
+  <meta content={title} property="og:title">
+  <meta content={description} property="og:description">
   <meta property="og:type" content="website">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">

@@ -1,13 +1,18 @@
 ---
 import Basic from '../../layouts/Basic.astro';
 import '../../styles/patterns.css';
+
+const metadata = {
+  title: 'Unlocking Imprivata’s Coverage for Several New Markets',
+  description: 'Consulting with a security/SaaS organization to expand their brand goodwill, reach greater markets, and integrate recently acquired subsidiaries into their marketing website.'
+};
 ---
 
-<Basic>
+<Basic {metadata}>
   <section class="case-study">
     <div class="container">
       <p class="eyebrow small--extra">Case Study</p>
-      <h1 class="largest">Unlocking Imprivata’s Coverage for Several New Markets</h1>
+      <h1 class="largest">{metadata.title}</h1>
       <div class="site-viewer" style="background-image: url('/images/siteviewers/siteviewer__imprivata.webp')" aria-label="Screen capture of Imprivata.com"></div>
       <div class="case-study__details small--extra row left-align row--four row--compact">
         <p class="column">Agency: <a href="https://chromatichq.com" target="_blank">Chromatic</a></p>

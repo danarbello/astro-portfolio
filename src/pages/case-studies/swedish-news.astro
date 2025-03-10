@@ -11,13 +11,18 @@ import imageInline06 from '../../assets/images/inline__nordic_reach_05.jpeg';
 import imageInline07 from '../../assets/images/inline__nordic_reach_06.jpeg';
 import imageInline08 from '../../assets/images/inline__nordstjernan_01.jpeg';
 import imageInline09 from '../../assets/images/inline__nordstjernan_02.jpeg';
+
+const metadata = {
+  title: 'A Decade+ of Leading the Creative for a Scandinavian Lifestyle Publisher',
+  description: 'I served as a creative director for over ten years on all properties for Swedish News Inc., including the prestigious Nordic Reach magazine and the historic Nordstjernan newspaper.'
+};
 ---
 
-<Basic>
+<Basic {metadata}>
   <section class="case-study">
       <div class="container">
         <p class="eyebrow small--extra">Case Study</p>
-        <h1 class="largest">A Decade+ of Leading the Creative for a Scandinavian Lifestyle Publisher</h1>
+        <h1 class="largest">{metadata.title}</h1>
         <div class="case-study__details small--extra row left-align row--four row--compact">
           <p class="column">Agency: Self</p>
           <p class="column">Role: Art Director</p>

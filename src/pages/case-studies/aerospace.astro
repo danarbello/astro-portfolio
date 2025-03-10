@@ -4,13 +4,18 @@ import '../../styles/patterns.css';
 import { Image } from 'astro:assets';
 import imageInline01 from '../../assets/images/inline__aerospace_metabylines.gif';
 import imageInline02 from '../../assets/images/inline__aerospace_metateasers.gif';
+
+const metadata = {
+  title: 'Guiding Aerospace’s Content Strategy and Procedures Into the Future',
+  description: 'Aerospace faced significant challenges with their outdated website, where disparate labs/entities published content without a proper editing process. We humanized their voice, focusing on the humans that make Aerospace an authority.'
+};
 ---
 
-<Basic>
+<Basic {metadata}>
   <section class="case-study">
     <div class="container">
       <p class="eyebrow small--extra">Case Study</p>
-      <h1 class="largest">Guiding Aerospace’s Content Strategy and Procedures Into the Future</h1>
+      <h1 class="largest">{metadata.title}</h1>
       <div class="site-viewer" style="background-image: url('/images/siteviewers/siteviewer__aerospace.webp')" aria-label="Screen capture of Aerospace.org"></div>
       <div class="case-study__details small--extra row left-align row--four row--compact">
         <p class="column">Agency: <a href="https://thirdandgrove.com" target="_blank">Third & Grove</a></p>

@@ -1,0 +1,31 @@
+---
+import '../styles/timeline.css';
+
+const { timelineEntry } = Astro.props;
+const { eyebrow, heading, inlineLink, link, summary } = timelineEntry;
+---
+
+<div class="timeline">
+  {link ? (
+    <a href={link.url}
+      target={link.newTab ? "_blank" : "_self"}
+      class="timeline-entry">
+      {eyebrow}
+      {heading}
+      {summary}
+    </a>
+  ) : (
+    <div class="timeline-entry">
+      {eyebrow}
+      {heading}
+      {summary}
+      {inlineLink && (
+        <a href={inlineLink.url}
+          target={inlineLink.newTab ? "_blank" : "_self"}
+          class="timeline-entry__inline-link">
+          {inlineLink.label}
+        </a>
+      )}
+    </div>
+  )}
+</div>

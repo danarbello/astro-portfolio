@@ -1,152 +1,43 @@
 ---
 import Basic from '../layouts/Basic.astro';
 import '../styles/patterns.css';
+
+import TimelineEntry from '../components/TimelineEntry.astro';
+
+const timelineEntries = [
+  {
+    eyebrow: "2001 to 2005",
+    heading: "Maryland Institute College of Art",
+    summary: "BFA Graphic Design with minor in Gender Studies/Literature",
+    inlineLink: {
+      label: "mica.edu",
+      url: "https://mica.edu",
+      newTab: true,
+    }
+  },
+  {
+    eyebrow: "2005 to 2014",
+    heading: "Swedish News, Inc.",
+    summary: "Art Director and lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    link: {
+      url: "https://nordicreach.com",
+      newTab: true,
+    }
+  },
+  {
+    eyebrow: "Eyebrow/Date",
+    heading: "Heading",
+    summary: "Summary",
+    link: {
+      url: "https://danarbello.com",
+      newTab: true,
+    }
+  }
+];
 ---
 
 <Basic>
-  <section>
-    <div class="container">
-      <div class="resume__header">
-        <h1 class="eyebrow">Resume</h1>
-        <a class="standalone smaller bold" href="/Dan%20Arbello%20-%20Resume.pdf">Download ↓</a>
-      </div>
-      <p class="largest"><span class="black">Dan Arbello</span></p>
-
-      <hr>
-
-      <h2 class="large">Objective</h2>
-      <p>Join a diverse team of empathic humans and contribute my multi-faceted creative, engineering, and leadership expertise to the team and their digital products that ultimately provide a net good to the world and society.</p>
-
-      <h2 class="large">Education</h2>
-      <div class="case-study__details small--extra row left-align row--compact">
-        <p class="column"><strong>2001-05 | BFA Graphic Design</strong> (Minor in Literature & Gender Studies) | <a href="https://mica.edu" target="_blank">Maryland Institute College of Art</a></p>
-        <p class="column"><strong>2003 | Photography & Printmaking</strong> (Study Abroad) | <a href="https://www.arts.ac.uk/colleges/central-saint-martins" target="_blank">Central Saint Martins</a></p>
-        <p class="column"><strong>2023 | So Now You’re A Manager</strong> (Cohort 23) | <a href="https://www.beplucky.com/" target="_blank">Plucky</a></p>
-      </div>
-
-      <details open>
-        <summary><h2 class="large">Experience</h2></summary>
-
-        <p class="small--extra">This list is abridged. For a full list of job experiences see <a href="https://linkedin.com/in/dan-arbello" target="_blank">my LinkedIn profile</a>.</p>
-
-        <p class="medium">
-          <strong>Chromatic</strong><span class="small--extra"> | <strong>2019-present</strong> | <a href="https://www.chromatichq.com/" target="_blank">chromatichq.com</a> | Remote</span>
-        </p>
-        <p>Wearer of many hats at a small development agency specializing in Drupal and WordPress builds, especially in the migration steps of massive content management systems and databases. Lead the redesign of the Chromatic brand in 2021. The complete re-discovery and UX/UI redesign of the website won Chromatic several awards.</p>
-        <p class="small">Managed the second-largest retainer account for the company from an account executive and tech leadership role. Served the client through three major redesigns, several stakeholder changes, and approaching 4,000 tickets.</p>
-        <p class="small--extra">Account Management • Technical Leadership • Development Management • Full-Stack Development • Drupal • Ideation & Discovery • UX/UI Design • Project Management • People Ops Management • In-medium Prototyping</p>
-
-        <hr class="compact">
-
-        <p class="medium">
-          <strong>Chemistry</strong><span class="small--extra"> | <strong>2018-19</strong> | <a href="https://www.chemistryagency.com/" target="_blank">chemistryagency.com</a> | Pittsburgh, PA</span>
-        </p>
-        <p>Provided an alternative and outsider voice to a Pittsburgh advertising agency. As AoRs for a wide range of regional and national brands; I sowed the seed of next-gen digital design by showcasing, delivering, and tutoring the design and development team on in-medium design practices and substantial evolutions to UX design.</p>
-        <p class="small">Consulted on and designed the redesign of the digital side of Guardian Protection’s marketing websites, products, and refining brand perception from both the UX research discovery side to the UX/UI itself.</p>
-        <p class="small--extra">Art Direction • Ideation & Discovery • UX/UI Design • In-medium Prototyping • Front-End Development • Development Support</p>
-
-        <hr class="compact">
-
-        <p class="medium">
-          <strong>Third & Grove</strong><span class="small--extra"> | <strong>2015-18</strong> | <a href="https://www.thirdandgrove.com/" target="_blank">thirdandgrove.com</a> | Remote</span>
-        </p>
-        <p>Evolved a faltering design department into a development agency contributing to overall success of Third & Grove as a full-service agency. Maturing the practice into an in-medium-capable design department able to provide everything from market research, ideation, content strategy, design, and prototyping for websites and apps.</p>
-        <p class="small">Helped the agency win a hard-earned King Arthur Flour marketing and e-commerce website redesign and support contract. My time as a Design Lead and bouts of interviews and pitches with the VP of King Arthur Flour helped secure the retainer. Designed and built a reusable Webflow template for offshoot and subsidiaries portals and websites for the TPG brand including TPG Global, TPG Real Estate, and TPG Growth/The Rise Fund; in addition to refining many features and sections of the parent website: tpg.com.</p>
-        <p class="small--extra">Ideation & Discovery • UX/UI Design • Design Leadership • People Ops Management • Project Management • Development Support • In-medium Prototyping</p>
-
-        <hr class="compact">
-
-        <p class="medium">
-          <strong>Swedish News</strong><span class="small--extra"> | <strong>2006-15</strong> | New York City & Remote</span>
-        </p>
-        <p>Consulted on nearly all things editorially related for the owner and editor-in-chief of Swedish News, and its flagship magazine and newspaper, Ulf Mårtensson. From the regular art direction, editorial management, design, and prepress of the quarterly magazine to consulting on new projects and peripherals I was Ulf’s right-hand man in all facets of Swedish News publishing.</p>
-        <p class="small">Art directed and designed over 30 issues of the quarterly magazine Nordic Reach, designed over 10 books/novels, and countless periodical inserts and booklets.</p>
-        <p class="small--extra">Consulting • Art Direction • Ideation & Discovery • UX/UI Design • Print & Editorial Design • Front-End Development • Development Support</p>
-      </details>
-
-      <details open>
-        <summary><h2 class="large">Skills, Technology, and Platforms</h2></summary>
-
-        <div class="print-columns">
-          <p><strong>Ideation & Design</strong></p>
-          <ul class="small columns--three">
-            <li>Webflow</li>
-            <li>Figma + FigJam</li>
-            <li>Framer</li>
-            <li>Sketch</li>
-            <li>Zeplin</li>
-            <li>Adobe Creative Suite: XD, Illustrator, Photoshop, InDesign, Fonts, After Effects</li>
-            <li>Affinity Suite: Designer, Photo, Publisher</li>
-            <li>Miro</li>
-            <li>Whimsical</li>
-            <li>Canva</li>
-          </ul>
-
-          <p><strong>Development & Analysis</strong></p>
-          <ul class="small columns--three">
-            <li>GitHub</li>
-            <li>GitLab</li>
-            <li>Sentry.io</li>
-            <li>Visual Studio Code</li>
-            <li>PHPStorm</li>
-            <li>Calibre</li>
-            <li>BrowserStack: Percy, Live</li>
-            <li>BitBar/CBT</li>
-            <li>Warp</li>
-          </ul>
-
-          <p><strong>Project Management</strong></p>
-          <ul class="small columns--three">
-            <li>Atlassian Suite: Jira, Confluence, Trello</li>
-            <li>GitHub Projects</li>
-            <li>Microsoft Office & Teams</li>
-            <li>Slack</li>
-            <li>Asana</li>
-            <li>Linear</li>
-            <li>ClickUp</li>
-            <li>Hive</li>
-            <li>Basecamp</li>
-            <li>Google Docs + Sheets</li>
-          </ul>
-
-          <p><strong>Standards</strong></p>
-          <ul class="small columns--three">
-            <li>WCAG 2.2 A-AAA</li>
-            <li>Section 508</li>
-            <li>GDPR</li>
-            <li>Google Lighthouse</li>
-          </ul>
-
-          <p><strong>Languages & Syntaxes</strong></p>
-          <ul class="small columns--three">
-            <li>Vanilla CSS and syntaxes like SCSS, Sass, and Stylus</li>
-            <li>HTML and syntaxes like Twig, PHP, Nunjucks, Jekyll, Pug, Haml, and Markdown</li>
-            <li>Vanilla JavaScript, ES5-6, and introductory-level React and Next</li>
-            <li>Bash/ZSH</li>
-            <li>Tugboat CLI</li>
-            <li>Terminus (Pantheon CLI)</li>
-            <li>Platform.sh CLI</li>
-          </ul>
-
-          <p><strong>Platforms</strong></p>
-          <ul class="small columns--three">
-            <li>AWS S3 / EC2</li>
-            <li>Drupal 8-11</li>
-            <li>HubSpot</li>
-            <li>Google Analytics (UA and GA4)</li>
-            <li>Pantheon</li>
-            <li>Platform.sh</li>
-            <li>Tugboat</li>
-            <li>Webflow (including ecommerce)</li>
-            <li>Wix</li>
-            <li>WordPress</li>
-            <li>Vercel</li>
-            <li>Shopify</li>
-            <li>Squarespace</li>
-            <li>Salesforce</li>
-          </ul>
-        </div>
-      </details>
-    </div>
-  </section>
+  {timelineEntries.map((entry) => (
+    <TimelineEntry timelineEntry={entry} />
+  ))}
 </Basic>

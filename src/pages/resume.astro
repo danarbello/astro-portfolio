@@ -6,38 +6,42 @@ import TimelineEntry from '../components/TimelineEntry.astro';
 
 const timelineEntries = [
   {
-    eyebrow: "2001 to 2005",
-    heading: "Maryland Institute College of Art",
-    summary: "BFA Graphic Design with minor in Gender Studies/Literature",
-    inlineLink: {
-      label: "mica.edu",
-      url: "https://mica.edu",
+    eyebrow: 'Inline, external, new tab',
+    date: 'YYYY to YYYY',
+    heading: 'Heading',
+    summary: 'Summary',
+    link: {
+      url: 'https://reddit.com',
+      label: 'Inline link label',
+      inline: false,
       newTab: true,
     }
   },
   {
-    eyebrow: "2005 to 2014",
-    heading: "Swedish News, Inc.",
-    summary: "Art Director and lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    eyebrow: 'Wrapper, internal, same tab',
+    date: '2005 to 2014',
+    heading: 'Swedish News, Inc.',
+    summary: 'Art Director and lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     link: {
-      url: "https://nordicreach.com",
-      newTab: true,
+      url: '/case-studies/swedish-news',
+      label: 'Read the case study',
+      inline: false,
+      newTab: false,
     }
   },
   {
-    eyebrow: "Eyebrow/Date",
-    heading: "Heading",
-    summary: "Summary",
-    link: {
-      url: "https://danarbello.com",
-      newTab: true,
-    }
+    eyebrow: 'Award | Editorial Design',
+    date: '2006',
+    heading: 'AIGA 365',
+    summary: 'Summary of AIGA 365 award.'
   }
 ];
 ---
 
 <Basic>
-  {timelineEntries.map((entry) => (
-    <TimelineEntry timelineEntry={entry} />
-  ))}
+  <div class="timeline">
+    {timelineEntries.map((entry) => (
+      <TimelineEntry timelineEntry={entry} />
+    ))}
+  </div>
 </Basic>

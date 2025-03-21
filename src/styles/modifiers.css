@@ -5,6 +5,9 @@
 .center {
   text-align: center;
 }
+.marginless {
+  margin: 0;
+}
 .space--top {
   margin-top: .618rem;
 }

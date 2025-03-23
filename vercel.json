@@ -1,0 +1,5 @@
+{
+  "trailingSlash": true,
+  "cleanUrls": true,
+  "rewrites": []
+}

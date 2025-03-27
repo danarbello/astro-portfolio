@@ -3,12 +3,13 @@
   display: block;
   margin: 0 auto;
   width: 61.803vw;
-  height: 38.917vh;
+  height: 50vh;
   overflow-y: scroll;
-  padding: 1.5rem 1rem 1rem;
+  padding: 1.75rem 1rem 1rem;
   background-color: var(--color-black);
   color: var(--color-white);
   border-radius: .2rem;
+  font-family: 'Recursive', monospace;
 }
 
 .terminal::after {

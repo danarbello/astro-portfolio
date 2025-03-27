@@ -1,0 +1,24 @@
+.terminal {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 61.803vw;
+  height: 38.917vh;
+  overflow-y: scroll;
+  padding: 1.5rem 1rem 1rem;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border-radius: .2rem;
+}
+
+.terminal::after {
+  content: '';
+  position: absolute;
+  top: .5rem;
+  left: .5rem;
+  width: .6rem;
+  height: .6rem;
+  border-radius: 50%;
+  background-color: crimson;
+  box-shadow: 1rem 0 0 orange, 2rem 0 0 limegreen;
+}

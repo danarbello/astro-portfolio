@@ -14,7 +14,9 @@ const { metadata } = Astro.props;
 	<Head {metadata} />
 	<Header />
 	<body>
-		<slot />
+		<main role="main">
+			<slot />
+		</main>
 	</body>
 	<Footer />
 </html>

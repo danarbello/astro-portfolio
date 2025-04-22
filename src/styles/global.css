@@ -15,6 +15,7 @@
   --color-black: #353535;
   --color-black-faded: rgba(53,53,53,.6);
   --color-grey: rgba(53,53,53,.3);
+  --color-grey-faded: rgba(53,53,53,.15);
   --color-white: white;
   --color-active: #DE3C4B;
   --transition: all 240ms ease-in-out;
@@ -112,6 +113,9 @@ hr {
 }
 hr.compact {
   margin: 1rem 0;
+}
+hr.light {
+  background-color: var(--color-grey-faded);
 }
 
 section {

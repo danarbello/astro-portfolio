@@ -1,0 +1,121 @@
+---
+import '../styles/patterns.css';
+import Basic from '../layouts/Basic.astro';
+import { YouTube } from 'astro-embed';
+import { Image } from 'astro:assets';
+import classImage1 from '../assets/images/class/aol-keyword-form.png';
+import classImage2 from '../assets/images/class/aol_keywords.jpg';
+import classImage3 from '../assets/images/class/lycos.png';
+import classImage4 from '../assets/images/class/aol_aim.png';
+import classImage5 from '../assets/images/class/myspace_1.png';
+import classImage6 from '../assets/images/class/myspace_2.jpg';
+import classImage7 from '../assets/images/class/w3c.svg';
+---
+
+<Basic>
+  <section>
+    <div class="container">
+      <p class="eyebrow small--extra">Intro to Web Design</p>
+      <h1 class="largest">Resources</h1>
+
+      <details open>
+
+        <summary class="medium">Day 1 • 22 April</summary>
+
+        <p><a href="https://internet-history.webflow.io/" target="_blank">A Brief History of the Internet</a>: a minisite built in Webflow</p>
+
+        <hr>
+        <p>1990s: Bulletin Board Systems</p>
+        <YouTube id="RuZUPpmXfT0" />
+
+        <hr>
+        <p>Dial-up and AOL</p>
+        <Image src={classImage1} alt="User interface for AOL keyword input" />
+        <Image src={classImage2} alt="Book titled AOL Keywords" />
+
+        <hr>
+        <p>Search engines begin to pop up: Yahoo, Lycos, etc.</p>
+        <Image src={classImage3} alt="Screenshot of Lycos homepage" />
+
+        <hr>
+        <p>Chatrooms 2.0 (aka "Instant Messaging")</p>
+        <Image src={classImage4} alt="Screenshot of AOL Instant Messenger" />
+
+        <p>Social media is introduced to the world with MySpace</p>
+        <Image src={classImage5} alt="Screenshot of basic MySpace profile" />
+        <br>
+        <br>
+        <p>People start teaching themselves basic HTML and CSS in order to customize their pages</p>
+        <Image src={classImage6} alt="Screenshot of customized MySpace profile" />
+        <br>
+        <br>
+        <p>Nothing is transparent: all development is quiet and locked behind corporate doors. If you aren't a <strong>webmaster</strong> or working on the engineering team of one of these companies then you've no idea what is going on behind the code.</p>
+
+        <hr>
+        <p>How web software is made, tweaked, and maintained nowadays:</p>
+        <ul>
+          <li><strong>Working privately</strong> at a company like OpenAI and Meta (Facebook, Instagram, Threads, etc.)</li>
+          <li><strong>Contributing to open source</strong>: like Chrome, Firefox, Safari, WordPress, and creative commons.</li>
+          <li><strong>Contributing to languages and standards</strong> like HTML, CSS are not licensed or licenseable.</li>
+          <li><strong>Contributing to working groups</strong>: Collection of people that regularly maintain standards, languages, and softwares for public use like HTML, CSS, and JavaScript.</li>
+        </ul>
+
+        <Image src={classImage7} alt="W3C logo" />
+        <p><a href="https://www.w3.org/" target="_blank">World Wide Web Consortium (W3C)</a> maintains and upgrades internet software.</p>
+
+        <hr>
+        <p>It's <em>systems</em> all the way down.</p>
+        <ul>
+          <li><strong>Development operations (devOps)</strong>: Where code is launched and kept stable on the internet, like the process of getting into and riding the car or bus that brings you to school</li>
+          <li><strong>Back-end</strong>: Where code builds the core of websites, like the bones and organs in your body</li>
+          <li><strong>Front-end</strong>: Where code structures and styles what you see, like your hair, skin, clothing, and makeup</li>
+          <li><strong>Content</strong>: Where all the data and rules stem from, like the ideas in your brain and the words it speaks out into the world</li>
+        </ul>
+
+        <p>Management systems make up the vast majority of the internet nowadays.</p>
+        <ul>
+          <li><strong>Content Management System (CMS)</strong>: Stores and publishes any kind of data desired in a reusable and redeployable fasion. Think news or blog website.</li>
+          <li><strong>Digital Asset Management (DAM)</strong>: Stores massive troves of images, texts, and variants of those. Think library but on the internet.</li>
+          <li><strong>Product Information Management (PIM)</strong>: Just like a DAM but stores information and content about products. Think store library but on the internet and locked away.</li>
+          <li><strong>Customer Relationship Management (CRM)</strong>: Stores information about real humans and the companies they work for for marketing and advertising purposes. Think like a super secret address book.</li>
+          <li><strong>Digital Experience Platform (DXP)</strong>: Compiles all of the above services into a massive monolith of content management and publishing. Think like a machine wired up to every and anything that is connected to the internet.</li>
+        </ul>
+
+        <hr>
+        <p>Bonus stuff:</p>
+        <ul>
+          <li>Virtual Private Network: A way to hide where exactly you are accessing the internet from.</li>
+          <li>Search is dead: What are algorithms and how content is spoon-fed to users nowadays?</li>
+          <li>The difference between algorithms, search configuration, AI, and AGI</li>
+          <li>How do websites that don't sell anything make money?</li>
+        </ul>
+
+      </details>
+
+      <details>
+        <summary class="medium">Day 2 • 24 April</summary>
+        <hr>
+        <h2>It's blocks all the way down</h2>
+        <ul>
+          <li>Markup: How “the block” structures all things on the internet</li>
+          <li>Interaction: Static vs Dynamic</li>
+          <li>Put a Bow on It: The importance of “styling” data and interactions</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary class="medium">Day 3 • 29 April</summary>
+        <hr>
+        <h2>Paper+Pencil Content Strategy + UX + Priority Guides</h2>
+        <p>To come…</p>
+      </details>
+
+      <details>
+        <summary class="medium">Day 4 • 1 May</summary>
+        <hr>
+        <h2>Project Introductions</h2>
+        <p>To come…</p>
+      </details>
+    </div>
+  </section>
+</Basic>

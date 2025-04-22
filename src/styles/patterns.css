@@ -90,6 +90,10 @@ details a:hover {
   background-size: 100% .1em, 100% .1em;
   color: var(--color-black);
 }
+details img {
+  max-width: 100%;
+  height: auto;
+}
 /* Fuck you, Safari. I hate you so much. */
 details summary::-webkit-details-marker {
   display: none;

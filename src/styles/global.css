@@ -62,6 +62,7 @@ p {
   margin: 0 0 1rem;
 }
 p a,
+li a,
 a.standalone {
   transition: var(--transition);
   background-image: linear-gradient(to right, var(--color-black), var(--color-black)), linear-gradient(to right, var(--color-active), var(--color-active));
@@ -72,6 +73,7 @@ a.standalone {
   text-decoration: none;
 }
 p a:hover,
+li a:hover,
 a.standalone:hover {
   background-size: 100% .1em, 100% .1em;
   color: var(--color-black);

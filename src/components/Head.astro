@@ -1,16 +1,18 @@
 ---
 const { metadata } = Astro.props;
-const title = metadata?.title || "Dan Arbello | Design | Engineering";
-const description = metadata?.description || "A unique breed of both visual and logical design: blending the role of a creative leader and bridging the gap between engineers and designers.";
+const title = metadata?.title || 'Dan Arbello | Design | Engineering';
+const description = metadata?.description || 'A unique breed of both visual and logical design: blending the role of a creative leader and bridging the gap between engineers and designers.';
+const image = metadata?.image || 'https://danarbello.com/images/featured-image.jpeg';
 ---
 
 <head>
   <meta charset="UTF-8" />
   <title>{title}</title>
-  <meta content={description} name="description">
-  <meta content={title} property="og:title">
-  <meta content={description} property="og:description">
-  <meta property="og:type" content="website">
+  <meta content={description} name="description" />
+  <meta content={title} property="og:title" />
+  <meta content={description} property="og:description" />
+  <meta content={image} property="og:image" />
+  <meta property="og:type" content="website" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
   <!-- <link rel="dns-prefetch" href="https://www.googletagmanager.com/"> -->

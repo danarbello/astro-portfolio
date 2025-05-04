@@ -1,0 +1,23 @@
+---
+import Basic from '../../layouts/Basic.astro';
+import '../../styles/patterns.css';
+import { Image } from 'astro:assets';
+import imageInline01 from '../../assets/images/inline__aerospace_metabylines.gif';
+import imageInline02 from '../../assets/images/inline__aerospace_metateasers.gif';
+
+const metadata = {
+  title: 'Tang Museum',
+  description: 'TK Description',
+  image: '/images/fragments/featured-images/tang-museum.jpeg',
+};
+---
+
+<Basic {metadata}>
+  <section class="case-study">
+    <div class="container">
+      <p class="eyebrow small--extra">Fragment</p>
+      <h1 class="largest">{metadata.title}</h1>
+      <p class="large">{metadata.title}</p>
+    </div>
+  </section>
+</Basic>

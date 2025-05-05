@@ -133,3 +133,10 @@ section.compact {
 section.case-study {
   border-top: none;
 }
+
+code {
+  background-color: var(--color-grey-faded);
+  color: var(--color-active);
+  padding: .2em .4em;
+  border-radius: .2em;
+}

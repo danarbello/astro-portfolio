@@ -13,7 +13,16 @@ const description = metadata?.description || "A unique breed of both visual and 
   <meta property="og:type" content="website">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
-  <!-- <link rel="dns-prefetch" href="https://www.googletagmanager.com/"> -->
-  <!-- <link href="https://www.googletagmanager.com/gtag/js?id=G-TNKRYXST33" rel="preload" as="script"> -->
-  <!-- <link href="styles/gtag.js" rel="preload" as="script"> -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="https://danarbello.matomo.cloud/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '1']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src='https://cdn.matomo.cloud/danarbello.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
 </head>

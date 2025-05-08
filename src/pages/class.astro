@@ -18,92 +18,95 @@ import classImage7 from '../assets/images/class/w3c.svg';
       <p class="eyebrow small--extra">Introduction to Designing and Building for Web</p>
       <h1 class="largest">Resources, references, and assets</h1>
       <p>For questions or assistance, please email me at <a href="mailto:daniearbello@gmail.com">danielarbello@gmail.com</a>.</p>
+
       <details open>
         <summary class="medium">Day 5~14 • 6 May and onward</summary>
         <hr class="light">
         <h2>Lab: Continue to work through DoLs with Dan as support.</h2>
-        <p>Students should have their groups already planned and/or project objective already set.</p>
-        <p>We'll spend most of this day doing tech/platform stack setup no matter the stack being used.</p>
-        <h3>Resources</h3>
+
+        <h3>Paths to take</h3>
         <ul>
-          <li>
-            If you are using Webflow or Bubble you can skip all the steps below.
-            <ul>
-              <li>Simply go to either sign up pages for the above and create an account.</li>
-            </ul>
-          </li>
-          <li>
-            <strong>Create a GitHub account</strong>
-            <ul>
-              <li>Using a personal email address go to <a href="https://github.com/signup" target="_blank">github.com/signup</a> and create an account.</li>
-              <li>⚠️ Be mindful of the username, this may travel with you into your future career.</li>
-            </ul>
-          </li>
-          <li>
-            <strong>Setup Package Installation Manager</strong>
-            <ul>
-              <li><strong>macOS:</strong> Open "Terminal" and paste in this command → <code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code></li>
-              <li><strong>Windows:</strong> Already has a package installation manager.</li>
-            </ul>
-          </li>
-          <li>
-            <strong>Install Packages</strong>
-            <ul>
-              <li>
-                <strong>Install Warp:</strong> Instead of using Terminal you can use a smooth and more helpful tool.
-                <ul>
-                  <li>macOS: <code>brew install --cask warp</code></li>
-                  <li>Windows: <code>winget install Warp.Warp</code></li>
-                </ul>
-              </li>
-              <li><strong>Install Node.js:</strong> Go to <a href="https://nodejs.org/en/download/" target="_blank">nodejs.org/en/download</a> and download the latest version for your OS.</li>
-            </ul>
-          </li>
-          <li>
-            <strong>Install Astro.js</strong>
-            <ul>
-              <li>Find a safe space to work in your device's working directory. For Macs that will likely be <code>Macintosh HD/Users/YOUR-USERNAME/</code>. I suggest making a folder here called <code>Sites</code> or similar (i.e., <code>Macintosh HD/Users/YOUR-USERNAME/Sites</code>).</li>
-              <li>Open Warp and navigate to your working directory using the <code>cd</code> command. For example, if you made a folder called <code>Sites</code> you would type <code>cd Sites</code>. (Your shell always boots up in this <code>/Users/YOUR-USERNAME/</code> directory.)</li>
-              <li>
-                <strong>Create a code respository</strong>
-                <ul>
-                  <li>Go to your GitHub dashboard</li>
-                  <li>Click on "Repositories"</li>
-                  <li>Click on the green "New" button</li>
-                  <li>Set yourself as owner</li>
-                  <li>Give your code repo a name</li>
-                  <li>Scroll down and click "Create repository"</li>
-                  <li>Copy the code that looks like this <code>git@github.com:danarbello/test.git</code></li>
-                </ul>
-              </li>
-              <li>Follow the "…or push an existing repository from the command line" directions and enter each command in Warp</li>
-              <li>Once completed, you can begin adding code to your code repo.</li>
-              <li>
-                Let's create our first branch and setup Astro!
-                <ul>
-                  <li>Make sure you are in your repo's directory (ask Dan).</li>
-                  <li>In Warp, enter <code>git checkout -b BRANCH-NAME</code> (replace "BRANCH-NAME" with your branch name like <code>git checkout -b install-astro</code>)</li>
-                  <li>Enter <code>npm create astro@latest</code></li>
-                  <li>While it loads let's open up <a href="https://docs.astro.build/en/install-and-setup/#install-from-the-cli-wizard" target="_blank">the Astro docs</a></li>
-                  <li>The rest of this is like reading a recipe. Follow every appropriate step carefully and you'll have a yummy cake in the end.</li>
-                </ul>
-              </li>
-              <li>
-                <strong>Setup Vercel</strong>
-                <ul>
-                  <li>Go to <a href="https://vercel.com/signup" target="_blank">vercel.com/signup</a> and create an account.</li>
-                  <li>Once logged in, click on the "New Project" button.</li>
-                  <li>Click on the "Import Git Repository" button.</li>
-                  <li>Click on the "Continue with GitHub" button.</li>
-                  <li>Click on the "Import" button next to your code repo.</li>
-                  <li>Click on the "Deploy" button.</li>
-                  <li>Once deployed, click on the "Visit" button to see your site live!</li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li>Review "the shell" (Brew, Warp, and Node), GitHub (code repository), Astro (static site framework), and Vercel (virtual hosting).</li>
+          <li>Use <strong>Webflow</strong> for a limiting but no-code experience.</li>
+          <li>Use <strong>Neocities</strong> for a slightly more unlimited experience but you have to write code and repeat yourself.</li>
+          <li>Use <strong>Astro.js</strong> to build a website using modern processes. This afford unlimited options and features but is a full code experience.</li>
         </ul>
+
+        <details>
+          <summary class="medium">Writing code without Neocities</summary>
+          <ul>
+            <li>
+              <strong>Create a GitHub account</strong>
+              <ul>
+                <li>Using a personal email address go to <a href="https://github.com/signup" target="_blank">github.com/signup</a> and create an account.</li>
+                <li>⚠️ Be mindful of the username, this may travel with you into your future career.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Setup Package Installation Manager</strong>
+              <ul>
+                <li><strong>macOS:</strong> Open "Terminal" and paste in this command → <code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code></li>
+                <li><strong>Windows:</strong> Already has a package installation manager.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Install Packages</strong>
+              <ul>
+                <li>
+                  <strong>Install Warp:</strong> Instead of using Terminal you can use a smooth and more helpful tool.
+                  <ul>
+                    <li>macOS: <code>brew install --cask warp</code></li>
+                    <li>Windows: <code>winget install Warp.Warp</code></li>
+                  </ul>
+                </li>
+                <li><strong>Install Node.js:</strong> Go to <a href="https://nodejs.org/en/download/" target="_blank">nodejs.org/en/download</a> and download the latest version for your OS.</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Install Astro.js</strong>
+              <ul>
+                <li>Find a safe space to work in your device's working directory. For Macs that will likely be <code>Macintosh HD/Users/YOUR-USERNAME/</code>. I suggest making a folder here called <code>Sites</code> or similar (i.e., <code>Macintosh HD/Users/YOUR-USERNAME/Sites</code>).</li>
+                <li>Open Warp and navigate to your working directory using the <code>cd</code> command. For example, if you made a folder called <code>Sites</code> you would type <code>cd Sites</code>. (Your shell always boots up in this <code>/Users/YOUR-USERNAME/</code> directory.)</li>
+                <li>
+                  <strong>Create a code respository</strong>
+                  <ul>
+                    <li>Go to your GitHub dashboard</li>
+                    <li>Click on "Repositories"</li>
+                    <li>Click on the green "New" button</li>
+                    <li>Set yourself as owner</li>
+                    <li>Give your code repo a name</li>
+                    <li>Scroll down and click "Create repository"</li>
+                    <li>Copy the code that looks like this <code>git@github.com:danarbello/test.git</code></li>
+                  </ul>
+                </li>
+                <li>Follow the "…or push an existing repository from the command line" directions and enter each command in Warp</li>
+                <li>Once completed, you can begin adding code to your code repo.</li>
+                <li>
+                  Let's create our first branch and setup Astro!
+                  <ul>
+                    <li>Make sure you are in your repo's directory (ask Dan).</li>
+                    <li>In Warp, enter <code>git checkout -b BRANCH-NAME</code> (replace "BRANCH-NAME" with your branch name like <code>git checkout -b install-astro</code>)</li>
+                    <li>Enter <code>npm create astro@latest</code></li>
+                    <li>While it loads let's open up <a href="https://docs.astro.build/en/install-and-setup/#install-from-the-cli-wizard" target="_blank">the Astro docs</a></li>
+                    <li>The rest of this is like reading a recipe. Follow every appropriate step carefully and you'll have a yummy cake in the end.</li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>Setup Vercel</strong>
+                  <ul>
+                    <li>Go to <a href="https://vercel.com/signup" target="_blank">vercel.com/signup</a> and create an account.</li>
+                    <li>Once logged in, click on the "New Project" button.</li>
+                    <li>Click on the "Import Git Repository" button.</li>
+                    <li>Click on the "Continue with GitHub" button.</li>
+                    <li>Click on the "Import" button next to your code repo.</li>
+                    <li>Click on the "Deploy" button.</li>
+                    <li>Once deployed, click on the "Visit" button to see your site live!</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Review "the shell" (Brew, Warp, and Node), GitHub (code repository), Astro (static site framework), and Vercel (virtual hosting).</li>
+          </ul>
+        </details>
       </details>
 
       <details>

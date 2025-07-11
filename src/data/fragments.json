@@ -8,20 +8,24 @@
     "description": "Content Strategy, UX/UI Design",
     "images": [
       {
-        "src": "../assets/images/fragments/basf-01.jpg",
+        "src": "images/fragments/basf-01.jpg",
         "alt": "BASF Catamold app screenshot"
       },
       {
-        "src": "../assets/images/fragments/basf-02.jpg",
+        "src": "images/fragments/basf-02.jpg",
         "alt": "BASF Catamold app screenshot"
       },
       {
-        "src": "../assets/images/fragments/basf-03.jpg",
+        "src": "images/fragments/basf-03.jpg",
         "alt": "BASF Catamold app screenshot"
       },
       {
-        "src": "../assets/images/fragments/basf-04.jpg",
+        "src": "images/fragments/basf-04.jpg",
         "alt": "BASF Catamold app icon"
+      },
+      {
+        "src": "images/fragments/basf-05.jpg",
+        "alt": "BASF Catamold app animation still"
       }
     ]
   },
@@ -33,8 +37,20 @@
     "description": "Infographics, Layout, Production",
     "images": [
       {
-        "src": "../assets/images/fragments/ets-01.jpg",
-        "alt": "Spread of ETS Highlights booklet"
+        "src": "images/fragments/ets-01.jpg",
+        "alt": "Excerpted page from ETS Highlights booklet"
+      },
+      {
+        "src": "images/fragments/ets-02.jpg",
+        "alt": "Excerpted page from ETS Highlights booklet"
+      },
+      {
+        "src": "images/fragments/ets-03.jpg",
+        "alt": "Excerpted page from ETS Highlights booklet"
+      },
+      {
+        "src": "images/fragments/ets-04.jpg",
+        "alt": "Excerpted page from ETS Highlights booklet"
       }
     ]
   }

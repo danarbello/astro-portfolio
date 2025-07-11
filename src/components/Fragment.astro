@@ -9,17 +9,70 @@ export interface Props {
   images?: Array<{ src: string; alt: string }>;
 }
 
-const { name, type, year, agency, client, description } = Astro.props;
+const { name, type, year, agency, client, description, images } = Astro.props;
+
+import '../styles/modifiers.css';
 ---
 
 <div class="fragment">
-  {name}
-  {type}
-  {year}
-  {agency}
-  {client}
-  {description}
-  {Astro.props.images && Astro.props.images.map((image) => (
-    <img src={image.src} alt={image.alt} loading="lazy" />
-  ))}
+  <dialog class="fragment__dialog">
+    <button class="fragment__dialog-close bold" aria-label="Close dialog">✕</button>
+    <div class="fragment__info">
+      <ul class="uppercase smallest">
+        <li>{type}</li>
+        <li>{year}</li>
+        {agency && (
+          <li>{agency}</li>
+        )}
+        {client && (
+          <li>{client}</li>
+        )}
+      </ul>
+      {description && (
+        <p class="small--extra">{description}</p>
+      )}
+    </div>
+    <div class="fragment__slider">
+      {images && images.map((image) => (
+        <img src={image.src} alt={image.alt} loading="lazy" />
+      ))}
+    </div>
+  </dialog>
+  <div class="fragment__button">
+    <span class="smaller bold">{name}</span>
+    {images && images.length > 0 && (
+      <img src={images[0].src} alt={images[0].alt} loading="lazy" />
+    )}
+  </div>
 </div>
+
+<script>
+  let element = document.querySelectorAll('.fragment');
+
+  element.forEach(e => {
+    const elementTrigger = e.querySelector('.fragment__button');
+    const elementDialog = e.querySelector('.fragment__dialog');
+    const elementDialogTrigger = e.querySelector('.fragment__dialog-close');
+    const body = document.querySelector('body');
+
+    elementTrigger.addEventListener('click', (event) => {
+      event.stopPropagation();
+      elementDialog.setAttribute('open', '');
+    })
+
+    elementDialogTrigger.addEventListener('click', (event) => {
+      event.stopPropagation();
+      elementDialog.removeAttribute('open');
+    })
+
+    elementDialog.addEventListener('click', (event) => {
+      event.stopPropagation();
+    });
+
+    body.addEventListener('click', (event) => {
+      if (!elementDialog.contains(event.target as Node)) {
+        elementDialog.removeAttribute('open');
+      }
+    });
+  })
+</script>

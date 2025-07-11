@@ -1,0 +1,25 @@
+---
+export interface Props {
+  name: string;
+  type: string;
+  year: string;
+  agency?: string;
+  client?: string;
+  description?: string;
+  images?: Array<{ src: string; alt: string }>;
+}
+
+const { name, type, year, agency, client, description } = Astro.props;
+---
+
+<div class="fragment">
+  {name}
+  {type}
+  {year}
+  {agency}
+  {client}
+  {description}
+  {Astro.props.images && Astro.props.images.map((image) => (
+    <img src={image.src} alt={image.alt} loading="lazy" />
+  ))}
+</div>

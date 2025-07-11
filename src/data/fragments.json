@@ -1,0 +1,41 @@
+[
+  {
+    "name": "BASF Catamold app",
+    "type": "app",
+    "year": "2012",
+    "agency": "3PC Media",
+    "client": "BASF",
+    "description": "Content Strategy, UX/UI Design",
+    "images": [
+      {
+        "src": "../assets/images/fragments/basf-01.jpg",
+        "alt": "BASF Catamold app screenshot"
+      },
+      {
+        "src": "../assets/images/fragments/basf-02.jpg",
+        "alt": "BASF Catamold app screenshot"
+      },
+      {
+        "src": "../assets/images/fragments/basf-03.jpg",
+        "alt": "BASF Catamold app screenshot"
+      },
+      {
+        "src": "../assets/images/fragments/basf-04.jpg",
+        "alt": "BASF Catamold app icon"
+      }
+    ]
+  },
+  {
+    "name": "ETS Highlights booklet",
+    "type": "print",
+    "year": "2011",
+    "agency": "Levine & Assoc",
+    "description": "Infographics, Layout, Production",
+    "images": [
+      {
+        "src": "../assets/images/fragments/ets-01.jpg",
+        "alt": "Spread of ETS Highlights booklet"
+      }
+    ]
+  }
+]

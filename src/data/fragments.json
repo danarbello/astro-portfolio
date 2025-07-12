@@ -2,7 +2,7 @@
   {
     "name": "BASF Catamold app",
     "type": "app",
-    "year": "2012",
+    "year": 2012,
     "agency": "3PC Media",
     "client": "BASF",
     "description": "Content Strategy, UX/UI Design",
@@ -32,7 +32,7 @@
   {
     "name": "ETS Highlights booklet",
     "type": "print",
-    "year": "2011",
+    "year": 2011,
     "agency": "Levine & Assoc",
     "description": "Infographics, Layout, Production",
     "images": [
@@ -53,5 +53,235 @@
         "alt": "Excerpted page from ETS Highlights booklet"
       }
     ]
+  },
+  {
+    "name": "Communities in Schools",
+    "type": "ad campaign",
+    "year": 2012,
+    "agency": "Levine & Assoc",
+    "description": "Communities in School is a network of education professionals striving to match students up with community support and empowerment in order to keep them in school and on track. I hand-lettered epic names for the second-round advertising campaign highlighting a few of our nation's superheroes.",
+    "images": ["tk"]
+  },
+  {
+    "name": "ATCC",
+    "type": "branding",
+    "year": 2013,
+    "agency": "3PC Media",
+    "industry": "non-profit",
+    "description": ["art direction", "copywriting", "design"],
+    "images": ["tk"]
+  },
+  {
+    "name": "LANXESS",
+    "type": "ios app",
+    "year": 2012,
+    "agency": "3PC Media",
+    "industry": "chemical",
+    "description": "Headed the ideation of an app that would help spread information about what Lanxess does, offers, and their dedication to encouraging science interest and education for all ages.",
+    "images": ["5 full page screenshots", "App icon"]
+  },
+  {
+    "name": "Solid State Soul",
+    "type": "branding",
+    "year": 2013,
+    "industry": "music",
+    "description": ["brand design", "marketing design", "production"],
+    "images": ["logo", "flyers", "posters"]
+  },
+  {
+    "name": "Jah's Creation",
+    "type": "branding",
+    "year": 2015,
+    "industry": "agriculture",
+    "description": ["brand design", "marketing design"],
+    "images": ["logo", "flyer"]
+  },
+  {
+    "name": "Flora Fauna",
+    "type": "branding",
+    "year": 2015,
+    "industry": "music",
+    "description": ["illustration"],
+    "images": ["buttons"]
+  },
+  {
+    "name": "Indigofera",
+    "type": "branding",
+    "year": 2007,
+    "agency": "flat",
+    "industry": "fashion",
+    "description": ["brand design", "illustration"],
+    "images": ["Several logos and art items"]
+  },
+  {
+    "name": "Lion Brand Yarn",
+    "type": "branding",
+    "year": 2006,
+    "agency": "flat",
+    "industry": "textiles",
+    "description": ["logo optimization", "label design", "production"],
+    "images": ["labels (2)", "logo update"]
+  },
+  {
+    "name": "Carosse",
+    "type": "typography",
+    "year": 2011,
+    "description": ["font design"],
+    "images": ["tk"]
+  },
+  {
+    "name": "Television Sky",
+    "type": "typography",
+    "year": 2005,
+    "description": ["font design"],
+    "images": ["tk"]
+  },
+  {
+    "name": "BBYO",
+    "type": "branding, print, web",
+    "year": 2011,
+    "agency": "Levine & Assoc",
+    "description": "Provide a wide range of services and support for the BBYO rebranding team, including UI design for three sub-brand websites, member book designs, brochures, custom font concepts, and illustrations.",
+    "images": ["tk"]
+  },
+  {
+    "name": "Unite - Cintas strike campaign",
+    "type": "print, peripherals",
+    "year": 2006,
+    "agency": "Flat",
+    "client": "Unite Here",
+    "description": "tk",
+    "images": ["tk"]
+  },
+  {
+    "name": "To Know Wisdom and Instruction book",
+    "type": "print",
+    "year": 2012,
+    "agency": "Levine & Assoc",
+    "client": "Library of Congress",
+    "description": "This is the project every graphic designer dreams of: design a book on the history of books. With Levine's Design Manager, Monica Snelling, and Library of Congress' specialist of Armenian and Georgian works, Levon Avdoyan, we composed one of the most beautiful books I've had the pleasure of working on.",
+    "images": ["tk"]
+  },
+  {
+    "name": "9/11 Legacy Fund booklet and website",
+    "type": "print, web",
+    "year": 2006,
+    "agency": "Flat",
+    "client": "American Red Cross",
+    "description": "Five years after the devastating 9/11 attacks, America was still steeped in the aftermath of the catastrophic events: residual medical ailments, missing family members, and PTSD were just a few of the persistent problems. The American Red Cross had built the 9/11 Legacy Fund to provide assistance for the people and families affected, however most of the public was unaware of what purpose, and to what extent, it served."
+  },
+  {
+    "name": "New York Road Runners",
+    "type": "ad campaign",
+    "year": 2006,
+    "agency": "Flat"
+  },
+  {
+    "name": "SAE Digital Library",
+    "type": "web, video",
+    "year": 2012,
+    "agency": "3PC Media",
+    "client": "SAE International",
+    "description": "Designed a sharp website to accompany videos and peripherals to enhance the presence and educate the industry on the updated portal and increase of library assets available to the innovators of the engineering industry.",
+    "images": ["tk"]
+  },
+  {
+    "name": "About Japan - A Teacher's Resource",
+    "type": "website",
+    "year": 2007,
+    "agency": "Flat"
+  },
+  {
+    "name": "Bishop Ranch",
+    "type": "website",
+    "year": 2016,
+    "agency": "TAG"
+  },
+  {
+    "name": "London Plane",
+    "type": "brand",
+    "images": ["Logo", "Shirt"]
+  },
+  {
+    "name": "Nordic Reach Magazine"
+  },
+  {
+    "name": "NordicReach.com"
+  },
+  {
+    "name": "Nordstjernan Newspaper"
+  },
+  {
+    "name": "God Jul Book"
+  },
+  {
+    "name": "Tang Museum book",
+    "type": "print",
+    "year": 2007,
+    "agency": "Flat",
+    "client": "Tang Teaching Museum & Art Gallery",
+    "description": "A unique museum and art gallery, juxtaposed in the heart of Skidmore College, has been creating the next generation of curators since 2000. I helped Flat design and print an exhibition space exposé booklet for them.",
+    "images": ["tk"]
+  },
+  {
+    "name": "Renew Financial"
+  },
+  {
+    "name": "Draper Apollo"
+  },
+  {
+    "name": "Draper.com"
+  },
+  {
+    "name": "Allen Linder website"
+  },
+  {
+    "name": "Bernard Caniffe website"
+  },
+  {
+    "name": "Pernod Ricard",
+    "prototypes": ["Webflow Prototype"]
+  },
+  {
+    "name": "Quicken",
+    "prototypes": ["Webflow Prototype"]
+  },
+  {
+    "name": "Waterchain",
+    "prototypes": ["Webflow Prototype"]
+  },
+  {
+    "name": "LiteracyPro",
+    "prototypes": ["Webflow Prototype"]
+  },
+  {
+    "name": "Velocity Mortgage",
+    "prototypes": ["Webflow Prototype"]
+  },
+  {
+    "name": "TPG",
+    "type": "web",
+    "year": 2016,
+    "agency": "Third & Grove",
+    "client": "TPG Capital",
+    "description": "tk",
+    "images": ["tk"],
+    "prototypes": ["tk"]
+  },
+  {
+    "name": "Quorum Consulting",
+    "prototypes": ["Webflow Prototype"]
+  },
+  {
+    "name": "Coupa",
+    "prototypes": ["Webflow Prototype"]
+  },
+  {
+    "name": "MRKS",
+    "prototypes": ["Webflow Prototype", "MarketServ?"]
+  },
+  {
+    "name": "WVI",
+    "prototypes": ["Webflow Prototype"]
   }
 ]

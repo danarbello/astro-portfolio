@@ -126,6 +126,10 @@
   font-size: .6rem;
   letter-spacing: .02em;
 }
+.smallest {
+  font-size: .55rem;
+  letter-spacing: .03em;
+}
 
 /* Typography Weights */
 .black {
@@ -139,4 +143,9 @@
 }
 .regular {
   font-weight: var(--font-weight-regular);
+}
+
+/* Typography Modifiers */
+.uppercase {
+  text-transform: uppercase;
 }

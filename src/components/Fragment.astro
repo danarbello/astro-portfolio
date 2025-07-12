@@ -15,29 +15,36 @@ import '../styles/modifiers.css';
 ---
 
 <div class="fragment">
+  {/* dialong inner wrapper */}
   <dialog class="fragment__dialog">
+    {/* dialog close button */}
     <button class="fragment__dialog-close bold" aria-label="Close dialog">✕</button>
-    <div class="fragment__info">
-      <ul class="uppercase smallest">
-        <li>{type}</li>
-        <li>{year}</li>
-        {agency && (
-          <li>{agency}</li>
-        )}
-        {client && (
-          <li>{client}</li>
-        )}
-      </ul>
-      {description && (
-        <p class="small--extra">{description}</p>
-      )}
-    </div>
+    {/* fragment contents */}
     <div class="fragment__slider">
+      {/* fragment intro */}
+      <div class="fragment__slider-intro">
+        <h2 class="small">{name}</h2>
+        <ul class="uppercase smallest">
+          <li>{type}</li>
+          <li>{year}</li>
+          {agency && (
+            <li>{agency}</li>
+          )}
+          {client && (
+            <li>{client}</li>
+          )}
+        </ul>
+        {description && (
+          <p class="small--extra">{description}</p>
+        )}
+      </div>
+      {/* fragment images */}
       {images && images.map((image) => (
         <img src={image.src} alt={image.alt} loading="lazy" />
       ))}
     </div>
   </dialog>
+  {/* fragment card/button */}
   <div class="fragment__button">
     <span class="smaller bold">{name}</span>
     {images && images.length > 0 && (
@@ -46,6 +53,7 @@ import '../styles/modifiers.css';
   </div>
 </div>
 
+{/* script to handle dialog opening/closing */}
 <script>
   let element = document.querySelectorAll('.fragment');
 

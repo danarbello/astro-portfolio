@@ -1,0 +1,427 @@
+[
+  {
+    "name": "BASF Catamold app",
+    "type": "app",
+    "year": 2012,
+    "agency": "3PC Media",
+    "client": "BASF",
+    "description": "Content Strategy, UX/UI Design",
+    "images": [
+      {
+        "src": "images/fragments/basf-01.jpg",
+        "alt": "BASF Catamold app screenshot"
+      },
+      {
+        "src": "images/fragments/basf-02.jpg",
+        "alt": "BASF Catamold app screenshot"
+      },
+      {
+        "src": "images/fragments/basf-03.jpg",
+        "alt": "BASF Catamold app screenshot"
+      },
+      {
+        "src": "images/fragments/basf-04.png",
+        "alt": "BASF Catamold app icon"
+      },
+      {
+        "src": "images/fragments/basf-05.jpg",
+        "alt": "BASF Catamold app animation still"
+      }
+    ]
+  },
+  {
+    "name": "ETS Highlights booklet",
+    "type": "print",
+    "year": 2011,
+    "agency": "Levine & Assoc",
+    "description": "Infographics, Layout, Production",
+    "images": [
+      {
+        "src": "images/fragments/ets-01.jpg",
+        "alt": "Excerpted page from ETS Highlights booklet"
+      },
+      {
+        "src": "images/fragments/ets-02.jpg",
+        "alt": "Excerpted page from ETS Highlights booklet"
+      },
+      {
+        "src": "images/fragments/ets-03.jpg",
+        "alt": "Excerpted page from ETS Highlights booklet"
+      },
+      {
+        "src": "images/fragments/ets-04.jpg",
+        "alt": "Excerpted page from ETS Highlights booklet"
+      }
+    ]
+  },
+  {
+    "name": "Communities in Schools lettering",
+    "type": "ad campaign",
+    "year": 2012,
+    "agency": "Levine & Assoc",
+    "description": "Communities in School is a network of education professionals striving to match students up with community support and empowerment in order to keep them in school and on track. I hand-lettered epic names for the second-round advertising campaign highlighting a few of our nation's superheroes.",
+    "images": ["tk"]
+  },
+  {
+    "name": "ATCC ad campaign",
+    "type": "ad campaign",
+    "year": 2013,
+    "agency": "3PC Media",
+    "description": "Art Direction, Copywriting, Design",
+    "images": [
+      {
+        "src": "images/fragments/atcc-01.webp",
+        "alt": "ATCC one-page insert ad"
+      },
+      {
+        "src": "images/fragments/atcc-02.webp",
+        "alt": "ATCC one-page insert ad"
+      },
+      {
+        "src": "images/fragments/atcc-03.webp",
+        "alt": "ATCC one-page insert ad"
+      },
+      {
+        "src": "images/fragments/atcc-04.webp",
+        "alt": "ATCC tote bag design"
+      },
+      {
+        "src": "images/fragments/atcc-05.webp",
+        "alt": "ATCC Facebook page screenshot"
+      },
+      {
+        "src": "images/fragments/atcc-06.webp",
+        "alt": "ATCC sub-branding logos"
+      }
+    ]
+  },
+  {
+    "name": "LANXESS ideation",
+    "type": "ios app",
+    "year": 2012,
+    "agency": "3PC Media",
+    "description": "Headed the ideation of an app that would help spread information about what Lanxess does, offers, and their dedication to encouraging science interest and education for all ages.",
+    "images": ["5 full page screenshots", "App icon"]
+  },
+  {
+    "name": "Solid State Soul branding",
+    "type": "branding",
+    "year": 2013,
+    "description": "Brand Design, Marketing/Social Design, Production",
+    "images": ["logo", "flyers", "posters"]
+  },
+  {
+    "name": "Jah's Creation branding",
+    "type": "branding",
+    "year": 2015,
+    "description": "Brand Design, Marketing/Social Design",
+    "images": ["logo", "flyer"]
+  },
+  {
+    "name": "Flora Fauna merch",
+    "type": "branding",
+    "year": 2015,
+    "description": "Logo Design, Merch Design, Illustration",
+    "images": [
+      {
+        "src": "images/fragments/flora-fauna-01.webp",
+        "alt": "Flora Fauna merch design"
+      },
+      {
+        "src": "images/fragments/flora-fauna-02.webp",
+        "alt": "Flora Fauna merch design"
+      }
+    ]
+  },
+  {
+    "name": "Indigofera branding",
+    "type": "branding",
+    "year": 2007,
+    "agency": "flat",
+    "industry": "fashion",
+    "description": "Brand Design, Illustration, Research",
+    "images": ["Several logos and art items"]
+  },
+  {
+    "name": "Lion Brand Yarn labels",
+    "type": "packaging",
+    "year": 2006,
+    "agency": "flat",
+    "client": "Lion Brand Yarn",
+    "description": "Logo Optimization, Packaging Design, Production",
+    "images": ["labels (2)", "logo update"]
+  },
+  {
+    "name": "Carosse font",
+    "type": "typography",
+    "year": 2011,
+    "description": "Font Design",
+    "images": ["tk"]
+  },
+  {
+    "name": "Television Sky font",
+    "type": "typography",
+    "year": 2005,
+    "description": "Font Design",
+    "images": ["tk"]
+  },
+  {
+    "name": "BBYO branding",
+    "type": "branding, print, web",
+    "year": 2011,
+    "agency": "Levine & Assoc",
+    "client": "BBYO",
+    "description": "Provide a wide range of services and support for the BBYO rebranding team, including UI design for three sub-brand websites, member book designs, brochures, custom font concepts, and illustrations.",
+    "images": ["tk"]
+  },
+  {
+    "name": "UNITE Cintas strike campaign",
+    "type": "branding",
+    "year": 2006,
+    "agency": "Flat",
+    "client": "UNITE HERE!",
+    "description": "Art Direction, Design, Production",
+    "images": ["tk"]
+  },
+  {
+    "name": "To Know Wisdom and Instruction book",
+    "type": "print",
+    "year": 2012,
+    "agency": "Levine & Assoc",
+    "client": "Library of Congress",
+    "description": "This is the project every graphic designer dreams of: design a book on the history of books. With Levine's Design Manager, Monica Snelling, and Library of Congress' specialist of Armenian and Georgian works, Levon Avdoyan, we composed one of the most beautiful books I've had the pleasure of working on.",
+    "images": ["tk"]
+  },
+  {
+    "name": "9/11 Legacy Fund booklet and website",
+    "type": "print, web",
+    "year": 2006,
+    "agency": "Flat",
+    "client": "American Red Cross",
+    "description": "Five years after the devastating 9/11 attacks, America was still steeped in the aftermath of the catastrophic events: residual medical ailments, missing family members, and PTSD were just a few of the persistent problems. The American Red Cross had built the 9/11 Legacy Fund to provide assistance for the people and families affected, however most of the public was unaware of what purpose, and to what extent, it served.",
+    "images": [
+      {
+        "src": "images/fragments/red-cross-01.webp",
+        "alt": "9/11 Legacy Fund booklet cover"
+      },
+      {
+        "src": "images/fragments/red-cross-02.webp",
+        "alt": "9/11 Legacy Fund booklet page"
+      },
+      {
+        "src": "images/fragments/red-cross-03.webp",
+        "alt": "9/11 Legacy Fund booklet page"
+      },
+      {
+        "src": "images/fragments/red-cross-04.webp",
+        "alt": "9/11 Legacy Fund website screenshot"
+      },
+      {
+        "src": "images/fragments/red-cross-05.webp",
+        "alt": "9/11 Legacy Fund website screenshot"
+      },
+      {
+        "src": "images/fragments/red-cross-06.webp",
+        "alt": "9/11 Legacy Fund website screenshot"
+      }
+    ]
+  },
+  {
+    "name": "New York Road Runners ad campaigns",
+    "type": "ad campaign",
+    "year": 2006,
+    "agency": "Flat",
+    "client": "New York Road Runners",
+    "description": "Art Direction, Copywriting, Design, Production",
+    "images": ["tk"]
+  },
+  {
+    "name": "SAE Digital Library websites",
+    "type": "web, video",
+    "year": 2012,
+    "agency": "3PC Media",
+    "client": "SAE International",
+    "description": "Designed a sharp website to accompany videos and peripherals to enhance the presence and educate the industry on the updated portal and increase of library assets available to the innovators of the engineering industry.",
+    "images": ["tk"]
+  },
+  {
+    "name": "About Japan website",
+    "type": "website",
+    "year": 2007,
+    "agency": "Flat",
+    "client": "Japan Society",
+    "description": "Japan Society is a non-profit organization dedicated to the promotion of cultural and educational exchange between the United States and Japan. I helped Flat design and build a website to promote their teacher resources and educational materials portal.",
+    "images": ["tk"]
+  },
+  {
+    "name": "Bishop Ranch website",
+    "type": "website",
+    "year": 2016,
+    "agency": "Third & Grove",
+    "client": "Bishop Ranch",
+    "description": "UX/UI Design",
+    "images": [
+      {
+        "src": "images/fragments/bishop-ranch-01.webp",
+        "alt": "Screenshot of Bishop Ranch website"
+      },
+      {
+        "src": "images/fragments/bishop-ranch-02.webp",
+        "alt": "Screenshot of Bishop Ranch website"
+      }
+    ]
+  },
+  {
+    "name": "London Plane branding",
+    "type": "branding",
+    "year": 2024,
+    "description": "Logo design for merch and other peripehrals.",
+    "images": [
+      {
+        "src": "images/fragments/london-plane-01.webp",
+        "alt": "London Plane tee laying flat on yellow-to-teal gradient rug"
+      },
+      {
+        "src": "images/fragments/london-plane-02.svg",
+        "alt": "London Plane logotype in black and white"
+      },
+      {
+        "src": "images/fragments/london-plane-03.svg",
+        "alt": "London Plane logomark in black and white"
+      }
+    ]
+  },
+  {
+    "name": "Tang Museum booklet",
+    "type": "print",
+    "year": 2007,
+    "agency": "Flat",
+    "client": "Tang Teaching Museum & Art Gallery",
+    "description": "A unique museum and art gallery, juxtaposed in the heart of Skidmore College, has been creating the next generation of curators since 2000. I helped Flat design and print an exhibition space exposé booklet for them.",
+    "images": ["tk"]
+  },
+  {
+    "name": "Allen Linder website",
+    "type": "website",
+    "year": 2005,
+    "description": "Design and implementation of a minimal website for a sculptor.",
+    "images": [
+      {
+        "src": "images/fragments/allen-linder-01.webp",
+        "alt": "Allen Linder website screenshot"
+      },
+      {
+        "src": "images/fragments/allen-linder-02.webp",
+        "alt": "Allen Linder website screenshot"
+      }
+    ]
+  },
+  {
+    "name": "Guardian Protection website",
+    "type": "website",
+    "year": 2018,
+    "agency": "Chemistry",
+    "client": "Guardian Protection",
+    "description": "Led the redesign of Guardian Protection's digital presence with a focus on market research, content strategy, UX/UI design, and even planning/scripting/model selection for commercial cinematography.",
+    "images": [
+      {
+        "src": "images/fragments/guardian-01.webp",
+        "alt": "Screenshot of website concept"
+      },
+      {
+        "src": "images/fragments/guardian-02.webp",
+        "alt": "Screenshot of website concept"
+      },
+      {
+        "src": "images/fragments/guardian-03.webp",
+        "alt": "Screenshot of website concept"
+      }
+    ]
+  },
+  {
+    "name": "LifeStyles website",
+    "type": "website",
+    "year": 2018,
+    "agency": "Chemistry",
+    "client": "LifeStyles Healthcare",
+    "description": "Copywriting, Content Strategy, UX/UI Design",
+    "images": [
+      {
+        "src": "images/fragments/lifestyles-01.webp",
+        "alt": "Screenshot of website concept"
+      },
+      {
+        "src": "images/fragments/lifestyles-02.webp",
+        "alt": "Screenshot of website concept"
+      }
+    ]
+  },
+  {
+    "name": "SRI website",
+    "type": "website",
+    "year": 2015,
+    "agency": "Third & Grove",
+    "client": "SRI International",
+    "description": "UI Design, Implementation Support",
+    "images": [
+      {
+        "src": "images/fragments/sri-01.webp",
+        "alt": "Screenshot of sri.com homepage"
+      }
+    ]
+  },
+  {
+    "name": "TPG Capital websites",
+    "type": "website",
+    "year": 2016,
+    "agency": "Third & Grove",
+    "client": "TPG Capital",
+    "description": "Strategy, UX/UI Design, Webflow Implementation & Support",
+    "images": [
+      {
+        "src": "images/fragments/tpg-01.webp",
+        "alt": "Screenshot of tpg.com website"
+      },
+      {
+        "src": "images/fragments/tpg-02.webp",
+        "alt": "Screenshot of tpg.com website"
+      }
+    ]
+  },
+  {
+    "name": "Pernod Ricard",
+    "prototypes": ["Webflow Prototype"]
+  },
+  {
+    "name": "Quicken",
+    "prototypes": ["Webflow Prototype"]
+  },
+  {
+    "name": "Waterchain",
+    "prototypes": ["Webflow Prototype"]
+  },
+  {
+    "name": "LiteracyPro",
+    "prototypes": ["Webflow Prototype"]
+  },
+  {
+    "name": "Velocity Mortgage",
+    "prototypes": ["Webflow Prototype"]
+  },
+  {
+    "name": "Quorum Consulting",
+    "prototypes": ["Webflow Prototype"]
+  },
+  {
+    "name": "Coupa",
+    "prototypes": ["Webflow Prototype"]
+  },
+  {
+    "name": "MRKS",
+    "prototypes": ["Webflow Prototype", "MarketServ?"]
+  },
+  {
+    "name": "WVI",
+    "prototypes": ["Webflow Prototype"]
+  }
+]

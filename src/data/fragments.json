@@ -55,7 +55,7 @@
     ]
   },
   {
-    "name": "Communities in Schools",
+    "name": "Communities in Schools lettering",
     "type": "ad campaign",
     "year": 2012,
     "agency": "Levine & Assoc",
@@ -63,94 +63,124 @@
     "images": ["tk"]
   },
   {
-    "name": "ATCC",
-    "type": "branding",
+    "name": "ATCC ad campaign",
+    "type": "ad campaign",
     "year": 2013,
     "agency": "3PC Media",
-    "industry": "non-profit",
-    "description": ["art direction", "copywriting", "design"],
-    "images": ["tk"]
+    "description": "Art Direction, Copywriting, Design",
+    "images": [
+      {
+        "src": "images/fragments/atcc-01.webp",
+        "alt": "ATCC one-page insert ad"
+      },
+      {
+        "src": "images/fragments/atcc-02.webp",
+        "alt": "ATCC one-page insert ad"
+      },
+      {
+        "src": "images/fragments/atcc-03.webp",
+        "alt": "ATCC one-page insert ad"
+      },
+      {
+        "src": "images/fragments/atcc-04.webp",
+        "alt": "ATCC tote bag design"
+      },
+      {
+        "src": "images/fragments/atcc-05.webp",
+        "alt": "ATCC Facebook page screenshot"
+      },
+      {
+        "src": "images/fragments/atcc-06.webp",
+        "alt": "ATCC sub-branding logos"
+      }
+    ]
   },
   {
-    "name": "LANXESS",
+    "name": "LANXESS ideation",
     "type": "ios app",
     "year": 2012,
     "agency": "3PC Media",
-    "industry": "chemical",
     "description": "Headed the ideation of an app that would help spread information about what Lanxess does, offers, and their dedication to encouraging science interest and education for all ages.",
     "images": ["5 full page screenshots", "App icon"]
   },
   {
-    "name": "Solid State Soul",
+    "name": "Solid State Soul branding",
     "type": "branding",
     "year": 2013,
-    "industry": "music",
-    "description": ["brand design", "marketing design", "production"],
+    "description": "Brand Design, Marketing/Social Design, Production",
     "images": ["logo", "flyers", "posters"]
   },
   {
-    "name": "Jah's Creation",
+    "name": "Jah's Creation branding",
     "type": "branding",
     "year": 2015,
-    "industry": "agriculture",
-    "description": ["brand design", "marketing design"],
+    "description": "Brand Design, Marketing/Social Design",
     "images": ["logo", "flyer"]
   },
   {
-    "name": "Flora Fauna",
+    "name": "Flora Fauna merch",
     "type": "branding",
     "year": 2015,
-    "industry": "music",
-    "description": ["illustration"],
-    "images": ["buttons"]
+    "description": "Logo Design, Merch Design, Illustration",
+    "images": [
+      {
+        "src": "images/fragments/flora-fauna-01.webp",
+        "alt": "Flora Fauna merch design"
+      },
+      {
+        "src": "images/fragments/flora-fauna-02.webp",
+        "alt": "Flora Fauna merch design"
+      }
+    ]
   },
   {
-    "name": "Indigofera",
+    "name": "Indigofera branding",
     "type": "branding",
     "year": 2007,
     "agency": "flat",
     "industry": "fashion",
-    "description": ["brand design", "illustration"],
+    "description": "Brand Design, Illustration, Research",
     "images": ["Several logos and art items"]
   },
   {
-    "name": "Lion Brand Yarn",
-    "type": "branding",
+    "name": "Lion Brand Yarn labels",
+    "type": "packaging",
     "year": 2006,
     "agency": "flat",
-    "industry": "textiles",
-    "description": ["logo optimization", "label design", "production"],
+    "client": "Lion Brand Yarn",
+    "description": "Logo Optimization, Packaging Design, Production",
     "images": ["labels (2)", "logo update"]
   },
   {
-    "name": "Carosse",
+    "name": "Carosse font",
     "type": "typography",
     "year": 2011,
-    "description": ["font design"],
+    "description": "Font Design",
     "images": ["tk"]
   },
   {
-    "name": "Television Sky",
+    "name": "Television Sky font",
     "type": "typography",
     "year": 2005,
-    "description": ["font design"],
+    "description": "Font Design",
     "images": ["tk"]
   },
   {
-    "name": "BBYO",
+    "name": "BBYO branding",
     "type": "branding, print, web",
     "year": 2011,
     "agency": "Levine & Assoc",
+    "client": "BBYO",
     "description": "Provide a wide range of services and support for the BBYO rebranding team, including UI design for three sub-brand websites, member book designs, brochures, custom font concepts, and illustrations.",
     "images": ["tk"]
   },
   {
-    "name": "Unite - Cintas strike campaign",
-    "type": "print, peripherals",
+    "name": "UNITE Cintas strike campaign",
+    "type": "branding",
     "year": 2006,
     "agency": "Flat",
-    "client": "Unite Here",
-    "description": "tk",
+    "client": "UNITE HERE!",
+    "description": "Art Direction, Design, Production",
     "images": ["tk"]
   },
   {
@@ -168,16 +198,45 @@
     "year": 2006,
     "agency": "Flat",
     "client": "American Red Cross",
-    "description": "Five years after the devastating 9/11 attacks, America was still steeped in the aftermath of the catastrophic events: residual medical ailments, missing family members, and PTSD were just a few of the persistent problems. The American Red Cross had built the 9/11 Legacy Fund to provide assistance for the people and families affected, however most of the public was unaware of what purpose, and to what extent, it served."
+    "description": "Five years after the devastating 9/11 attacks, America was still steeped in the aftermath of the catastrophic events: residual medical ailments, missing family members, and PTSD were just a few of the persistent problems. The American Red Cross had built the 9/11 Legacy Fund to provide assistance for the people and families affected, however most of the public was unaware of what purpose, and to what extent, it served.",
+    "images": [
+      {
+        "src": "images/fragments/red-cross-01.webp",
+        "alt": "9/11 Legacy Fund booklet cover"
+      },
+      {
+        "src": "images/fragments/red-cross-02.webp",
+        "alt": "9/11 Legacy Fund booklet page"
+      },
+      {
+        "src": "images/fragments/red-cross-03.webp",
+        "alt": "9/11 Legacy Fund booklet page"
+      },
+      {
+        "src": "images/fragments/red-cross-04.webp",
+        "alt": "9/11 Legacy Fund website screenshot"
+      },
+      {
+        "src": "images/fragments/red-cross-05.webp",
+        "alt": "9/11 Legacy Fund website screenshot"
+      },
+      {
+        "src": "images/fragments/red-cross-06.webp",
+        "alt": "9/11 Legacy Fund website screenshot"
+      }
+    ]
   },
   {
-    "name": "New York Road Runners",
+    "name": "New York Road Runners ad campaigns",
     "type": "ad campaign",
     "year": 2006,
-    "agency": "Flat"
+    "agency": "Flat",
+    "client": "New York Road Runners",
+    "description": "Art Direction, Copywriting, Design, Production",
+    "images": ["tk"]
   },
   {
-    "name": "SAE Digital Library",
+    "name": "SAE Digital Library websites",
     "type": "web, video",
     "year": 2012,
     "agency": "3PC Media",
@@ -186,36 +245,54 @@
     "images": ["tk"]
   },
   {
-    "name": "About Japan - A Teacher's Resource",
+    "name": "About Japan website",
     "type": "website",
     "year": 2007,
-    "agency": "Flat"
+    "agency": "Flat",
+    "client": "Japan Society",
+    "description": "Japan Society is a non-profit organization dedicated to the promotion of cultural and educational exchange between the United States and Japan. I helped Flat design and build a website to promote their teacher resources and educational materials portal.",
+    "images": ["tk"]
   },
   {
-    "name": "Bishop Ranch",
+    "name": "Bishop Ranch website",
     "type": "website",
     "year": 2016,
-    "agency": "TAG"
+    "agency": "Third & Grove",
+    "client": "Bishop Ranch",
+    "description": "UX/UI Design",
+    "images": [
+      {
+        "src": "images/fragments/bishop-ranch-01.webp",
+        "alt": "Screenshot of Bishop Ranch website"
+      },
+      {
+        "src": "images/fragments/bishop-ranch-02.webp",
+        "alt": "Screenshot of Bishop Ranch website"
+      }
+    ]
   },
   {
-    "name": "London Plane",
-    "type": "brand",
-    "images": ["Logo", "Shirt"]
+    "name": "London Plane branding",
+    "type": "branding",
+    "year": 2024,
+    "description": "Logo design for merch and other peripehrals.",
+    "images": [
+      {
+        "src": "images/fragments/london-plane-01.webp",
+        "alt": "London Plane tee laying flat on yellow-to-teal gradient rug"
+      },
+      {
+        "src": "images/fragments/london-plane-02.svg",
+        "alt": "London Plane logotype in black and white"
+      },
+      {
+        "src": "images/fragments/london-plane-03.svg",
+        "alt": "London Plane logomark in black and white"
+      }
+    ]
   },
   {
-    "name": "Nordic Reach Magazine"
-  },
-  {
-    "name": "NordicReach.com"
-  },
-  {
-    "name": "Nordstjernan Newspaper"
-  },
-  {
-    "name": "God Jul Book"
-  },
-  {
-    "name": "Tang Museum book",
+    "name": "Tang Museum booklet",
     "type": "print",
     "year": 2007,
     "agency": "Flat",
@@ -224,19 +301,92 @@
     "images": ["tk"]
   },
   {
-    "name": "Renew Financial"
+    "name": "Allen Linder website",
+    "type": "website",
+    "year": 2005,
+    "description": "Design and implementation of a minimal website for a sculptor.",
+    "images": [
+      {
+        "src": "images/fragments/allen-linder-01.webp",
+        "alt": "Allen Linder website screenshot"
+      },
+      {
+        "src": "images/fragments/allen-linder-02.webp",
+        "alt": "Allen Linder website screenshot"
+      }
+    ]
   },
   {
-    "name": "Draper Apollo"
+    "name": "Guardian Protection website",
+    "type": "website",
+    "year": 2018,
+    "agency": "Chemistry",
+    "client": "Guardian Protection",
+    "description": "Led the redesign of Guardian Protection's digital presence with a focus on market research, content strategy, UX/UI design, and even planning/scripting/model selection for commercial cinematography.",
+    "images": [
+      {
+        "src": "images/fragments/guardian-01.webp",
+        "alt": "Screenshot of website concept"
+      },
+      {
+        "src": "images/fragments/guardian-02.webp",
+        "alt": "Screenshot of website concept"
+      },
+      {
+        "src": "images/fragments/guardian-03.webp",
+        "alt": "Screenshot of website concept"
+      }
+    ]
   },
   {
-    "name": "Draper.com"
+    "name": "LifeStyles website",
+    "type": "website",
+    "year": 2018,
+    "agency": "Chemistry",
+    "client": "LifeStyles Healthcare",
+    "description": "Copywriting, Content Strategy, UX/UI Design",
+    "images": [
+      {
+        "src": "images/fragments/lifestyles-01.webp",
+        "alt": "Screenshot of website concept"
+      },
+      {
+        "src": "images/fragments/lifestyles-02.webp",
+        "alt": "Screenshot of website concept"
+      }
+    ]
   },
   {
-    "name": "Allen Linder website"
+    "name": "SRI website",
+    "type": "website",
+    "year": 2015,
+    "agency": "Third & Grove",
+    "client": "SRI International",
+    "description": "UI Design, Implementation Support",
+    "images": [
+      {
+        "src": "images/fragments/sri-01.webp",
+        "alt": "Screenshot of sri.com homepage"
+      }
+    ]
   },
   {
-    "name": "Bernard Caniffe website"
+    "name": "TPG Capital websites",
+    "type": "website",
+    "year": 2016,
+    "agency": "Third & Grove",
+    "client": "TPG Capital",
+    "description": "Strategy, UX/UI Design, Webflow Implementation & Support",
+    "images": [
+      {
+        "src": "images/fragments/tpg-01.webp",
+        "alt": "Screenshot of tpg.com website"
+      },
+      {
+        "src": "images/fragments/tpg-02.webp",
+        "alt": "Screenshot of tpg.com website"
+      }
+    ]
   },
   {
     "name": "Pernod Ricard",
@@ -257,16 +407,6 @@
   {
     "name": "Velocity Mortgage",
     "prototypes": ["Webflow Prototype"]
-  },
-  {
-    "name": "TPG",
-    "type": "web",
-    "year": 2016,
-    "agency": "Third & Grove",
-    "client": "TPG Capital",
-    "description": "tk",
-    "images": ["tk"],
-    "prototypes": ["tk"]
   },
   {
     "name": "Quorum Consulting",

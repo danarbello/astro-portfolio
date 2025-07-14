@@ -14,17 +14,19 @@ import '../styles/fragments.css';
   </section>
   <div class="fragments">
     {
-      fragments.map((fragment) => (
-        <Fragment
-          name={fragment.name}
-          type={fragment.type}
-          year={fragment.year}
-          agency={fragment.agency}
-          client={fragment.client}
-          description={fragment.description}
-          images={fragment.images}
-        />
-      ))
+      fragments
+        .sort((a, b) => b.year - a.year)
+        .map((fragment) => (
+          <Fragment
+            name={fragment.name}
+            type={fragment.type}
+            year={fragment.year}
+            agency={fragment.agency}
+            client={fragment.client}
+            description={fragment.description}
+            images={fragment.images}
+          />
+        ))
     }
   </div>
 </Basic>

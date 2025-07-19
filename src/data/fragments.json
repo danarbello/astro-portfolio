@@ -8,23 +8,23 @@
     "description": "Content Strategy, UX/UI Design",
     "images": [
       {
-        "src": "images/fragments/basf-01.jpg",
+        "src": "images/fragments/basf-01.webp",
         "alt": "BASF Catamold app screenshot"
       },
       {
-        "src": "images/fragments/basf-02.jpg",
+        "src": "images/fragments/basf-02.webp",
         "alt": "BASF Catamold app screenshot"
       },
       {
-        "src": "images/fragments/basf-03.jpg",
+        "src": "images/fragments/basf-03.webp",
         "alt": "BASF Catamold app screenshot"
       },
       {
-        "src": "images/fragments/basf-04.png",
+        "src": "images/fragments/basf-04.webp",
         "alt": "BASF Catamold app icon"
       },
       {
-        "src": "images/fragments/basf-05.jpg",
+        "src": "images/fragments/basf-05.webp",
         "alt": "BASF Catamold app animation still"
       }
     ]
@@ -37,19 +37,19 @@
     "description": "Infographics, Layout, Production",
     "images": [
       {
-        "src": "images/fragments/ets-01.jpg",
+        "src": "images/fragments/ets-01.webp",
         "alt": "Excerpted page from ETS Highlights booklet"
       },
       {
-        "src": "images/fragments/ets-02.jpg",
+        "src": "images/fragments/ets-02.webp",
         "alt": "Excerpted page from ETS Highlights booklet"
       },
       {
-        "src": "images/fragments/ets-03.jpg",
+        "src": "images/fragments/ets-03.webp",
         "alt": "Excerpted page from ETS Highlights booklet"
       },
       {
-        "src": "images/fragments/ets-04.jpg",
+        "src": "images/fragments/ets-04.webp",
         "alt": "Excerpted page from ETS Highlights booklet"
       }
     ]
@@ -101,7 +101,36 @@
     "year": 2012,
     "agency": "3PC Media",
     "description": "Headed the ideation of an app that would help spread information about what Lanxess does, offers, and their dedication to encouraging science interest and education for all ages.",
-    "images": ["5 full page screenshots", "App icon"]
+    "images": [
+      {
+        "src": "images/fragments/lxs-01.webp",
+        "alt": "LANXESS app concept screenshot"
+      },
+      {
+        "src": "images/fragments/lxs-02.webp",
+        "alt": "LANXESS app concept screenshot"
+      },
+      {
+        "src": "images/fragments/lxs-03.webp",
+        "alt": "LANXESS app concept screenshot"
+      },
+      {
+        "src": "images/fragments/lxs-04.webp",
+        "alt": "LANXESS app concept screenshot"
+      },
+      {
+        "src": "images/fragments/lxs-icon.webp",
+        "alt": "LANXESS app icon"
+      },
+      {
+        "src": "images/fragments/lxs-05.webp",
+        "alt": "LANXESS app concept wireframes screenshot"
+      },
+      {
+        "src": "images/fragments/lxs-06.webp",
+        "alt": "LANXESS app concept wireframes screenshot"
+      }
+    ]
   },
   {
     "name": "Solid State Soul branding",
@@ -140,7 +169,32 @@
     "agency": "flat",
     "industry": "fashion",
     "description": "Brand Design, Illustration, Research",
-    "images": ["Several logos and art items"]
+    "images": [
+      {
+        "src": "images/fragments/indigofera-01.webp",
+        "alt": "Indigofera logo idea"
+      },
+      {
+        "src": "images/fragments/indigofera-02.webp",
+        "alt": "Indigofera logo idea"
+      },
+      {
+        "src": "images/fragments/indigofera-03.webp",
+        "alt": "Indigofera logo idea"
+      },
+      {
+        "src": "images/fragments/indigofera-04.webp",
+        "alt": "Indigofera logo idea"
+      },
+      {
+        "src": "images/fragments/indigofera-05.webp",
+        "alt": "Indigofera logo idea"
+      },
+      {
+        "src": "images/fragments/indigofera-06.webp",
+        "alt": "Indigofera logo idea"
+      }
+    ]
   },
   {
     "name": "Lion Brand Yarn labels",
@@ -172,7 +226,36 @@
     "agency": "Levine & Assoc",
     "client": "BBYO",
     "description": "Provide a wide range of services and support for the BBYO rebranding team, including UI design for three sub-brand websites, member book designs, brochures, custom font concepts, and illustrations.",
-    "images": ["tk"]
+    "images": [
+      {
+        "src": "images/fragments/bbyo-01.webp",
+        "alt": "BBYO camp booklet cover"
+      },
+      {
+        "src": "images/fragments/bbyo-02.webp",
+        "alt": "BBYO camp booklet page"
+      },
+      {
+        "src": "images/fragments/bbyo-03.webp",
+        "alt": "BBYO member book cover"
+      },
+      {
+        "src": "images/fragments/bbyo-04.webp",
+        "alt": "BBYO website screenshot"
+      },
+      {
+        "src": "images/fragments/bbyo-05.webp",
+        "alt": "BBYO website screenshot"
+      },
+      {
+        "src": "images/fragments/bbyo-06.webp",
+        "alt": "BBYO website screenshot"
+      },
+      {
+        "src": "images/fragments/bbyo-07.webp",
+        "alt": "BBYO website screenshot"
+      }
+    ]
   },
   {
     "name": "UNITE Cintas strike campaign",
@@ -190,7 +273,28 @@
     "agency": "Levine & Assoc",
     "client": "Library of Congress",
     "description": "This is the project every graphic designer dreams of: design a book on the history of books. With Levine's Design Manager, Monica Snelling, and Library of Congress' specialist of Armenian and Georgian works, Levon Avdoyan, we composed one of the most beautiful books I've had the pleasure of working on.",
-    "images": ["tk"]
+    "images": [
+      {
+        "src": "images/fragments/loc-01.webp",
+        "alt": "To Know Wisdom and Instruction book cover"
+      },
+      {
+        "src": "images/fragments/loc-02.webp",
+        "alt": "To Know Wisdom and Instruction book page"
+      },
+      {
+        "src": "images/fragments/loc-03.webp",
+        "alt": "To Know Wisdom and Instruction book page"
+      },
+      {
+        "src": "images/fragments/loc-04.webp",
+        "alt": "To Know Wisdom and Instruction book page"
+      },
+      {
+        "src": "images/fragments/loc-05.webp",
+        "alt": "To Know Wisdom and Instruction book page"
+      }
+    ]
   },
   {
     "name": "9/11 Legacy Fund booklet and website",
@@ -236,13 +340,52 @@
     "images": ["tk"]
   },
   {
-    "name": "SAE Digital Library websites",
+    "name": "SAE International Digital Library websites",
     "type": "web, video",
     "year": 2012,
     "agency": "3PC Media",
     "client": "SAE International",
     "description": "Designed a sharp website to accompany videos and peripherals to enhance the presence and educate the industry on the updated portal and increase of library assets available to the innovators of the engineering industry.",
-    "images": ["tk"]
+    "images": [
+      {
+        "src": "images/fragments/sae-01.webp",
+        "alt": "SAE Digital Library website screenshot"
+      },
+      {
+        "src": "images/fragments/sae-02.webp",
+        "alt": "SAE Digital Library website screenshot"
+      },
+      {
+        "src": "images/fragments/sae-03.webp",
+        "alt": "SAE Digital Library website screenshot"
+      },
+      {
+        "src": "images/fragments/sae-04.webp",
+        "alt": "SAE Digital Library website screenshot"
+      }
+    ]
+  },
+  {
+    "name": "PharmSource website ideation",
+    "type": "web",
+    "year": 2012,
+    "agency": "3PC Media",
+    "client": "PharmSource",
+    "description": "Content Strategy, UX/UI Design",
+    "images": [
+      {
+        "src": "images/fragments/pharm-01.webp",
+        "alt": "PharmSource website screenshot"
+      },
+      {
+        "src": "images/fragments/pharm-02.webp",
+        "alt": "PharmSource website screenshot"
+      },
+      {
+        "src": "images/fragments/pharm-03.webp",
+        "alt": "PharmSource website screenshot"
+      }
+    ]
   },
   {
     "name": "About Japan website",
@@ -385,6 +528,26 @@
       {
         "src": "images/fragments/tpg-02.webp",
         "alt": "Screenshot of tpg.com website"
+      }
+    ]
+  },
+  {
+    "name": "William-Sonoma websites",
+    "type": "website",
+    "year": 2017,
+    "agency": "Third & Grove",
+    "client": "William-Sonoma",
+    "description": "Strategy, UX/UI Design",
+    "images": [
+      {
+        "src": "images/fragments/william-sonoma.webp",
+        "alt": "Screenshot of tpg.com website"
+      }
+    ],
+    "prototypes": [
+      {
+        "label": "In-medium Prototypes",
+        "url": "/prototypes/william-sonoma/index.html"
       }
     ]
   },

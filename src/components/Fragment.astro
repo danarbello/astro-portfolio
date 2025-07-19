@@ -7,9 +7,10 @@ export interface Props {
   client?: string;
   description?: string;
   images?: Array<{ src: string; alt: string }>;
+  prototypes?: Array<{ label: string; url: string }>;
 }
 
-const { name, type, year, agency, client, description, images } = Astro.props;
+const { name, type, year, agency, client, description, images, prototypes } = Astro.props;
 
 import '../styles/modifiers.css';
 ---
@@ -37,6 +38,12 @@ import '../styles/modifiers.css';
         {description && (
           <p class="small--extra">{description}</p>
         )}
+        {/* fragment prototype links */}
+        {prototypes && prototypes.map((prototype) => (
+          <p class="small--extra">
+            <a href={prototype.url} target="_blank">{prototype.label} ➝</a>
+          </p>
+        ))}
       </div>
       {/* fragment images */}
       {images && images.map((image) => (

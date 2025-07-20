@@ -16,6 +16,13 @@ import '../styles/modifiers.css';
 ---
 
 <div class="fragment">
+  {/* fragment card/button */}
+  <div class="fragment__button">
+    <span class="smaller bold">{name}</span>
+    {images && images.length > 0 && (
+      <img src={images[0].src} alt={images[0].alt} loading="lazy" />
+    )}
+  </div>
   {/* dialong inner wrapper */}
   <dialog class="fragment__dialog">
     {/* dialog close button */}
@@ -51,43 +58,33 @@ import '../styles/modifiers.css';
       ))}
     </div>
   </dialog>
-  {/* fragment card/button */}
-  <div class="fragment__button">
-    <span class="smaller bold">{name}</span>
-    {images && images.length > 0 && (
-      <img src={images[0].src} alt={images[0].alt} loading="lazy" />
-    )}
-  </div>
 </div>
 
 {/* script to handle dialog opening/closing */}
 <script>
   let element = document.querySelectorAll('.fragment');
-
   element.forEach(e => {
     const elementTrigger = e.querySelector('.fragment__button');
-    const elementDialog = e.querySelector('.fragment__dialog');
-    const elementDialogTrigger = e.querySelector('.fragment__dialog-close');
-    const body = document.querySelector('body');
-
+    const elementDialog = e.querySelector('dialog');
+    const elementDialogTrigger = e.querySelector('dialog button');
+    // Open the dialog/modal.
     elementTrigger.addEventListener('click', (event) => {
       event.stopPropagation();
-      elementDialog.setAttribute('open', '');
-    })
-
+      elementDialog.showModal();
+      console.log('Dialog opened');
+    });
+    // Close the dialog/modal when click the button.
     elementDialogTrigger.addEventListener('click', (event) => {
       event.stopPropagation();
-      elementDialog.removeAttribute('open');
-    })
-
-    elementDialog.addEventListener('click', (event) => {
-      event.stopPropagation();
+      elementDialog.close();
+      console.log('Dialog closed');
     });
-
-    body.addEventListener('click', (event) => {
-      if (!elementDialog.contains(event.target as Node)) {
-        elementDialog.removeAttribute('open');
+    // Close the dialog/modal when clicking "outside" the dialog.
+    elementDialog.addEventListener('click', (event) => {
+      if (event.target === elementDialog) {
+        elementDialog.close();
+        console.log('Dialog closed by clicking outside');
       }
     });
-  })
+  });
 </script>

@@ -6,7 +6,6 @@
 }
 .fragment {
   height: 46vw;
-  /* border: 1px solid var(--color-black); */
   transition: var(--transition);
 }
 @media (min-width: 768px) {
@@ -81,22 +80,19 @@
 }
 
 .fragment__dialog {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 10;
   width: 80vw;
   height: 80vh;
   border: 1px solid var(--color-black);
-  box-shadow: 0 0 0 10vw rgba(0, 0, 0, .8);
+}
+
+.fragment__dialog::backdrop {
+  background-color: rgba(0, 0, 0, .8);
 }
 
 .fragment__dialog-close {
-  position: absolute;
-  top: -1rem;
-  right: -1rem;
+  position: fixed;
+  top: 7%;
+  right: 8%;
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;

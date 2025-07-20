@@ -6,9 +6,13 @@ import '../styles/navigation.css';
   <nav>
     <span><strong>Dan Arbello</strong> | Design | Engineering</span>
     <ul>
-      <li><a class="standalone" href="/">Home</a></li>
-      <li><a class="standalone" href="/fragments">Fragments</a></li>
-      <li><a class="standalone" href="/resume">Resume</a></li>
+      {['/', '/fragments', '/resume'].map((href) => (
+        <li key={href}>
+          <a className={`standalone${Astro.url.pathname === href ? ' current' : ''}`} href={href}>
+            {href === '/' ? 'Home' : href.replace('/', '').charAt(0).toUpperCase() + href.slice(2)}
+          </a>
+        </li>
+      ))}
     </ul>
   </nav>
 </header>

@@ -83,6 +83,10 @@ a.standalone:hover {
 a.standlone {
   display: block;
 }
+a.standalone.current {
+  color: var(--color-black-faded);
+  background-size: 0;
+}
 
 ul {
   margin: 0 0 2rem;

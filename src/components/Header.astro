@@ -1,24 +1,24 @@
 ---
 import '../styles/navigation.css';
-
-const navLinks = [
-  { href: '/', label: 'Home' },
-  { href: '/fragments', label: 'Fragments' },
-  { href: '/resume', label: 'Resume' }
-];
 ---
 
 <header class="small--extra" id="top">
   <nav>
     <span><strong>Dan Arbello</strong> | Design | Engineering</span>
     <ul>
-      {navLinks.map(({ href, label }) => (
-        <li>
-          <a class={`standalone${Astro.url.pathname === href ? ' current' : ''}`} href={href}>
-            {label}
-          </a>
-        </li>
-      ))}
+      <li><a class="standalone" href="/">Home</a></li>
+      <li><a class="standalone" href="/fragments">Fragments</a></li>
+      <li><a class="standalone" href="/resume">Resume</a></li>
     </ul>
   </nav>
 </header>
+
+<script>
+  const currentPath = window.location.pathname;
+  const links = document.querySelectorAll('header .standalone');
+  links.forEach(link => {
+    if (link.getAttribute('href') === currentPath) {
+      link.classList.add('current');
+    }
+  });
+</script>

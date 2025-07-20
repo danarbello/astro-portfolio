@@ -60,7 +60,28 @@
     "year": 2012,
     "agency": "Levine & Assoc",
     "description": "Communities in School is a network of education professionals striving to match students up with community support and empowerment in order to keep them in school and on track. I hand-lettered epic names for the second-round advertising campaign highlighting a few of our nation's superheroes.",
-    "images": ["tk"]
+    "images": [
+      {
+        "src": "images/fragments/cis-01.webp",
+        "alt": "Communities in Schools hand-lettered ad"
+      },
+      {
+        "src": "images/fragments/cis-02.webp",
+        "alt": "Communities in Schools hand-lettered ad"
+      },
+      {
+        "src": "images/fragments/cis-03.webp",
+        "alt": "Communities in Schools hand-lettered ad"
+      },
+      {
+        "src": "images/fragments/cis-04.webp",
+        "alt": "Communities in Schools hand-lettered ad"
+      },
+      {
+        "src": "images/fragments/cis-05.webp",
+        "alt": "Communities in Schools hand-lettered ad"
+      }
+    ]
   },
   {
     "name": "ATCC ad campaign",
@@ -137,14 +158,32 @@
     "type": "branding",
     "year": 2013,
     "description": "Brand Design, Marketing/Social Design, Production",
-    "images": ["logo", "flyers", "posters"]
+    "images": [
+      {
+        "src": "images/fragments/sss-01.webp",
+        "alt": "Solid State Soul poster"
+      },
+      {
+        "src": "images/fragments/sss-02.webp",
+        "alt": "Solid State Soul poster"
+      }
+    ]
   },
   {
     "name": "Jah's Creation branding",
     "type": "branding",
     "year": 2015,
     "description": "Brand Design, Marketing/Social Design",
-    "images": ["logo", "flyer"]
+    "images": [
+      {
+        "src": "images/fragments/jah-01.webp",
+        "alt": "Jah's Creation logo"
+      },
+      {
+        "src": "images/fragments/jah-02.webp",
+        "alt": "Jah's Creation CSA flyer"
+      }
+    ]
   },
   {
     "name": "Flora Fauna merch",
@@ -202,22 +241,55 @@
     "year": 2006,
     "agency": "flat",
     "client": "Lion Brand Yarn",
-    "description": "Logo Optimization, Packaging Design, Production",
-    "images": ["labels (2)", "logo update"]
+    "description": "Logo Optimization (for printing), Packaging Design, Production",
+    "images": [
+      {
+        "src": "images/fragments/lion-01.webp",
+        "alt": "Lion Brand Yarn label design"
+      },
+      {
+        "src": "images/fragments/lion-02.webp",
+        "alt": "Lion Brand Yarn label design"
+      },
+      {
+        "src": "images/fragments/lion-03.webp",
+        "alt": "Lion Brand Yarn logo optimization for small printing"
+      }
+    ]
   },
   {
     "name": "Carosse font",
     "type": "typography",
     "year": 2011,
     "description": "Font Design",
-    "images": ["tk"]
+    "images": [
+      {
+        "src": "images/fragments/car-01.webp",
+        "alt": "Carosse font sample"
+      },
+      {
+        "src": "images/fragments/car-02.webp",
+        "alt": "Carosse font sample"
+      }
+    ]
   },
   {
     "name": "Television Sky font",
     "type": "typography",
     "year": 2005,
     "description": "Font Design",
-    "images": ["tk"]
+    "images": [
+      {
+        "src": "images/fragments/telsky.webp",
+        "alt": "Carosse font sample"
+      }
+    ],
+    "prototypes": [
+      {
+        "label": "Download TTF",
+        "url": "/TelevisionSky.ttf"
+      }
+    ]
   },
   {
     "name": "BBYO branding",
@@ -264,7 +336,16 @@
     "agency": "Flat",
     "client": "UNITE HERE!",
     "description": "Art Direction, Design, Production",
-    "images": ["tk"]
+    "images": [
+      {
+        "src": "images/fragments/unite-01.webp",
+        "alt": "UNITE Cintas protester holding campaign poster as NASCAR event"
+      },
+      {
+        "src": "images/fragments/unite-02.webp",
+        "alt": "UNITE Cintas strike campaign poster"
+      }
+    ]
   },
   {
     "name": "To Know Wisdom and Instruction book",
@@ -337,7 +418,28 @@
     "agency": "Flat",
     "client": "New York Road Runners",
     "description": "Art Direction, Copywriting, Design, Production",
-    "images": ["tk"]
+    "images": [
+      {
+        "src": "images/fragments/nyrr-01.webp",
+        "alt": "New York Road Runners Central Park outdoor banner"
+      },
+      {
+        "src": "images/fragments/nyrr-02.webp",
+        "alt": "New York Road Runners bus advert"
+      },
+      {
+        "src": "images/fragments/nyrr-03.webp",
+        "alt": "New York Road Runners subway wall advert"
+      },
+      {
+        "src": "images/fragments/nyrr-04.webp",
+        "alt": "New York Road Runners magazine ad insert"
+      },
+      {
+        "src": "images/fragments/nyrr-05.webp",
+        "alt": "New York Road Runners general horizontal advert"
+      }
+    ]
   },
   {
     "name": "SAE International Digital Library websites",
@@ -394,7 +496,12 @@
     "agency": "Flat",
     "client": "Japan Society",
     "description": "Japan Society is a non-profit organization dedicated to the promotion of cultural and educational exchange between the United States and Japan. I helped Flat design and build a website to promote their teacher resources and educational materials portal.",
-    "images": ["tk"]
+    "images": [
+      {
+        "src": "images/fragments/japan.webp",
+        "alt": "About Japan website screenshot"
+      }
+    ]
   },
   {
     "name": "Bishop Ranch website",
@@ -441,7 +548,24 @@
     "agency": "Flat",
     "client": "Tang Teaching Museum & Art Gallery",
     "description": "A unique museum and art gallery, juxtaposed in the heart of Skidmore College, has been creating the next generation of curators since 2000. I helped Flat design and print an exhibition space exposé booklet for them.",
-    "images": ["tk"]
+    "images": [
+      {
+        "src": "images/fragments/tang-01.webp",
+        "alt": "Tang Museum booklet cover"
+      },
+      {
+        "src": "images/fragments/tang-02.webp",
+        "alt": "Tang Museum booklet page"
+      },
+      {
+        "src": "images/fragments/tang-03.webp",
+        "alt": "Tang Museum booklet page"
+      },
+      {
+        "src": "images/fragments/tang-04.webp",
+        "alt": "Tang Museum booklet page"
+      }
+    ]
   },
   {
     "name": "Allen Linder website",
@@ -552,39 +676,20 @@
     ]
   },
   {
-    "name": "Pernod Ricard",
-    "prototypes": ["Webflow Prototype"]
-  },
-  {
-    "name": "Quicken",
-    "prototypes": ["Webflow Prototype"]
-  },
-  {
-    "name": "Waterchain",
-    "prototypes": ["Webflow Prototype"]
-  },
-  {
-    "name": "LiteracyPro",
-    "prototypes": ["Webflow Prototype"]
-  },
-  {
-    "name": "Velocity Mortgage",
-    "prototypes": ["Webflow Prototype"]
-  },
-  {
-    "name": "Quorum Consulting",
-    "prototypes": ["Webflow Prototype"]
-  },
-  {
-    "name": "Coupa",
-    "prototypes": ["Webflow Prototype"]
-  },
-  {
-    "name": "MRKS",
-    "prototypes": ["Webflow Prototype", "MarketServ?"]
-  },
-  {
-    "name": "WVI",
-    "prototypes": ["Webflow Prototype"]
+    "name": "KGNU Boulder show posters",
+    "type": "print",
+    "year": 2008,
+    "client": "Isaac Linder for KGNU",
+    "description": "Poster Design",
+    "images": [
+      {
+        "src": "images/fragments/naropa-01.webp",
+        "alt": "Poster design for a KGNU Boulder show"
+      },
+      {
+        "src": "images/fragments/naropa-02.webp",
+        "alt": "Poster design for a KGNU Boulder show"
+      }
+    ]
   }
 ]

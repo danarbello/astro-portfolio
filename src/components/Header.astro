@@ -1,15 +1,21 @@
 ---
 import '../styles/navigation.css';
+
+const navLinks = [
+  { href: '/', label: 'Home' },
+  { href: '/fragments', label: 'Fragments' },
+  { href: '/resume', label: 'Resume' }
+];
 ---
 
 <header class="small--extra" id="top">
   <nav>
     <span><strong>Dan Arbello</strong> | Design | Engineering</span>
     <ul>
-      {['/', '/fragments', '/resume'].map((href) => (
-        <li key={href}>
-          <a className={`standalone${Astro.url.pathname === href ? ' current' : ''}`} href={href}>
-            {href === '/' ? 'Home' : href.replace('/', '').charAt(0).toUpperCase() + href.slice(2)}
+      {navLinks.map(({ href, label }) => (
+        <li>
+          <a class={`standalone${Astro.url.pathname === href ? ' current' : ''}`} href={href}>
+            {label}
           </a>
         </li>
       ))}

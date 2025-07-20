@@ -53,9 +53,11 @@ body {
 h1 {
   margin: 0 0 2rem;
   font-weight: unset;
+  line-height: 1.2;
 }
 h2 {
   margin: 0 0 .5rem;
+  line-height: 1.2;
 }
 
 p {
@@ -80,6 +82,10 @@ a.standalone:hover {
 }
 a.standlone {
   display: block;
+}
+a.standalone.current {
+  color: var(--color-black-faded);
+  background-size: 0;
 }
 
 ul {

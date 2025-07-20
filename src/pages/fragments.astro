@@ -1,0 +1,33 @@
+---
+import Basic from '../layouts/Basic.astro';
+import Fragment from '../components/Fragment.astro';
+import fragments from '../data/fragments.json';
+import '../styles/fragments.css';
+
+---
+
+<Basic>
+  <section>
+    <div class="container">
+      <h1 class="title">A collection of professional fragments — old work, pitches, one-offs, rejected ideas — from 2005 to present.</h1>
+    </div>
+  </section>
+  <div class="fragments">
+    {
+      fragments
+        .sort((a, b) => b.year - a.year)
+        .map((fragment) => (
+          <Fragment
+            name={fragment.name}
+            type={fragment.type}
+            year={fragment.year}
+            agency={fragment.agency}
+            client={fragment.client}
+            description={fragment.description}
+            images={fragment.images}
+            prototypes={fragment.prototypes}
+          />
+        ))
+    }
+  </div>
+</Basic>

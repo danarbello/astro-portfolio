@@ -1,0 +1,90 @@
+---
+export interface Props {
+  name: string;
+  type: string;
+  year: string;
+  agency?: string;
+  client?: string;
+  description?: string;
+  images?: Array<{ src: string; alt: string }>;
+  prototypes?: Array<{ label: string; url: string }>;
+}
+
+const { name, type, year, agency, client, description, images, prototypes } = Astro.props;
+
+import '../styles/modifiers.css';
+---
+
+<div class="fragment">
+  {/* fragment card/button */}
+  <div class="fragment__button">
+    <span class="smaller bold">{name}</span>
+    {images && images.length > 0 && (
+      <img src={images[0].src} alt={images[0].alt} loading="lazy" />
+    )}
+  </div>
+  {/* dialong inner wrapper */}
+  <dialog class="fragment__dialog">
+    {/* dialog close button */}
+    <button class="fragment__dialog-close bold" aria-label="Close dialog">✕</button>
+    {/* fragment contents */}
+    <div class="fragment__slider">
+      {/* fragment intro */}
+      <div class="fragment__slider-intro">
+        <h2 class="small">{name}</h2>
+        <ul class="uppercase smallest">
+          <li>{type}</li>
+          <li>{year}</li>
+          {agency && (
+            <li>{agency}</li>
+          )}
+          {client && (
+            <li>{client}</li>
+          )}
+        </ul>
+        {description && (
+          <p class="small--extra">{description}</p>
+        )}
+        {/* fragment prototype links */}
+        {prototypes && prototypes.map((prototype) => (
+          <p class="small--extra">
+            <a href={prototype.url} target="_blank">{prototype.label} ➝</a>
+          </p>
+        ))}
+      </div>
+      {/* fragment images */}
+      {images && images.map((image) => (
+        <img src={image.src} alt={image.alt} loading="lazy" />
+      ))}
+    </div>
+  </dialog>
+</div>
+
+{/* script to handle dialog opening/closing */}
+<script>
+  let element = document.querySelectorAll('.fragment');
+  element.forEach(e => {
+    const elementTrigger = e.querySelector('.fragment__button');
+    const elementDialog = e.querySelector('dialog');
+    const elementDialogTrigger = e.querySelector('dialog button');
+    // Open the dialog/modal.
+    elementTrigger.addEventListener('click', (event) => {
+      event.stopPropagation();
+      elementDialog.showModal();
+      console.log('Dialog opened');
+    });
+    // Close the dialog/modal when click the button.
+    elementDialogTrigger.addEventListener('click', (event) => {
+      event.stopPropagation();
+      elementDialog.close();
+      console.log('Dialog closed');
+    });
+    // Close the dialog/modal when clicking "outside" the dialog.
+    elementDialog.addEventListener('click', (event) => {
+      if (event.target === elementDialog) {
+        elementDialog.close();
+        console.log('Dialog closed by clicking outside');
+      }
+    });
+  });
+</script>

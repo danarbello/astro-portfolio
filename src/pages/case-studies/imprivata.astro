@@ -3,7 +3,7 @@ import Basic from '../../layouts/Basic.astro';
 import '../../styles/patterns.css';
 
 const metadata = {
-  title: 'Unlocking Imprivata’s Coverage for Several New Markets',
+  title: 'Rebuilding Imprivata\'s Complex Drupal Platform for Performance, Search, and Long-Term Ownership',
   description: 'Consulting with a security/SaaS organization to expand their brand goodwill, reach greater markets, and integrate recently acquired subsidiaries into their marketing website.'
 };
 ---
@@ -17,46 +17,43 @@ const metadata = {
       <div class="case-study__details small--extra row left-align row--four row--compact">
         <p class="column">Agency: <a href="https://chromatichq.com" target="_blank">Chromatic</a></p>
         <p class="column">Role: Account Lead + Tech Lead</p>
-        <p class="column">Year(s): 2019-23</p>
+        <p class="column">Year(s): 2019-present</p>
         <p class="column">Client: <a href="https://imprivata.com" target="_blank">Imprivata</a></p>
       </div>
       <details open>
-        <summary>Summary</summary>
-        <p>In the highly competitive landscape of health security and verification services, Imprivata faced the challenge of maintaining and increasing its brand goodwill beyond its current market. Their aim was aim was to achieve this through strategic marketing initiatives on its website and other digital platforms. Additionally, the recent acquisition of subsidiaries required seamless integration into the company's marketing website. To address these challenges, we sought a comprehensive solution that would leverage cutting-edge technologies and best practices in web development.</p>
+        <summary>Rebuilding Imprivata's Complex Drupal Platform for Performance, Search, and Long-Term Ownership</summary>
+        <p>While working at Chromatic, I partnered closely with Imprivata to help rebuild a large, long-lived Drupal 7 platform that had accumulated years of technical debt, uneven documentation, and brittle front-end patterns. The site supported critical marketing and product content, but even modest updates required outside engineering support. At the same time, Imprivata was preparing for a broader brand refresh and confronting Drupal 7's end of life. The goal was not simply to redesign the site, but to rebuild it in a way that restored confidence, improved performance, and gave internal teams meaningful ownership moving forward.</p>
+        <p>I was deeply involved in the Drupal 7 to modern Drupal rebuild, beginning with a full audit of content models, custom modules, theme-layer decisions, and editorial workflows. Rather than attempting a one-to-one port, we worked deliberately to identify what was essential and what had become accidental complexity. This allowed us to modernize the underlying architecture while preserving familiar patterns for editors and stakeholders who relied on the site day to day.</p>
       </details>
       <details open>
-        <summary>Problem</summary>
-        <p>Imprivata identified three key challenges that needed to be addressed:</p>
-        <ul>
-          <li><strong>Expanding Brand Goodwill:</strong> Imprivata needed to reach a broader audience beyond its current market of health services through effective marketing strategies on its website and digital platforms.</li>
-          <li><strong>Subsidiary Integration:</strong> The recent acquisition of subsidiaries necessitated the migration of their digital assets into the parent brand's marketing website seamlessly.</li>
-          <li><strong>Website Integrations and Rebranding:</strong> Imprivata's website and design system would require three Drupal updates, migration from D7 to D8, and adaptation to two major corporate rebrands.</li>
-        </ul>
+        <summary>Design System Architecture and Front-End Simplification</summary>
+        <p>A major focus of my work on the project was the design and implementation of a comprehensive design system. We initially built this system in Pattern Lab, creating a shared, component-level language that emphasized accessibility, performance, and reuse. Each component was designed with WCAG compliance in mind and tested against real-world rendering constraints, not just visual expectations.</p>
+        <p>As the platform matured, I helped guide the decision to intentionally recouple the design system back into Drupal. This reduced front-end abstraction layers, simplified theming, and made the system easier for Imprivata's internal engineers to extend and maintain without specialized tooling knowledge. The result was a faster, more predictable front end and a codebase that felt approachable rather than fragile.</p>
       </details>
       <details open>
-        <summary>Solution</summary>
-        <p>To address the challenges and fulfill Imprivata's objectives, the following comprehensive solution was proposed:</p>
-        <ul>
-          <li><strong>Discovery and Audits:</strong> A thorough analysis of the existing website, code performance, and user experience (UX/UI) was conducted to identify areas of improvement and optimization opportunities.</li>
-          <li><strong>Design System Enhancement:</strong> Regular inventorying, optimization, and enhancement of the design system were implemented to ensure consistency across the website and its peripheral digital platforms.</li>
-          <li><strong>Third-party Design Vendor Gap-filling:</strong> To align with business goals and stakeholder requirements, the team filled the gaps left by third-party design vendors, resulting in well-defined agile user stories and engineering tickets for smooth implementation.</li>
-          <li><strong>Project Management and Technical Leadership:</strong> The project was supported by experienced project managers, providing technical leadership and engineering management throughout the development process.</li>
-        </ul>
+        <summary>Translation Automation and Multilingual Architecture</summary>
+
+        <p>Another key initiative I led was the introduction of automated translation workflows for Imprivata's platform. As the site expanded to support multiple regions and audiences, the existing manual translation process had become both time-intensive and error-prone. Working with Imprivata's team, I consulted on and implemented an integration between Drupal and TransPerfect's GlobalLink platform, ensuring the solution aligned cleanly with their Layout Builder-based site architecture.</p>
+
+        <p>This work required careful coordination between content modeling, Layout Builder configuration, and client-side rendering behavior. The integration allowed translated content to be delivered through automation and client-side DOM augmentation, rather than duplicative manual authoring. The result was a multilingual system that preserved editorial flexibility while dramatically reducing the operational cost of composing and maintaining translations.</p>
+
+        <p>By off-boarding translation production to AI/automation, Imprivata saved hundreds of hours in content authoring and review time, while gaining a more scalable and consistent multilingual experience. I later presented this approach at DrupalCon Atlanta 2025, sharing lessons learned around integrating enterprise translation services with modern Drupal site-building workflows. (<a href="https://www.youtube.com/watch?v=MsGaX9q___s" target="_blank" title="Go to Youtube">Watch video recording ➝</a>)</p>
       </details>
       <details open>
-        <summary>Result</summary>
-        <p>The implementation of the proposed solution yielded significant results:</p>
-        <ul>
-          <li><strong>Website Theme Rebuild:</strong> Imprivata.com's theme was completely rebuilt using a robust design system that utilized Pattern Lab and Drupal 8. This overhaul ensured a cohesive and visually appealing user experience across all web properties.</li>
-          <li><strong>UX/UI Consulting and Enhancements:</strong> Tactical consulting and continuous improvements in the user experience and user interface were carried out, resulting in a more engaging and intuitive user journey.</li>
-          <li><strong>Seamless Drupal 10 Upgrade: </strong> In preparation for the Drupal 10 upgrade, the Pattern Lab decoupled design system was deprecated and integrated back into the Drupal theme codebase. This streamlining significantly increased maintenance legibility and comprehension, leading to reduced engineering frustrations and faster time-to-live for feature requests and adjustments.</li>
-          <li><strong>Multi-Site Integration:</strong> The team successfully recoupled international multi-sites into a single Drupal 10 instance with Translations configuration, ensuring a seamless migration process for the multi-sites.</li>
-          <li><strong>Enhanced Performance:</strong> The website properties witnessed a drastic improvement in performance, user flows, and SEO audits, resulting in an enhanced user experience and improved search engine visibility.</li>
-        </ul>
+        <summary>Search Experience Optimization (SXO) and Solr Strategy</summary>
+        <p>Search was another core area of responsibility. Imprivata's existing search indexed content indiscriminately, which led to noisy results and poor discovery. I worked with the team to reframe search as a search experience optimization (SXO) problem rather than a feature checklist.</p>
+        <p>This included redefining what content should be indexed, implementing type-ahead autocomplete to help users refine intent earlier, and tuning relevance to reflect how real people actually navigated the site. We later upgraded the platform to Solr 9 and began redesigning the search experience around faceted navigation, cross-referenced content promotion, and “More Like This” relationships. These changes allowed users to move laterally through related material instead of encountering dead ends.</p>
+        <p>Equally important, I collaborated with Imprivata's team to establish sustainable indexing and governance practices, ensuring that search quality would improve over time rather than degrade as content volume increased.</p>
       </details>
       <details open>
-        <summary>Conclusion</summary>
-        <p>In conclusion, Imprivata's decision to invest in a comprehensive web development solution proved to be a game-changer. By leveraging the expertise of Chromatic's experienced professionals and adopting cutting-edge facets of Drupal, Imprivata successfully expanded its brand goodwill and integrated recently purchased subsidiaries into its marketing website seamlessly. The strategic upgrades, rebranding efforts, and optimization initiatives led to a visually appealing, high-performing, and user-friendly website that continues to attract a broader audience and strengthen the brand's position in the health services market and beyond.</p>
+        <summary>Security, Stability, and Ongoing Stewardship</summary>
+        <p>Beyond the rebuild itself, I continue to support Imprivata through ongoing security and stability initiatives as part of Chromatic's long-term engagement. This includes maintaining their Solr configuration, overseeing upgrades, and supporting performance tuning. The platform is integrated with StackHawk for continuous vulnerability scanning, allowing findings to flow directly into the engineering backlog as actionable work rather than static reports.</p>
+        <p>We are also in the process of deploying StackHawk's Vibe feature to support AI-assisted penetration testing, adding another proactive layer to the security posture. Combined with structured logging, error monitoring, and disciplined release workflows, these systems help ensure that issues are identified early and addressed methodically.</p>
+      </details>
+      <details open>
+        <summary>Collaboration with Internal Teams</summary>
+        <p>Throughout the engagement, I worked closely with Imprivata's marketing operations team, web manager, and internal Drupal engineers. My role was not to act as a gatekeeper, but to help strengthen internal capability through collaboration. We partnered on content governance, component usage, search strategy, and architectural decision-making, supporting junior engineers while giving senior staff confidence in the platform's direction.</p>
+        <p>Today, Imprivata's platform is faster, more accessible, easier to maintain, and designed to evolve without accumulating the same kinds of technical debt that prompted the rebuild in the first place. It stands as an example of how thoughtful modernization;— across architecture, search, and security;— can restore trust in a complex system and in the teams who depend on it.</p>
       </details>
     </div>
   </section>

@@ -53,6 +53,7 @@ details {
 }
 details summary {
   position: relative;
+  padding-right: 4rem;
   transition: var(--transition);
   list-style: none;
   color: var(--color-grey);
@@ -62,9 +63,8 @@ details summary {
 details summary::after {
   content: 'Expand ↯';
   position: absolute;
+  top: 0.3rem;
   right: 0;
-  bottom: 50%;
-  transform: translateY(50%);
   font-size: 61.803%;
 }
 details summary:hover,

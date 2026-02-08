@@ -1,0 +1,109 @@
+---
+import Basic from '../../layouts/Basic.astro';
+import '../../styles/patterns.css';
+
+const metadata = {
+  title: 'Site Building with Regionalization, Translations, and Layout Builder',
+  description: 'A practical walkthrough of Drupal translations, Layout Builder asymmetric translations, regionalization strategies, and CDN-based geolocation for global sites.'
+};
+---
+
+<Basic {metadata}>
+  <section class="case-study">
+    <div class="container">
+      <p class="eyebrow small--extra">Conference Talk</p>
+      <h1 class="largest">{metadata.title}</h1>
+      <div class="siteviewer-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/MsGaX9q___s?si=ORo1sn1t5V1RvKPk" title="Recording of Site Building with Regionalization, Translations, and Layout Builder talk at DrupalCon 2025 Atlanta" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="case-study__details small--extra row left-align row--four row--compact">
+        <p class="column">Sponsor: <a href="https://chromatichq.com" target="_blank">Chromatic</a></p>
+        <p class="column">Platform: DrupalCon</p>
+        <p class="column">Where: Atlanta, GA</p>
+        <p class="column">Year: 2025</p>
+      </div>
+      <details open>
+        <summary>Video Summary</summary>
+        <p>This talk at DrupalCon 2025 (Atlanta) covers the quirks, problems, and suggested solutions for providing translation and regionalization for modern Drupal websites that make use of Layout Builder (and similar site building features). I developed the talk — with technical back-end support from Matt Daniel — after seeing how many translation issues people were sharing without solutions at DrupalCon 2024 (Portland).</p>
+      </details>
+      <details open>
+        <summary>Transcript</summary>
+        <br>
+        <h2>Introduction</h2>
+        <p>All right, welcome everyone. Today we're going to be talking about site building—specifically translations, Layout Builder, and how to regionalize all of that. This will cover both technical configuration and practical usage for content teams.</p>
+        <p>Since this setup is genuinely straightforward and designed to save time, we'll be moving quickly. The talk is about 60% more efficient, which means it'll be shorter than usual. We do have a live Tugboat instance at the end, so if there are questions or if anyone wants deeper elaboration, we can walk through it together.</p>
+        <p>I'm Dan, an Account Lead at Chromatic.</p>
+        <p>And I'm Matt, a Senior Developer at Chromatic.</p>
+        <p>We're not here to advertise. Let's jump right in.</p>
+        <h2>Why This Talk Exists</h2>
+        <p>This talk was inspired by a client using a multisite Drupal setup to manage regionalization. They had multiple products and regulatory constraints governing which products could be marketed in which regions. As a result, content duplication and source-of-truth issues became serious problems, requiring nodes to be recreated repeatedly.</p>
+        <p>The business logic itself was simple, but the Drupal implementation was not. By moving to a single-site architecture and grouping content by region, the setup became significantly simpler. Editors no longer needed to log into multiple sites, and workflows remained familiar.</p>
+        <p>Regionalization allowed precise control over what content visitors saw based on relevance, without forcing editors to relearn how to work. The only change was an additional layer of tagging.</p>
+        <h2>What This Talk Covers</h2>
+        <ul>
+          <li>Initial translation setup</li>
+          <li>Working with translations alongside Layout Builder</li>
+          <li>Grouping content by geographic region in addition to language</li>
+          <li>Using a CDN to support localization and performance</li>
+        </ul>
+        <h2>The Value of Translation and Regionalization</h2>
+        <p>Translation and regionalization help teams reach wider audiences while maintaining granular control over who sees what content. These strategies also improve SEO by allowing search engines to crawl region-specific content, helping build authority in markets that may not have been reachable before.</p>
+        <p>Most importantly, this approach simplifies content aggregation and preserves a reliable source of truth.</p>
+        <h2>Requirements</h2>
+        <p>At a minimum, Layout Builder must be enabled. In addition, the following modules are required:</p>
+        <ul>
+          <li>Layout Builder Discovery</li>
+          <li>Layout Builder Browser</li>
+          <li>Layout Builder Asymmetric Translation</li>
+        </ul>
+        <p>You'll also need at least two configured languages and users accessing the site from multiple geographic regions.</p>
+        <h2>Translations</h2>
+        <h3>Language Configuration</h3>
+        <p>Drupal includes over 100 preset languages. Selecting a language automatically assigns the correct ISO language code, label, and writing direction. Custom languages can also be added, but their language codes must not conflict with existing ISO standards.</p>
+        <p>Conflicting language codes can cause issues for both editors and end users. Drupal provides documentation and reference links to help avoid these conflicts.</p>
+        <h3>Language Negotiation</h3>
+        <p>Language negotiation determines how Drupal selects the appropriate language for a user. URL-based negotiation is typically recommended first, followed by browser language preferences using the <code>Accept-Language</code> HTTP header. These priorities can be reordered as needed.</p>
+        <h3>What Can Be Translated</h3>
+        <p>Drupal allows fine-grained control over what content can be translated. By default, nodes and most fields are translatable, but this can be customized per content type. This is also where fallback languages are defined if a requested translation does not yet exist.</p>
+        <h3>Interface Strings</h3>
+        <p>When Drupal's translation functions are used in templates and preprocessing, interface strings are automatically logged. Content teams can then translate these strings through the interface translation UI.</p>
+        <p>String matching is exact and case-sensitive, so translations must precisely match the original source text.</p>
+        <h3>Content Translation</h3>
+        <p>Drupal provides a Translate tab for content entities, allowing editors to manage translations directly. This interface is consistent across nodes and other entity types.</p>
+        <h3>Translation Management Tool (TMGMT)</h3>
+        <p>The Translation Management Tool (TMGMT) module helps manage translations at scale. Translation jobs can be created for entire content types, individual entities, or paragraph types.</p>
+        <p>Translations can be assigned to Drupal users, third-party APIs such as DeepL or Google Translate, or external translators via XLIFF files. Once translated files are returned and imported, Drupal applies them automatically.</p>
+        <p>The core idea is delegation — letting specialists handle translations efficiently.</p>
+        <h3>Language Switcher</h3>
+        <p>Drupal includes a built-in language switcher that requires only theming. If a translation does not exist, Drupal falls back to the default language automatically. The default output is an unstyled list, which can be themed to match the site design.</p>
+        <h2>Layout Builder</h2>
+        <h3>Overview</h3>
+        <p>Layout Builder allows editors to compose pages using components without working directly with templates. Designers and engineers build the components, while editors control how they are assembled on each page.</p>
+        <p>Although most Drupal entities are translatable, Layout Builder blocks are not translatable by default.</p>
+        <h3>Asymmetric Translation</h3>
+        <p>The Layout Builder Asymmetric Translation module allows each language to have its own independent layout. Each translation can clone the source layout and then be customized independently.</p>
+        <p>To enable this, the layout field must be marked as translatable and enabled on the node form display.</p>
+        <h3>Current Limitations</h3>
+        <p>Layout Builder block content cannot yet be included in TMGMT translation jobs, though a long-standing Drupal core issue addressing this is close to resolution.</p>
+        <p>In the meantime, manual translation works well for Drupal-user translators, and third-party DOM-based translation services can translate content at the presentation layer without altering stored content.</p>
+        <h2>Regionalization</h2>
+        <h3>What Regionalization Is</h3>
+        <p>Regionalization goes beyond language by adapting content, products, branding, and design to specific geographic audiences. Regions may share the same language while displaying different content and visual treatments.</p>
+        <h3>Implementing Regionalization in Drupal</h3>
+        <p>For simple one-to-one mappings, translation alone may be sufficient. For greater flexibility, regions and languages should be treated separately.</p>
+        <p>A common approach uses a region taxonomy, content tagging, and path-based visibility rules. A region switcher can redirect users to region-specific paths, with cookies used to prevent redirect loops.</p>
+        <h3>Region Detection</h3>
+        <p>IP-based geolocation can help direct users to regionally relevant content. This can be layered with language negotiation so users see content appropriate to their location without forcing a specific language.</p>
+        <p>Language should never be inferred from location alone.</p>
+        <h2>CDN-Based Regionalization</h2>
+        <p>CDNs such as Fastly, Cloudflare, and CloudFront provide geolocation data that can be used to redirect users before requests reach Drupal.</p>
+        <p>Using edge logic such as Fastly's VCL, traffic can be routed by region, cookies can be respected, and performance remains high without custom Drupal modules or client-side JavaScript.</p>
+        <h3>Alternatives</h3>
+        <p>Drupal modules such as Smart IP and GeoIP offer similar functionality but often rely on paid databases. Custom implementations are also possible, though no geolocation data source is perfectly accurate.</p>
+        <h2>Privacy and Compliance</h2>
+        <p>Privacy regulations vary widely across regions. Any functionality that collects location data or uses cookies should be reviewed with legal teams.</p>
+        <p>Across most regulatory frameworks, direct identifiers and location data — including IP addresses — are considered personal data. Rather than viewing privacy as a compliance burden, it should be treated as a user-facing service.</p>
+      </details>
+    </div>
+  </section>
+</Basic>

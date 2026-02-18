@@ -1,0 +1,695 @@
+[
+  {
+    "name": "BASF Catamold app",
+    "type": "app",
+    "year": 2012,
+    "agency": "3PC Media",
+    "client": "BASF",
+    "description": "Content Strategy, UX/UI Design",
+    "images": [
+      {
+        "src": "images/fragments/basf-01.webp",
+        "alt": "BASF Catamold app screenshot"
+      },
+      {
+        "src": "images/fragments/basf-02.webp",
+        "alt": "BASF Catamold app screenshot"
+      },
+      {
+        "src": "images/fragments/basf-03.webp",
+        "alt": "BASF Catamold app screenshot"
+      },
+      {
+        "src": "images/fragments/basf-04.webp",
+        "alt": "BASF Catamold app icon"
+      },
+      {
+        "src": "images/fragments/basf-05.webp",
+        "alt": "BASF Catamold app animation still"
+      }
+    ]
+  },
+  {
+    "name": "ETS Highlights booklet",
+    "type": "print",
+    "year": 2011,
+    "agency": "Levine & Assoc",
+    "description": "Infographics, Layout, Production",
+    "images": [
+      {
+        "src": "images/fragments/ets-01.webp",
+        "alt": "Excerpted page from ETS Highlights booklet"
+      },
+      {
+        "src": "images/fragments/ets-02.webp",
+        "alt": "Excerpted page from ETS Highlights booklet"
+      },
+      {
+        "src": "images/fragments/ets-03.webp",
+        "alt": "Excerpted page from ETS Highlights booklet"
+      },
+      {
+        "src": "images/fragments/ets-04.webp",
+        "alt": "Excerpted page from ETS Highlights booklet"
+      }
+    ]
+  },
+  {
+    "name": "Communities in Schools lettering",
+    "type": "ad campaign",
+    "year": 2012,
+    "agency": "Levine & Assoc",
+    "description": "Communities in School is a network of education professionals striving to match students up with community support and empowerment in order to keep them in school and on track. I hand-lettered epic names for the second-round advertising campaign highlighting a few of our nation's superheroes.",
+    "images": [
+      {
+        "src": "images/fragments/cis-01.webp",
+        "alt": "Communities in Schools hand-lettered ad"
+      },
+      {
+        "src": "images/fragments/cis-02.webp",
+        "alt": "Communities in Schools hand-lettered ad"
+      },
+      {
+        "src": "images/fragments/cis-03.webp",
+        "alt": "Communities in Schools hand-lettered ad"
+      },
+      {
+        "src": "images/fragments/cis-04.webp",
+        "alt": "Communities in Schools hand-lettered ad"
+      },
+      {
+        "src": "images/fragments/cis-05.webp",
+        "alt": "Communities in Schools hand-lettered ad"
+      }
+    ]
+  },
+  {
+    "name": "ATCC ad campaign",
+    "type": "ad campaign",
+    "year": 2013,
+    "agency": "3PC Media",
+    "description": "Art Direction, Copywriting, Design",
+    "images": [
+      {
+        "src": "images/fragments/atcc-01.webp",
+        "alt": "ATCC one-page insert ad"
+      },
+      {
+        "src": "images/fragments/atcc-02.webp",
+        "alt": "ATCC one-page insert ad"
+      },
+      {
+        "src": "images/fragments/atcc-03.webp",
+        "alt": "ATCC one-page insert ad"
+      },
+      {
+        "src": "images/fragments/atcc-04.webp",
+        "alt": "ATCC tote bag design"
+      },
+      {
+        "src": "images/fragments/atcc-05.webp",
+        "alt": "ATCC Facebook page screenshot"
+      },
+      {
+        "src": "images/fragments/atcc-06.webp",
+        "alt": "ATCC sub-branding logos"
+      }
+    ]
+  },
+  {
+    "name": "LANXESS ideation",
+    "type": "ios app",
+    "year": 2012,
+    "agency": "3PC Media",
+    "description": "Headed the ideation of an app that would help spread information about what Lanxess does, offers, and their dedication to encouraging science interest and education for all ages.",
+    "images": [
+      {
+        "src": "images/fragments/lxs-01.webp",
+        "alt": "LANXESS app concept screenshot"
+      },
+      {
+        "src": "images/fragments/lxs-02.webp",
+        "alt": "LANXESS app concept screenshot"
+      },
+      {
+        "src": "images/fragments/lxs-03.webp",
+        "alt": "LANXESS app concept screenshot"
+      },
+      {
+        "src": "images/fragments/lxs-04.webp",
+        "alt": "LANXESS app concept screenshot"
+      },
+      {
+        "src": "images/fragments/lxs-icon.webp",
+        "alt": "LANXESS app icon"
+      },
+      {
+        "src": "images/fragments/lxs-05.webp",
+        "alt": "LANXESS app concept wireframes screenshot"
+      },
+      {
+        "src": "images/fragments/lxs-06.webp",
+        "alt": "LANXESS app concept wireframes screenshot"
+      }
+    ]
+  },
+  {
+    "name": "Solid State Soul branding",
+    "type": "branding",
+    "year": 2013,
+    "description": "Brand Design, Marketing/Social Design, Production",
+    "images": [
+      {
+        "src": "images/fragments/sss-01.webp",
+        "alt": "Solid State Soul poster"
+      },
+      {
+        "src": "images/fragments/sss-02.webp",
+        "alt": "Solid State Soul poster"
+      }
+    ]
+  },
+  {
+    "name": "Jah's Creation branding",
+    "type": "branding",
+    "year": 2015,
+    "description": "Brand Design, Marketing/Social Design",
+    "images": [
+      {
+        "src": "images/fragments/jah-01.webp",
+        "alt": "Jah's Creation logo"
+      },
+      {
+        "src": "images/fragments/jah-02.webp",
+        "alt": "Jah's Creation CSA flyer"
+      }
+    ]
+  },
+  {
+    "name": "Flora Fauna merch",
+    "type": "branding",
+    "year": 2015,
+    "description": "Logo Design, Merch Design, Illustration",
+    "images": [
+      {
+        "src": "images/fragments/flora-fauna-01.webp",
+        "alt": "Flora Fauna merch design"
+      },
+      {
+        "src": "images/fragments/flora-fauna-02.webp",
+        "alt": "Flora Fauna merch design"
+      }
+    ]
+  },
+  {
+    "name": "Indigofera branding",
+    "type": "branding",
+    "year": 2007,
+    "agency": "flat",
+    "industry": "fashion",
+    "description": "Brand Design, Illustration, Research",
+    "images": [
+      {
+        "src": "images/fragments/indigofera-01.webp",
+        "alt": "Indigofera logo idea"
+      },
+      {
+        "src": "images/fragments/indigofera-02.webp",
+        "alt": "Indigofera logo idea"
+      },
+      {
+        "src": "images/fragments/indigofera-03.webp",
+        "alt": "Indigofera logo idea"
+      },
+      {
+        "src": "images/fragments/indigofera-04.webp",
+        "alt": "Indigofera logo idea"
+      },
+      {
+        "src": "images/fragments/indigofera-05.webp",
+        "alt": "Indigofera logo idea"
+      },
+      {
+        "src": "images/fragments/indigofera-06.webp",
+        "alt": "Indigofera logo idea"
+      }
+    ]
+  },
+  {
+    "name": "Lion Brand Yarn labels",
+    "type": "packaging",
+    "year": 2006,
+    "agency": "flat",
+    "client": "Lion Brand Yarn",
+    "description": "Logo Optimization (for printing), Packaging Design, Production",
+    "images": [
+      {
+        "src": "images/fragments/lion-01.webp",
+        "alt": "Lion Brand Yarn label design"
+      },
+      {
+        "src": "images/fragments/lion-02.webp",
+        "alt": "Lion Brand Yarn label design"
+      },
+      {
+        "src": "images/fragments/lion-03.webp",
+        "alt": "Lion Brand Yarn logo optimization for small printing"
+      }
+    ]
+  },
+  {
+    "name": "Carosse font",
+    "type": "typography",
+    "year": 2011,
+    "description": "Font Design",
+    "images": [
+      {
+        "src": "images/fragments/car-01.webp",
+        "alt": "Carosse font sample"
+      },
+      {
+        "src": "images/fragments/car-02.webp",
+        "alt": "Carosse font sample"
+      }
+    ]
+  },
+  {
+    "name": "Television Sky font",
+    "type": "typography",
+    "year": 2005,
+    "description": "Font Design",
+    "images": [
+      {
+        "src": "images/fragments/telsky.webp",
+        "alt": "Carosse font sample"
+      }
+    ],
+    "prototypes": [
+      {
+        "label": "Download TTF",
+        "url": "/TelevisionSky.ttf"
+      }
+    ]
+  },
+  {
+    "name": "BBYO branding",
+    "type": "branding, print, web",
+    "year": 2011,
+    "agency": "Levine & Assoc",
+    "client": "BBYO",
+    "description": "Provide a wide range of services and support for the BBYO rebranding team, including UI design for three sub-brand websites, member book designs, brochures, custom font concepts, and illustrations.",
+    "images": [
+      {
+        "src": "images/fragments/bbyo-01.webp",
+        "alt": "BBYO camp booklet cover"
+      },
+      {
+        "src": "images/fragments/bbyo-02.webp",
+        "alt": "BBYO camp booklet page"
+      },
+      {
+        "src": "images/fragments/bbyo-03.webp",
+        "alt": "BBYO member book cover"
+      },
+      {
+        "src": "images/fragments/bbyo-04.webp",
+        "alt": "BBYO website screenshot"
+      },
+      {
+        "src": "images/fragments/bbyo-05.webp",
+        "alt": "BBYO website screenshot"
+      },
+      {
+        "src": "images/fragments/bbyo-06.webp",
+        "alt": "BBYO website screenshot"
+      },
+      {
+        "src": "images/fragments/bbyo-07.webp",
+        "alt": "BBYO website screenshot"
+      }
+    ]
+  },
+  {
+    "name": "UNITE Cintas strike campaign",
+    "type": "branding",
+    "year": 2006,
+    "agency": "Flat",
+    "client": "UNITE HERE!",
+    "description": "Art Direction, Design, Production",
+    "images": [
+      {
+        "src": "images/fragments/unite-01.webp",
+        "alt": "UNITE Cintas protester holding campaign poster as NASCAR event"
+      },
+      {
+        "src": "images/fragments/unite-02.webp",
+        "alt": "UNITE Cintas strike campaign poster"
+      }
+    ]
+  },
+  {
+    "name": "To Know Wisdom and Instruction book",
+    "type": "print",
+    "year": 2012,
+    "agency": "Levine & Assoc",
+    "client": "Library of Congress",
+    "description": "This is the project every graphic designer dreams of: design a book on the history of books. With Levine's Design Manager, Monica Snelling, and Library of Congress' specialist of Armenian and Georgian works, Levon Avdoyan, we composed one of the most beautiful books I've had the pleasure of working on.",
+    "images": [
+      {
+        "src": "images/fragments/loc-01.webp",
+        "alt": "To Know Wisdom and Instruction book cover"
+      },
+      {
+        "src": "images/fragments/loc-02.webp",
+        "alt": "To Know Wisdom and Instruction book page"
+      },
+      {
+        "src": "images/fragments/loc-03.webp",
+        "alt": "To Know Wisdom and Instruction book page"
+      },
+      {
+        "src": "images/fragments/loc-04.webp",
+        "alt": "To Know Wisdom and Instruction book page"
+      },
+      {
+        "src": "images/fragments/loc-05.webp",
+        "alt": "To Know Wisdom and Instruction book page"
+      }
+    ]
+  },
+  {
+    "name": "9/11 Legacy Fund booklet and website",
+    "type": "print, web",
+    "year": 2006,
+    "agency": "Flat",
+    "client": "American Red Cross",
+    "description": "Five years after the devastating 9/11 attacks, America was still steeped in the aftermath of the catastrophic events: residual medical ailments, missing family members, and PTSD were just a few of the persistent problems. The American Red Cross had built the 9/11 Legacy Fund to provide assistance for the people and families affected, however most of the public was unaware of what purpose, and to what extent, it served.",
+    "images": [
+      {
+        "src": "images/fragments/red-cross-01.webp",
+        "alt": "9/11 Legacy Fund booklet cover"
+      },
+      {
+        "src": "images/fragments/red-cross-02.webp",
+        "alt": "9/11 Legacy Fund booklet page"
+      },
+      {
+        "src": "images/fragments/red-cross-03.webp",
+        "alt": "9/11 Legacy Fund booklet page"
+      },
+      {
+        "src": "images/fragments/red-cross-04.webp",
+        "alt": "9/11 Legacy Fund website screenshot"
+      },
+      {
+        "src": "images/fragments/red-cross-05.webp",
+        "alt": "9/11 Legacy Fund website screenshot"
+      },
+      {
+        "src": "images/fragments/red-cross-06.webp",
+        "alt": "9/11 Legacy Fund website screenshot"
+      }
+    ]
+  },
+  {
+    "name": "New York Road Runners ad campaigns",
+    "type": "ad campaign",
+    "year": 2006,
+    "agency": "Flat",
+    "client": "New York Road Runners",
+    "description": "Art Direction, Copywriting, Design, Production",
+    "images": [
+      {
+        "src": "images/fragments/nyrr-01.webp",
+        "alt": "New York Road Runners Central Park outdoor banner"
+      },
+      {
+        "src": "images/fragments/nyrr-02.webp",
+        "alt": "New York Road Runners bus advert"
+      },
+      {
+        "src": "images/fragments/nyrr-03.webp",
+        "alt": "New York Road Runners subway wall advert"
+      },
+      {
+        "src": "images/fragments/nyrr-04.webp",
+        "alt": "New York Road Runners magazine ad insert"
+      },
+      {
+        "src": "images/fragments/nyrr-05.webp",
+        "alt": "New York Road Runners general horizontal advert"
+      }
+    ]
+  },
+  {
+    "name": "SAE International Digital Library websites",
+    "type": "web, video",
+    "year": 2012,
+    "agency": "3PC Media",
+    "client": "SAE International",
+    "description": "Designed a sharp website to accompany videos and peripherals to enhance the presence and educate the industry on the updated portal and increase of library assets available to the innovators of the engineering industry.",
+    "images": [
+      {
+        "src": "images/fragments/sae-01.webp",
+        "alt": "SAE Digital Library website screenshot"
+      },
+      {
+        "src": "images/fragments/sae-02.webp",
+        "alt": "SAE Digital Library website screenshot"
+      },
+      {
+        "src": "images/fragments/sae-03.webp",
+        "alt": "SAE Digital Library website screenshot"
+      },
+      {
+        "src": "images/fragments/sae-04.webp",
+        "alt": "SAE Digital Library website screenshot"
+      }
+    ]
+  },
+  {
+    "name": "PharmSource website ideation",
+    "type": "web",
+    "year": 2012,
+    "agency": "3PC Media",
+    "client": "PharmSource",
+    "description": "Content Strategy, UX/UI Design",
+    "images": [
+      {
+        "src": "images/fragments/pharm-01.webp",
+        "alt": "PharmSource website screenshot"
+      },
+      {
+        "src": "images/fragments/pharm-02.webp",
+        "alt": "PharmSource website screenshot"
+      },
+      {
+        "src": "images/fragments/pharm-03.webp",
+        "alt": "PharmSource website screenshot"
+      }
+    ]
+  },
+  {
+    "name": "About Japan website",
+    "type": "website",
+    "year": 2007,
+    "agency": "Flat",
+    "client": "Japan Society",
+    "description": "Japan Society is a non-profit organization dedicated to the promotion of cultural and educational exchange between the United States and Japan. I helped Flat design and build a website to promote their teacher resources and educational materials portal.",
+    "images": [
+      {
+        "src": "images/fragments/japan.webp",
+        "alt": "About Japan website screenshot"
+      }
+    ]
+  },
+  {
+    "name": "Bishop Ranch website",
+    "type": "website",
+    "year": 2016,
+    "agency": "Third & Grove",
+    "client": "Bishop Ranch",
+    "description": "UX/UI Design",
+    "images": [
+      {
+        "src": "images/fragments/bishop-ranch-01.webp",
+        "alt": "Screenshot of Bishop Ranch website"
+      },
+      {
+        "src": "images/fragments/bishop-ranch-02.webp",
+        "alt": "Screenshot of Bishop Ranch website"
+      }
+    ]
+  },
+  {
+    "name": "London Plane branding",
+    "type": "branding",
+    "year": 2024,
+    "description": "Logo design for merch and other peripehrals.",
+    "images": [
+      {
+        "src": "images/fragments/london-plane-01.webp",
+        "alt": "London Plane tee laying flat on yellow-to-teal gradient rug"
+      },
+      {
+        "src": "images/fragments/london-plane-02.svg",
+        "alt": "London Plane logotype in black and white"
+      },
+      {
+        "src": "images/fragments/london-plane-03.svg",
+        "alt": "London Plane logomark in black and white"
+      }
+    ]
+  },
+  {
+    "name": "Tang Museum booklet",
+    "type": "print",
+    "year": 2007,
+    "agency": "Flat",
+    "client": "Tang Teaching Museum & Art Gallery",
+    "description": "A unique museum and art gallery, juxtaposed in the heart of Skidmore College, has been creating the next generation of curators since 2000. I helped Flat design and print an exhibition space exposé booklet for them.",
+    "images": [
+      {
+        "src": "images/fragments/tang-01.webp",
+        "alt": "Tang Museum booklet cover"
+      },
+      {
+        "src": "images/fragments/tang-02.webp",
+        "alt": "Tang Museum booklet page"
+      },
+      {
+        "src": "images/fragments/tang-03.webp",
+        "alt": "Tang Museum booklet page"
+      },
+      {
+        "src": "images/fragments/tang-04.webp",
+        "alt": "Tang Museum booklet page"
+      }
+    ]
+  },
+  {
+    "name": "Allen Linder website",
+    "type": "website",
+    "year": 2005,
+    "description": "Design and implementation of a minimal website for a sculptor.",
+    "images": [
+      {
+        "src": "images/fragments/allen-linder-01.webp",
+        "alt": "Allen Linder website screenshot"
+      },
+      {
+        "src": "images/fragments/allen-linder-02.webp",
+        "alt": "Allen Linder website screenshot"
+      }
+    ]
+  },
+  {
+    "name": "Guardian Protection website",
+    "type": "website",
+    "year": 2018,
+    "agency": "Chemistry",
+    "client": "Guardian Protection",
+    "description": "Led the redesign of Guardian Protection's digital presence with a focus on market research, content strategy, UX/UI design, and even planning/scripting/model selection for commercial cinematography.",
+    "images": [
+      {
+        "src": "images/fragments/guardian-01.webp",
+        "alt": "Screenshot of website concept"
+      },
+      {
+        "src": "images/fragments/guardian-02.webp",
+        "alt": "Screenshot of website concept"
+      },
+      {
+        "src": "images/fragments/guardian-03.webp",
+        "alt": "Screenshot of website concept"
+      }
+    ]
+  },
+  {
+    "name": "LifeStyles website",
+    "type": "website",
+    "year": 2018,
+    "agency": "Chemistry",
+    "client": "LifeStyles Healthcare",
+    "description": "Copywriting, Content Strategy, UX/UI Design",
+    "images": [
+      {
+        "src": "images/fragments/lifestyles-01.webp",
+        "alt": "Screenshot of website concept"
+      },
+      {
+        "src": "images/fragments/lifestyles-02.webp",
+        "alt": "Screenshot of website concept"
+      }
+    ]
+  },
+  {
+    "name": "SRI website",
+    "type": "website",
+    "year": 2015,
+    "agency": "Third & Grove",
+    "client": "SRI International",
+    "description": "UI Design, Implementation Support",
+    "images": [
+      {
+        "src": "images/fragments/sri-01.webp",
+        "alt": "Screenshot of sri.com homepage"
+      }
+    ]
+  },
+  {
+    "name": "TPG Capital websites",
+    "type": "website",
+    "year": 2016,
+    "agency": "Third & Grove",
+    "client": "TPG Capital",
+    "description": "Strategy, UX/UI Design, Webflow Implementation & Support",
+    "images": [
+      {
+        "src": "images/fragments/tpg-01.webp",
+        "alt": "Screenshot of tpg.com website"
+      },
+      {
+        "src": "images/fragments/tpg-02.webp",
+        "alt": "Screenshot of tpg.com website"
+      }
+    ]
+  },
+  {
+    "name": "William-Sonoma websites",
+    "type": "website",
+    "year": 2017,
+    "agency": "Third & Grove",
+    "client": "William-Sonoma",
+    "description": "Strategy, UX/UI Design",
+    "images": [
+      {
+        "src": "images/fragments/william-sonoma.webp",
+        "alt": "Screenshot of tpg.com website"
+      }
+    ],
+    "prototypes": [
+      {
+        "label": "In-medium Prototypes",
+        "url": "/prototypes/william-sonoma/index.html"
+      }
+    ]
+  },
+  {
+    "name": "KGNU Boulder show posters",
+    "type": "print",
+    "year": 2008,
+    "client": "Isaac Linder for KGNU",
+    "description": "Poster Design",
+    "images": [
+      {
+        "src": "images/fragments/naropa-01.webp",
+        "alt": "Poster design for a KGNU Boulder show"
+      },
+      {
+        "src": "images/fragments/naropa-02.webp",
+        "alt": "Poster design for a KGNU Boulder show"
+      }
+    ]
+  }
+]

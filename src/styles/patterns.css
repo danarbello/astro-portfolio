@@ -53,6 +53,7 @@ details {
 }
 details summary {
   position: relative;
+  padding-right: 4rem;
   transition: var(--transition);
   list-style: none;
   color: var(--color-grey);
@@ -62,9 +63,8 @@ details summary {
 details summary::after {
   content: 'Expand ↯';
   position: absolute;
+  top: 0.3rem;
   right: 0;
-  bottom: 50%;
-  transform: translateY(50%);
   font-size: 61.803%;
 }
 details summary:hover,
@@ -89,6 +89,10 @@ details a {
 details a:hover {
   background-size: 100% .1em, 100% .1em;
   color: var(--color-black);
+}
+details img {
+  max-width: 100%;
+  height: auto;
 }
 /* Fuck you, Safari. I hate you so much. */
 details summary::-webkit-details-marker {
@@ -180,4 +184,22 @@ figcaption {
     margin: 0 -12vw 2rem;
     width: calc(100% + 24vw);
   }
+}
+
+/* Video iframes */
+.siteviewer-video {
+  position: relative;
+  width: 100%;
+  height: 0;
+  margin-bottom: 1rem;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  border-radius: .5rem;
+}
+.siteviewer-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

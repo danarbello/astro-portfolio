@@ -23,6 +23,7 @@
   --color-black: #353535;
   --color-black-faded: rgba(53,53,53,.6);
   --color-grey: rgba(53,53,53,.3);
+  --color-grey-faded: rgba(53,53,53,.15);
   --color-white: white;
   --color-active: #DE3C4B;
   --transition: all 240ms ease-in-out;
@@ -60,15 +61,22 @@ body {
 h1 {
   margin: 0 0 2rem;
   font-weight: unset;
+  line-height: 1.2;
 }
 h2 {
   margin: 0 0 .5rem;
+  line-height: 1.2;
+}
+h3 {
+  margin: 0 0 .5rem;
+  line-height: 1.2;
 }
 
 p {
   margin: 0 0 1rem;
 }
 p a,
+li a,
 a.standalone {
   transition: var(--transition);
   background-image: linear-gradient(to right, var(--color-black), var(--color-black)), linear-gradient(to right, var(--color-active), var(--color-active));
@@ -79,12 +87,17 @@ a.standalone {
   text-decoration: none;
 }
 p a:hover,
+li a:hover,
 a.standalone:hover {
   background-size: 100% .1em, 100% .1em;
   color: var(--color-black);
 }
 a.standlone {
   display: block;
+}
+a.standalone.current {
+  color: var(--color-black-faded);
+  background-size: 0;
 }
 
 ul {
@@ -121,6 +134,9 @@ hr {
 hr.compact {
   margin: 1rem 0;
 }
+hr.light {
+  background-color: var(--color-grey-faded);
+}
 
 section {
   padding: 8vw 0;
@@ -134,4 +150,11 @@ section.compact {
 }
 section.case-study {
   border-top: none;
+}
+
+code {
+  background-color: var(--color-grey-faded);
+  color: var(--color-active);
+  padding: .2em .4em;
+  border-radius: .2em;
 }

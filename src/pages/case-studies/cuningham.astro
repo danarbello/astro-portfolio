@@ -1,0 +1,79 @@
+---
+import Basic from '../../layouts/Basic.astro';
+import '../../styles/patterns.css';
+import { Image } from 'astro:assets';
+import imageInline01 from '../../assets/images/inline__cuningham_location.png';
+import imageInline02 from '../../assets/images/inline__cuningham_leader-page.png';
+import imageInline03 from '../../assets/images/inline__cuningham_list-term.png';
+
+const metadata = {
+  title: 'Redesigning Cuningham\'s Lead-Driven Architecture Digital Portfolio',
+  description: 'Redesign and ongoing optimization of Cuningham\'s website, focused on accessibility, lead generation, regional context, and alignment with evolving brand standards.'
+};
+---
+
+<Basic {metadata}>
+  <section class="case-study">
+    <div class="container">
+      <p class="eyebrow small--extra">Case Study</p>
+      <h1 class="largest">{metadata.title}</h1>
+      <div class="site-viewer" style="background-image: url('/images/siteviewers/siteviewer__cuningham.webp')" aria-label="Screen capture of Cuningham.com"></div>
+      <div class="case-study__details small--extra row left-align row--four row--compact">
+        <p class="column">Agency: <a href="https://chromatichq.com" target="_blank">Chromatic</a></p>
+        <p class="column">Role: Account + Design Lead</p>
+        <p class="column">Year(s): 2025-present</p>
+        <p class="column">Client: <a href="https://cuningham.com" target="_blank">Cuningham Architectural Group</a></p>
+      </div>
+      <details open>
+        <summary>Summary</summary>
+
+        <p>As Account Lead at Chromatic, I worked with Cuningham to strengthen confidence in their primary and fastest-growing lead-generation channel: their website. Coming off a difficult experience with a previous vendor, the internal team needed clarity, momentum, and a partner who could translate high-level brand goals into concrete, measurable improvements. My role focused on rebuilding trust in the platform by aligning design, content, and user experience around how prospective clients actually evaluate architectural partners.</p>
+        <p>The work was not framed as a cosmetic refresh. It was about helping the site communicate credibility, humanity, and regional expertise in ways that supported both business development and brand integrity.</p>
+        <p class="smaller">Though I use "design" a lot in the case study, it should be noted that I not only provided UX/UI design but as the Account Lead on this project I also served as strategy, project manager (for a back-end/devOps and additional front-end engineers), as well as full-stack implementation and maintenance support.</p>
+      </details>
+
+      <details open>
+        <summary>Designing for Lead Generation and Trust</summary>
+        <p>A major focus of the engagement was redesigning key sections of the site to better support lead generation without resorting to aggressive or generic conversion patterns. Based on real use data via Cuningham's simultaneous services (HubSpot and Google Analytics) and stakeholder interviews, I audited how users moved through the site, where intent naturally formed, and where the existing experience failed to reinforce confidence.</p>
+        <p>From there, I redesigned core page types and flows to make it easier for prospective clients to understand who Cuningham is, what they stand for, and how to take the next step. Calls to action were clarified and contextualized, not amplified. The goal was to meet users at the moment they were ready to engage, rather than forcing conversion prematurely.</p>
+        <figure class="figure--wide">
+          <Image src={imageInline03} alt="Screenshot of a portfolio market page showing teasers leading to projects and articles." />
+          <figcaption class="small--extra">The redesigned portfolio section favors custom crops of the beautiful images instead of relying solely on the client names. This section intentionally blends the group's news articles with portfolio pieces to create a platform for story telling as opposed to shallow visuals.</figcaption>
+        </figure>
+      </details>
+
+      <details open>
+        <summary>Re-Centering the Human Factor Through Leadership Pages</summary>
+        <p>One of the most impactful changes I led was a rethinking of the leadership and people sections of the site. Previously, leaders were presented primarily as functional roles within the firm. I redesigned these sections to foreground the humanity of the individuals — their perspectives, experience, and personal presence — rather than positioning them as interchangeable parts of a larger machine.</p>
+        <figure class="figure--wide">
+          <Image src={imageInline02} alt="Screenshot of Cuningham's redesigned leadership page, featuring a profile image, biography of a firm leader, accreditations, and related works/articles." />
+          <figcaption class="small--extra">The leader's headshot and quick contact button stay fixed in the viewport while the text scrolls to expose related work and articles.</figcaption>
+        </figure>
+        <p>This shift helped reinforce trust and relatability, particularly for clients selecting long-term architectural partners. The leadership pages became a proof point for culture and values, not just credentials.</p>
+      </details>
+
+      <details open>
+        <summary>Proving the Group's Location Reach</summary>
+        <p>I also redesigned the location-based sections of the site to better tie regional presence to demonstrated knowledge and expertise. Rather than treating locations as static office listings, these pages were reframed to show how Cuningham's work, relationships, and experience vary by region.</p>
+        <figure class="figure--wide">
+          <Image src={imageInline01} alt="Screenshot of Cuningham's redesigned location pages." />
+          <figcaption class="small--extra">The redesigned location pages puts their actual work front and center as well as providing more call-t0-action routing to related leaders and projects, closing the experience with an optimized HubSpot contact form.</figcaption>
+        </figure>
+        <p>This approach strengthened local credibility while still supporting the firm's national identity. For prospective clients, it created a clearer connection between geography and expertise — an important signal in a field where regional context matters deeply.</p>
+      </details>
+
+      <details open>
+        <summary>Brand Parity, Accessibility, and Visual Refinement</summary>
+        <p>As the project progressed, I worked closely with the team to refine color usage, visual hierarchy, and typographic treatment across the site. These refinements emphasized brand parity, accessibility, and legibility, ensuring the design system supported both aesthetic goals and real-world usability.</p>
+        <p>Typography is currently undergoing a broader facelift, and my design work has been structured to accommodate that evolution without requiring disruptive rework. The emphasis throughout has been on systems that can absorb change gracefully rather than resist it.</p>
+      </details>
+
+      <details open>
+        <summary>Ongoing Optimization and Iterative Improvement</summary>
+        <p>The work with Cuningham is intentionally ongoing. I've composed and planned optimization tickets that feed directly into development sprints, covering continued refinement of leadership and people pages, deeper treatment of location-based content, bringing the careers section into visual and structural parity, and preparing the site for a broader internal brand redesign.</p>
+        <p>Rather than treating launch as an endpoint, this approach treats the website as a living system — one that can be measured, adjusted, and improved over time. My role has been to help establish that rhythm and ensure design decisions remain aligned with business goals, accessibility standards, and long-term maintainability.</p>
+      </details>
+
+    </div>
+  </section>
+</Basic>

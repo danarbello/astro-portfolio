@@ -8,6 +8,7 @@ type PostModule = {
     description: string;
     pubDate: string;
     tags?: string[];
+    externalUrl?: string;
   };
   url: string;
 };
@@ -30,7 +31,14 @@ const posts = Object.values(
     <ul class="dangents__list">
       {posts.map(post => (
         <li>
-          <a href={post.url} class="bold space--bottom">{post.frontmatter.title}</a>
+          <a
+            href={post.frontmatter.externalUrl ?? post.url}
+            rel={post.frontmatter.externalUrl ? "noopener noreferrer" : undefined}
+            class="bold space--bottom"
+          >
+            {post.frontmatter.title}
+            {post.frontmatter.externalUrl && " →"}
+          </a>
           <p class="small marginless">
             {post.frontmatter.description}
             <span class="smallest">

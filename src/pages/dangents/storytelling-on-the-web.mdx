@@ -10,7 +10,14 @@ tags: [
 ]
 ---
 
+import { Image } from 'astro:assets';
+import inlineImageHero from '../../assets/images/dangents/logo-designs.png';
+
 <p class="warning smallest bold">This article was published in {new Date(frontmatter.pubDate).getFullYear()} by [Third & Grove](https://thirdandgrove.com).</p>
+
+<figure class="figure--wide">
+  <Image src={inlineImageHero} alt="PBS, NBC, and Harpers logos slightly manipulated" width={960} />
+</figure>
 
 The mouthful of a name, Chermayeff & Geismar & Haviv (C&G&H for short), may not have found its way on to your palette, ever, but the brands they've been illustrating since 1958 undoubtedly have. In fact, I am willing to bet the shirt I'm wearing (it's a nice one) that you have quite an intimate relationship with at least one of the logos they've produced.
 

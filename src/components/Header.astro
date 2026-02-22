@@ -18,7 +18,8 @@ import '../styles/navigation.css';
   const currentPath = window.location.pathname;
   const links = document.querySelectorAll('header .standalone');
   links.forEach(link => {
-    if (link.getAttribute('href') === currentPath) {
+    const href = link.getAttribute('href');
+    if (currentPath === href || currentPath.startsWith(href + '/')) {
       link.classList.add('current');
     }
   });

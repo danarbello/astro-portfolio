@@ -2,6 +2,9 @@
 .block {
   display: block;
 }
+.borderless {
+  border: unset;
+}
 .center {
   text-align: center;
 }
@@ -154,4 +157,12 @@
 /* Typography Modifiers */
 .uppercase {
   text-transform: uppercase;
+}
+.warning {
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1em 1.2em;
+  border-radius: .3em;
+  background-color: var(--color-grey-faded);
 }

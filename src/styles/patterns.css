@@ -130,6 +130,9 @@ figcaption {
   padding: .25rem 0 .5rem;
   border-bottom: 1px solid var(--color-grey);
 }
+figure.borderless img {
+  border: unset;
+}
 
 .resume__header {
   display: flex;

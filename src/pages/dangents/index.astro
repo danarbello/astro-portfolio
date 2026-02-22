@@ -31,7 +31,7 @@ const posts = Object.values(
       {posts.map(post => (
         <li>
           <a href={post.url} class="bold space--bottom">{post.frontmatter.title}</a>
-          <p class="small">
+          <p class="small marginless">
             {post.frontmatter.description}
             <span class="smallest">
               • {new Date(post.frontmatter.pubDate).getFullYear()} ◦

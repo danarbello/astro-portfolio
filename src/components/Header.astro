@@ -4,10 +4,11 @@ import '../styles/navigation.css';
 
 <header class="small--extra" id="top">
   <nav>
-    <span><strong>Dan Arbello</strong> | Design | Engineering</span>
+    <span><strong>Dan Arbello</strong><span> | Design | Engineering</span></span>
     <ul>
       <li><a class="standalone" href="/">Home</a></li>
       <li><a class="standalone" href="/fragments">Fragments</a></li>
+      <li><a class="standalone" href="/dangents">Dangents</a></li>
       <li><a class="standalone" href="/resume">Resume</a></li>
     </ul>
   </nav>
@@ -17,7 +18,8 @@ import '../styles/navigation.css';
   const currentPath = window.location.pathname;
   const links = document.querySelectorAll('header .standalone');
   links.forEach(link => {
-    if (link.getAttribute('href') === currentPath) {
+    const href = link.getAttribute('href');
+    if (currentPath === href || currentPath.startsWith(href + '/')) {
       link.classList.add('current');
     }
   });

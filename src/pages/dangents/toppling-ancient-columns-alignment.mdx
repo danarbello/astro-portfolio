@@ -1,0 +1,73 @@
+---
+layout: ../../layouts/DangentLayout.astro
+title: "Toppling Ancient Columns and Alignment"
+description: "Most designers and engineers are familiar with the concept of a grid system. In fact, most libraries come packed with their own grid system — take Bootstrap, for instance. In static comps, most engineers will find a disabled layer riddled with pink columns."
+pubDate: 2017-08-11
+tags: [
+  "User Experience",
+  "Design",
+  "Typography",
+]
+---
+
+import { Image } from 'astro:assets';
+
+import inlineImageHero from '../../assets/images/dangents/pink-apamea-columns.jpg';
+import inlineImage01 from '../../assets/images/dangents/01__comparing-object-alignment-with-square-circle.jpg';
+import inlineImage02 from '../../assets/images/dangents/02__comparing-object-alignment-with-square-circle.jpg';
+import inlineImage03 from '../../assets/images/dangents/03__optical-alignment-of-header-style.jpg';
+
+<p class="warning smallest bold">This article was published in {new Date(frontmatter.pubDate).getFullYear()} by [Third & Grove](https://thirdandgrove.com).</p>
+
+<figure class="figure--wide">
+  <Image src={inlineImageHero} alt="Image of the Apamea columns tinted pink to show the grid system" width={960} />
+</figure>
+I'm going to assume most people in our industry are aware of these suggestive rulers. Some make use of it to pack massive content into nice, neat little columns. Others rely on them for strict bounds for page designs.
+
+I'd like to make an argument against these pink columns of fascist, albeit often ignored intent and offer a way of looking at alignment at two levels: through containers and individual object alignment.
+
+## What is the grid system good for?
+
+Sure, a grid helps designers create visual blocks that will consistently and tidily align along the y-axis. It reduces the need for constant math to break up a single block into many. In addition, the grid helps to keep blocks of varying content aligned on a single (sometimes multiple) area. This is better known as a container.
+
+In turn, this rule is supposed to help users consume content easier and without having to re-orient your understanding of the environment during heavy scrolls or complex arrays.
+
+It's a great idea and often functions as designed. However, that is not the end of the alignment story, and relying on a grid system, and as little varying container widths as necessary, is not the final requirement for keeping products comfortably consumable and optimally performing.
+
+## Grids fail at alignment when:
+
+- Your grid becomes too complicated with numerous containers: As with almost every current grid system (based off of the 12 column grid) the alignment can become moot if the designer makes use of all 12 columns to align their various objects against. This can cause anchor-less page designs.
+- Employing haphazard alignment to the grid.
+- You focus more on grid alignment than container and neighboring object alignment.
+
+## Objects and their edge
+
+Every object has an edge. Not just physical objects in the real world, but optical objects as well. There is a definitive edge and a perceived, felt edge. (Consider hit boxes in video games: most game designers build hit boxes that extend beyond the visual object.)
+
+Take this illustration for instance:
+<figure class="borderless">
+  <Image src={inlineImage01} alt="Graphic illustration showing the different edge alignments of a square and circle" width={400} />
+</figure>
+
+Notice how the square has an easily discernible edge — denoted with the red line. The circle, however, has two "edges". The red line denotes the obvious, definitive edge. Considering optical alignment will show there is another edge. This is the space you would want to align with — denoted with the blue highlighted portion.
+
+Let's use another illustration to show why this optical, felt edge is so important.
+
+<figure class="borderless">
+  <Image src={inlineImage02} alt="Graphic illustration showing the proper and improper alignment between a circle and square" width={400} />
+</figure>
+
+Notice how the circle appears smaller than the square? Although they are both the same size, it loses its weight when not increased to scale optically with its neighbor (as shown on the right). Though this is a case of scaling, one uses the safe region of alignment in the first illustration as a basis for scale.
+## More complex shapes
+
+Not all of us are building products for toddlers, though, so alignment like this goes beyond just shapes. (Though even buttons and call-to-actions, especially the rounded lozenge variety, can benefit with this alignment practice.)
+
+The most applicable usage of this true, optical, felt alignment pertains to text. Even more applicable, are the adjustments one is able to make to large font sizes.
+
+<figure class="figure--wide">
+  <Image src={inlineImage03} alt="Graphic illustration showing the results of proper and improper edge alignment for groups of text and flat edges" width={960} />
+</figure>
+
+This illustration compares before and after margin adjustments to show how alignment can create refinement even in microscopic cases. Some may notice, others may not :] It is my belief that whether precisely perceived or not, it is felt nonetheless. Moreover, when this practice permeates through an entire theme it can bestow the same amount of trust users feel towards well manufactured luxury products.
+
+<p class="small">Unfortunately, story alignment is not yet a feature for any browser, and until this is a consideration for web — or any digital space — it is important to consider these minute, OCD adjustments to provide better feeling products. Story alignment is a feature in products like Adobe InDesign that align all of the glyphs (including punctuation) to the optical edges within their text frame/block.</p>

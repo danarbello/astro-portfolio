@@ -31,14 +31,15 @@ const posts = Object.values(
     <ul class="dangents__list">
       {posts.map(post => (
         <li>
-          <a
-            href={post.frontmatter.externalUrl ?? post.url}
-            rel={post.frontmatter.externalUrl ? "noopener noreferrer" : undefined}
-            class="bold space--bottom"
-          >
-            {post.frontmatter.title}
-            {post.frontmatter.externalUrl && " →"}
-          </a>
+          <div class="bold space--bottom">
+            <a
+              href={post.frontmatter.externalUrl ?? post.url}
+              rel={post.frontmatter.externalUrl ? "noopener noreferrer" : undefined}
+            >
+              {post.frontmatter.title}
+              {post.frontmatter.externalUrl && " →"}
+            </a>
+          </div>
           <p class="small marginless">
             {post.frontmatter.description}
             <span class="smallest">

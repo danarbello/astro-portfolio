@@ -15,9 +15,6 @@
 .dangents__list li:last-of-type {
   margin-bottom: 0;
 }
-.dangents__list li a {
-  display: inline-block;
-}
 
 /* Detail/listing pages headers */
 .dangents__header,

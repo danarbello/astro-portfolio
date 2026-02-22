@@ -1,0 +1,30 @@
+---
+import Head from '../components/Head.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+import '../styles/global.css';
+import '../styles/modifiers.css';
+import '../styles/dangents.css';
+
+const { title, description, pubDate } = Astro.props.frontmatter;
+---
+
+<!doctype html>
+<html lang="en">
+	<Head title={title} description={description} />
+	<Header />
+	<body class="dangent">
+		<article class="container">
+      <section class="dangent__header">
+        <a href="/dangents" class="standalone bold small--extra">Back to Dangents</a>
+        <h1 class="largest">{title}</h1>
+        <p class="large">{description}</p>
+      </section>
+      <section class="compact">
+        <slot />
+      </section>
+    </article>
+	</body>
+	<Footer />
+</html>

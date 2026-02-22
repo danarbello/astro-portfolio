@@ -1,0 +1,45 @@
+---
+import Basic from '../../layouts/Basic.astro';
+import '../../styles/dangents.css';
+
+type PostModule = {
+  frontmatter: {
+    title: string;
+    description: string;
+    pubDate: string;
+    tags?: string[];
+  };
+  url: string;
+};
+
+const posts = Object.values(
+  import.meta.glob<PostModule>('./*.mdx', { eager: true })
+).sort(
+  (a, b) =>
+    new Date(b.frontmatter.pubDate).getTime() -
+    new Date(a.frontmatter.pubDate).getTime()
+);
+---
+
+<Basic>
+  <div class="container">
+    <section class="dangents__header">
+      <h1 class="largest">Dangents</h1>
+      <p class="large">A collection of tangents in written format: both professional and creative in subject matter.</p>
+    </section>
+    <ul class="dangents__list">
+      {posts.map(post => (
+        <li>
+          <a href={post.url} class="bold space--bottom">{post.frontmatter.title}</a>
+          <p class="small">
+            {post.frontmatter.description}
+            <span class="smallest">
+              • {new Date(post.frontmatter.pubDate).getFullYear()} ◦
+              {post.frontmatter.tags?.join(' ◦ ')}
+            </span>
+          </p>
+        </li>
+      ))}
+    </ul>
+  </div>
+</Basic>

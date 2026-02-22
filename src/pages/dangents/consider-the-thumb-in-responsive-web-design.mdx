@@ -1,0 +1,66 @@
+---
+layout: ../../layouts/DangentLayout.astro
+title: "Consider the thumb in responsive web design"
+description: "Here are three major arenas we, as designers can consider to help touch environments be safer places for my fellow voluptuously-fingied brethren and I."
+pubDate: 2017-01-13
+tags: [
+  "accessibility",
+  "user experience",
+  "design",
+]
+---
+<p class="warning smallest bold">This article was published in {new Date(frontmatter.pubDate).getFullYear()} by [Third & Grove](https://thirdandgrove.com).</p>
+
+I have amply cushioned hands. Monster claws. Latex gloves filled with banana pudding. These bad boys are like sausages dangling from a Calder mobile. For stats, I'm clocking in ¾ inch (19mm) for my thumbprint, and require a size 11 wedding band. The most unfortunate factor of all, I've never been able to shop like Johnny Depp when it comes to man jewelry.
+
+Okay, so, maybe they're not _that_ thick, but many mobile interactions are really starting to trigger my #FatFingerLogic. And it's not just my digits, but the increasing size of our mobile devices, that are increasing the obstacles in touch environments.
+
+Most editorial designers are aware of the importance of physical _touch_ when it comes to design. When setting up a new book or magazine, the gutter and margins are the two regions that solve for actual physical interactions: where the user will place their thumbs, and how much realty and tension are required for getting a good grip and spreading the book open. If these regions are too tight, reading becomes difficult, pressure is put on the binding, and holding the book becomes an unwieldy endeavor.
+
+These are fundamental, albeit incredibly microscopic, design principles; but, mind, the provisioning for how we hold our consumptive products doesn't end with books. In this era of touch-enabled devices (smartphones, tablets, touch screens, etc.), the index finger and thumb have become the major input controllers.
+
+Out of frustration, I have composed three major arenas we, as designers — as well as the dual-wielding magicians of our time (full stack dev, that is) — can consider to help touch environments be safer places for my fellow voluptuously-fingied brethren and I.
+
+## Location
+
+More than half of the world is right-handed, with 12% penciling in their census surveys with their left hands; and 30% using both relatively comfortably (and annoyingly recounting their advantage every time the topic comes us — Ok, Tony, thank you, yes, we all know you are the god of foosball, you don't have to destroy EVERYONE in the office to prove your point).
+
+Left, right, or centered: no matter which hand you focus on, you will certainly end up favoring a particular handedness. Of course, these are suggestive numbers, and only abstractly define your users, as left-handers have adapted to their devices in their own comforting ways _without_ designers' considerations. However, if we were to stick to data-driven solutions, we'd want to bank on the majority, if it must hang towards any particular side.
+
+If we are to be safe, fool-proof, obvious, efficient, and incredibly easy to deploy and touch, though; full-width buttons are your friend. This solution for buttons is the utilitarian object of web components.
+
+Aha! But those two solutions aren't the end all, be all. Those are the solutions for a binary world. CSS transitions and animations, and their wide/growing browser compatibility, make it easier for designers to provide new ways to optimize multiple interactions in small spaces. (As an example: starting a button with an icon where the hover/click expands the button to _then_ show the call-to-action text.)
+
+Do not put your main navigation — especially the global navigation — on the far left of the screen. For desktop, this doesn't cause much irritation, but with your thumb, one-handed, on a mobile device, it requires an awkward stretch, often accompanied by palms clicking active items within the page. Centered navigation that drops from the top or bottom of the browser serves the best, safest solution for all users.
+
+## Spacing
+
+Ample space doesn't just provide a clean, visually relaxing flow, it also offers breathing room for both your users' brains and their touch input. Tight spaces where interaction is required is too vexing when your finger spans three of your buttons' realty in one tap. Since the button is the most important call-to-action, it should be amply-sized, cushioned, and spaced far away enough from neighboring active elements so as not to force your users to act like they're surgeons working on the President's heart.
+
+We usually reserve buttons for major interactions. So, ensuring that stacked, multiple buttons have ample spacing will reduce the amount of times your user will accidentally click "Cancel" when they really meant to hit "Send". This doesn't mean we should be filling the screen with repeated, massive blocks of minimal content and white space. There are better solutions for breathing room than merely reducing content (as noted above in Location).
+
+Unlike buttons, inline links are the interactions we usually sprinkle throughout large bodies of text. They are informative, peripheral, but that doesn't mean they get a free pass to be stippled within dense, chainmail-like continents of copy — especially when these bodies of text encompass several inline-links. Remember to give your paragraphs ample line-height, not just for ease of reading.
+
+It is important to remember that most people don't like reading. It's a chore. There's a reason film is a richer industry than publishing. Do not make it difficult for a user to consume the copy on your site. Furthermore, your interactions should be immediately understood, even without consuming the copy within its context (to some degree).
+
+Do not forget about spacing in the footer and menu listed objects. Yes, the footer is usually something we are forced to build per legal requirements or because the client is worried a user won't explore subsubsubpages frequently enough. Take care in providing ample enough line-height or margin/padding so you are not requiring the user to pinch and zoom just to get to the Coupon Details page to reap those delicious discount codes.
+
+## Scrolling
+
+Please, please, please stop making me scroll through animations. Unless the objective of the site is visual exploration for pure aesthetic, there is no reason you should be elaborating on your product/service details with parallax scrolling. Parallax is immersive, and it is precisely this immersion that can cause frustration in instances where information gathering, research, and shopping are the reason I'm on your site. In fact, I'd go so far as to say that this sort of scrolling is very rarely necessary (read: Cool! Tubular! Rad! Bodacious!), and should never be used for functional [utilitarian] environments.
+
+Requiring long, successive bouts of drawn out scrolling fatigues your users. For anyone that plays sandbox games, this is a common gripe: traversing epic distances by holding that finger on the W or analog stick can be draining and carpal tunnel syndrome inducing. (If only there was fast travel for websites. Oh, wait, there is: global navigation.)
+
+Allow the content to be blocked, segmented, in ways that encourage pauses and break-up large bodies of copy without exhausting your reader and their reading apathy. This may require continuous and ideative concourse between Content and Design, as scrolling is linear and not unlike linear story narrative (there is an exposition/base detail(s), climax/decision-turning selling point(s), and dénouement/interaction).
+
+Don't stop my flow. Let me scroll. Let me scroll until I want to stop. Google Maps has notoriously been a greedy captor, snatching your scrolling down pages by grabbing your touch interaction, expecting you to want to walk around the map itself. We often solve this by laying an enable/disable overlay on the map, requiring the user to click into the map with definitive intention. However, Google Maps recently updated their mobile interaction by added a two-finger gesture to initiate map interaction. It is default, without design, non-responsive (the informative text is overflow: hidden and is often clipped on smartphones), and requires a weird touch gesture that is reserved for another (already well-establish) touch gesture that makes activating and deactivating the Map scrolling extremely awkward. Worse of all, this feature has been automatically forced on the entire Google Maps API, essentially overriding any preemptive solutions you've made in the past.
+
+Google Maps isn't the only scroll jacker, though, as I've noted above. Carousel, sliders, and parallax scrolling are other notorious touch-greedy culprits. If you must include these elements, be sure to provide an disable/enable feature wherein the user must explicitly provide intent to begin scrolling within your carousel or scrolling-feature. An alternative solution would be to provide ample spacing above (or left/right of) the feature, so that your user can grab the non-scrolling areas to pass the element.
+
+## TL;DR
+
+Ultimately, most of these touch issues I have are results of designers not thinking succinctly about the physicality of their users. As responsibly responsive designers, we need to ensure the product successfully satiates all aspects of the user's desires, not just the technical. In our effort to balance functionality and form, we often forget about these smaller, OCD-like qualities in our designs. I urge my fellow designers to not forget about your users. Become a voyeur. Mind every inch of your users' physicality — where and how they will access your product, even down to their finger-size — and not simply the persona developed from Discovery. These actual physical properties will help you provide a better-functioning, better-looking product.
+
+More over — and directed more towards your sales or marketing teams — comfortable user experiences encourage continual usage and return visits. For those instances where returning is not part of the relationship, it produces an environment worthy of the user's respect, time, and money.
+
+Note: Obviously, the most antagonistic opposition in the fight for more breathing room in digital products is the false idea that everything must fit at the top of the browser screen. There are many articles in the wild for both sides of the argument when it comes to _The Fold_, so I will refrain from joining in on that argument. However, it is my belief that realty above _The Fold_ is a matter of efficient content, messaging, and tried-and-true-and-tested navigation and interactivity. Don't be afraid to fight for space, because, ultimately, you're fighting for your users' thumbs.

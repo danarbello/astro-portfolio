@@ -34,7 +34,7 @@ nav li a {
 nav span {
   display: none;
 }
-@media (min-width: 769px) {
+@media (min-width: 1024px) {
   nav span {
     display: block;
     position: absolute;

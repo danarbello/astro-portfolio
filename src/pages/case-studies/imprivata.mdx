@@ -1,0 +1,48 @@
+---
+layout: ../../layouts/CaseStudyLayout.astro
+title: "Rebuilding Imprivata's Complex Drupal Platform for Performance, Search, and Long-Term Ownership"
+description: "Consulting with a security/SaaS organization to expand their brand goodwill, reach greater markets, and integrate recently acquired subsidiaries into their marketing website."
+agency: "Chromatic"
+client: "Imprivata, Inc."
+role: "Account Lead + Tech Lead"
+date: "2019-present"
+siteviewer: "background-image: url('/images/siteviewers/siteviewer__imprivata.webp')"
+logo: "/images/logos/imprivata.svg"
+weight: 6
+---
+
+<details open>
+  <summary>Rebuilding Imprivata's Complex Drupal Platform for Performance, Search, and Long-Term Ownership</summary>
+  <p>While working at Chromatic, I partnered closely with Imprivata to help rebuild a large, long-lived Drupal 7 platform that had accumulated years of technical debt, uneven documentation, and brittle front-end patterns. The site supported critical marketing and product content, but even modest updates required outside engineering support. At the same time, Imprivata was preparing for a broader brand refresh and confronting Drupal 7's end of life. The goal was not simply to redesign the site, but to rebuild it in a way that restored confidence, improved performance, and gave internal teams meaningful ownership moving forward.</p>
+  <p>I was deeply involved in the Drupal 7 to modern Drupal rebuild, beginning with a full audit of content models, custom modules, theme-layer decisions, and editorial workflows. Rather than attempting a one-to-one port, we worked deliberately to identify what was essential and what had become accidental complexity. This allowed us to modernize the underlying architecture while preserving familiar patterns for editors and stakeholders who relied on the site day to day.</p>
+</details>
+<details open>
+  <summary>Design System Architecture and Front-End Simplification</summary>
+  <p>A major focus of my work on the project was the design and implementation of a comprehensive design system. We initially built this system in Pattern Lab, creating a shared, component-level language that emphasized accessibility, performance, and reuse. Each component was designed with WCAG compliance in mind and tested against real-world rendering constraints, not just visual expectations.</p>
+  <p>As the platform matured, I helped guide the decision to intentionally recouple the design system back into Drupal. This reduced front-end abstraction layers, simplified theming, and made the system easier for Imprivata's internal engineers to extend and maintain without specialized tooling knowledge. The result was a faster, more predictable front end and a codebase that felt approachable rather than fragile.</p>
+</details>
+<details open>
+  <summary>Translation Automation and Multilingual Architecture</summary>
+
+  <p>Another key initiative I led was the introduction of automated translation workflows for Imprivata's platform. As the site expanded to support multiple regions and audiences, the existing manual translation process had become both time-intensive and error-prone. Working with Imprivata's team, I consulted on and implemented an integration between Drupal and TransPerfect's GlobalLink platform, ensuring the solution aligned cleanly with their Layout Builder-based site architecture.</p>
+
+  <p>This work required careful coordination between content modeling, Layout Builder configuration, and client-side rendering behavior. The integration allowed translated content to be delivered through automation and client-side DOM augmentation, rather than duplicative manual authoring. The result was a multilingual system that preserved editorial flexibility while dramatically reducing the operational cost of composing and maintaining translations.</p>
+
+  <p>By off-boarding translation production to AI/automation, Imprivata saved hundreds of hours in content authoring and review time, while gaining a more scalable and consistent multilingual experience. I later presented this approach at DrupalCon Atlanta 2025, sharing lessons learned around integrating enterprise translation services with modern Drupal site-building workflows. (<a href="https://www.youtube.com/watch?v=MsGaX9q___s" target="_blank" title="Go to Youtube">Watch video recording ➝</a>)</p>
+</details>
+<details open>
+  <summary>Search Experience Optimization (SXO) and Solr Strategy</summary>
+  <p>Search was another core area of responsibility. Imprivata's existing search indexed content indiscriminately, which led to noisy results and poor discovery. I worked with the team to reframe search as a search experience optimization (SXO) problem rather than a feature checklist.</p>
+  <p>This included redefining what content should be indexed, implementing type-ahead autocomplete to help users refine intent earlier, and tuning relevance to reflect how real people actually navigated the site. We later upgraded the platform to Solr 9 and began redesigning the search experience around faceted navigation, cross-referenced content promotion, and “More Like This” relationships. These changes allowed users to move laterally through related material instead of encountering dead ends.</p>
+  <p>Equally important, I collaborated with Imprivata's team to establish sustainable indexing and governance practices, ensuring that search quality would improve over time rather than degrade as content volume increased.</p>
+</details>
+<details open>
+  <summary>Security, Stability, and Ongoing Stewardship</summary>
+  <p>Beyond the rebuild itself, I continue to support Imprivata through ongoing security and stability initiatives as part of Chromatic's long-term engagement. This includes maintaining their Solr configuration, overseeing upgrades, and supporting performance tuning. The platform is integrated with StackHawk for continuous vulnerability scanning, allowing findings to flow directly into the engineering backlog as actionable work rather than static reports.</p>
+  <p>We are also in the process of deploying StackHawk's Vibe feature to support AI-assisted penetration testing, adding another proactive layer to the security posture. Combined with structured logging, error monitoring, and disciplined release workflows, these systems help ensure that issues are identified early and addressed methodically.</p>
+</details>
+<details open>
+  <summary>Collaboration with Internal Teams</summary>
+  <p>Throughout the engagement, I worked closely with Imprivata's marketing operations team, web manager, and internal Drupal engineers. My role was not to act as a gatekeeper, but to help strengthen internal capability through collaboration. We partnered on content governance, component usage, search strategy, and architectural decision-making, supporting junior engineers while giving senior staff confidence in the platform's direction.</p>
+  <p>Today, Imprivata's platform is faster, more accessible, easier to maintain, and designed to evolve without accumulating the same kinds of technical debt that prompted the rebuild in the first place. It stands as an example of how thoughtful modernization;— across architecture, search, and security;— can restore trust in a complex system and in the teams who depend on it.</p>
+</details>

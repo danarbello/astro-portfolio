@@ -1,0 +1,34 @@
+---
+import Head from '../components/Head.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+import '../styles/global.css';
+import '../styles/modifiers.css';
+import '../styles/patterns.css';
+
+const { title, description, date, role, agency, client, siteviewer } = Astro.props.frontmatter;
+---
+
+<!doctype html>
+<html lang="en">
+	<Head title={title} description={description} />
+	<Header />
+	<body>
+    <section class="case-study">
+      <div class="container">
+        <a href="/case-studies" class="standalone bold small--extra">Back to Case Studies</a>
+        <h1 class="largest">{title}</h1>
+        {siteviewer ? <div class="site-viewer" style={siteviewer}></div> : undefined}
+        <div class="case-study__details small--extra row left-align row--four row--compact">
+          {agency ? <p class="column">Agency: {agency}</p> : undefined}
+          <p class="column">Role: {role}</p>
+          <p class="column">Year: {date}</p>
+          {client ? <p class="column">Client: {client}</p> : undefined}
+        </div>
+        <slot />
+      </div>
+    </section>
+	</body>
+	<Footer />
+</html>

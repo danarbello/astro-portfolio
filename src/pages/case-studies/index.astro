@@ -1,0 +1,41 @@
+---
+import Basic from '../../layouts/Basic.astro';
+import '../../styles/case-studies.css';
+
+type PostModule = {
+  frontmatter: {
+    title: string;
+    description: string;
+    weight: number;
+    logo: string;
+  };
+  url: string;
+};
+
+const posts = Object.values(
+  import.meta.glob<PostModule>('./*.mdx', { eager: true })
+).sort(
+  (a, b) =>
+    b.frontmatter.weight - a.frontmatter.weight
+);
+---
+
+<Basic>
+  <div class="container">
+    <section>
+      <h1 class="largest">Case Studies</h1>
+      <p class="large">An extremely abridged representation of my past work.</p>
+      <p class="smaller">For more work see <a href="/fragments">Fragments</a>.</p>
+      <hr>
+      <div class="case-studies">
+        {posts.map(post => (
+          <a href={post.url} class="case-study block">
+            <img src={post.frontmatter.logo} width="400" height="300" loading="eager" alt="Referenced company's logo" />
+            <p class="large">{post.frontmatter.title}</p>
+            <span class="smaller block space--top">Read the case study ➝</span>
+          </a>
+        ))}
+      </div>
+    </section>
+  </div>
+</Basic>

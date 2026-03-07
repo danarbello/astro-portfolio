@@ -1,12 +1,27 @@
 ---
 import Basic from '../layouts/Basic.astro';
-import CaseStudyTeasers from '../components/CaseStudyTeasers.astro';
 import IndexIntro from '../components/IndexIntro.astro';
 import IndexLogos from '../components/IndexLogos.astro';
 ---
 
 <Basic>
   <IndexIntro />
-  <CaseStudyTeasers />
+  <section>
+    <div class="container">
+      <h2 class="section-hanger eyebrow">Latest Stuff</h2>
+      <div class="row row--split row--featured">
+        <div class="column">
+          <h2 class="eyebrow">Featured Case Study</h2>
+          <img src="/images/logos/imprivata.svg" alt="Imprivata company logo" />
+          <p class="mediumer bold marginless"><a href="/case-studies/imprivata">Rebuilding Imprivata's Complex Drupal Platform for Performance, Search, and Long-Term Ownership</a></p>
+        </div>
+        <div class="column">
+          <h2 class="eyebrow">Featured Dangent</h2>
+          <p class="mediumer bold"><a href="/dangents/client-empathy-and-the-importance-of-stakeholder-interviews">Client Empathy and the Importance of Stakeholder Interviews</a></p>
+          <p class="smaller">When a new partnership begins, most teams rush to tasks, timelines, and tools. That's understandable. Work needs to start. But strong work doesn't begin with deliverables — it begins with people.</p>
+        </div>
+      </div>
+    </div>
+  </section>
   <IndexLogos />
 </Basic>

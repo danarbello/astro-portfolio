@@ -112,8 +112,14 @@ ul li {
   max-width: 60rem;
 }
 @media (min-width: 1024px) {
-  .container {
+  .container:not(.container--wide) {
     width: 61.803%;
+  }
+  .container--wide {
+    width: 100%;
+    max-width: none;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
   }
 }
 

@@ -133,6 +133,7 @@ hr.light {
 }
 
 section {
+  position: relative;
   padding: 8vw 0;
   border-top: 1px solid var(--color-black);
 }
@@ -144,6 +145,17 @@ section.compact {
 }
 section.case-study {
   border-top: none;
+}
+.section-hanger {
+  position: absolute;
+  top: -.7rem;
+  left: 50%;
+  padding: .35rem .75rem;
+  border: 1px solid var(--color-black);
+  border-radius: 1rem;
+  background-color: var(--color-white);
+  transform: translateX(-50%);
+  line-height: .9;
 }
 
 code {

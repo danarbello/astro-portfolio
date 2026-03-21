@@ -147,6 +147,9 @@
 .bold {
   font-weight: var(--font-weight-bold);
 }
+.weight--medium {
+  font-weight: var(--font-weight-medium);
+}
 .light {
   font-weight: var(--font-weight-light);
 }

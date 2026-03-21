@@ -38,6 +38,7 @@
   --font-display: 'Movement', 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --font-weight-light: 100;
   --font-weight-regular: 400;
+  --font-weight-medium: 600;
   --font-weight-bold: 700;
   --font-weight-black: 900;
 }

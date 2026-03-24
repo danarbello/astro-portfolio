@@ -21,7 +21,9 @@
   display: block;
   margin-bottom: 1rem;
   width: auto;
-  height: 1.5rem;
+  max-width: 7.5rem;
+  height: auto;
+  min-height: 1.5rem;
 }
 .case-study p {
   display: inline;

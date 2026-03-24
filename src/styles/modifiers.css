@@ -169,3 +169,32 @@
   border-radius: .3em;
   background-color: var(--color-grey-faded);
 }
+
+.tada-emoji {
+  font-size: 15vw;
+}
+@media (min-width: 768px) {
+  .tada-emoji {
+    top: 50%;
+    position: absolute;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 15vw;
+  }
+}
+@media (min-width: 1028px) {
+  .tada-emoji {
+    right: -2ch;
+    font-size: 10vw;
+  }
+}
+@media (min-width: 1215px) {
+  .tada-emoji {
+    right: 0;
+  }
+}
+@media (min-width: 1375px) {
+  .tada-emoji {
+    right: 1ch;
+  }
+}

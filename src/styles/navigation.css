@@ -55,3 +55,25 @@ footer {
     padding-bottom: 4rem;
   }
 }
+
+.back-to-top {
+  position: fixed;
+  right: -2.75rem;
+  bottom: 2rem;
+  transform-origin: 0 0;
+  transform: rotateZ(-90deg);
+}
+.back-to-top[aria-hidden="true"] {
+  visibility: hidden;
+  opacity: 0;
+}
+.back-to-top.at-footer {
+  position: absolute;
+  bottom: 100%;
+}
+@media (min-width: 1024px) {
+  .back-to-top {
+    right: -2rem;
+    bottom: 1rem;
+  }
+}

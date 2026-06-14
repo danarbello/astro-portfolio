@@ -6,7 +6,8 @@ import '../styles/row.css';
 <footer>
   <section class="compact">
     <div class="container">
-      <div class="row row--five small--extra bold">
+      <p class="small--extra center">I don't — nor allow any other third parties to — track any of your activity on this site. <a class="bold" href="/dangents/no-tracking-no-broken-rights">Why</a></p>
+      <div class="row row--four small--extra bold">
         <div class="column">
           <a class="standalone" href="https://linkedin.com/in/dan-arbello" target="_blank">LinkedIn</a>
         </div>
@@ -14,15 +15,35 @@ import '../styles/row.css';
           <a class="standalone" href="https://github.com/danarbello" target="_blank">GitHub</a>
         </div>
         <div class="column">
-          <a class="standalone" href="https://codepen.io/danarbello" target="_blank">CodePen</a>
+          <a class="standalone" href="https://app.thestorygraph.com/profile/danarbello" target="_blank">StoryGraph</a>
         </div>
         <div class="column">
           <a class="standalone" href="https://music.youtube.com/channel/UClMeEC_KW6RLfHz3fhxuEVg" target="_blank">Youtube Music</a>
         </div>
-        <div class="column">
-          <a class="standalone" href="#top">Back up ↑</a>
-        </div>
       </div>
+      <a class="back-to-top standalone small--extra bold" href="#top" aria-hidden="true">back to top →</a>
     </div>
   </section>
 </footer>
+
+<script>
+  const btpButton = document.querySelector('.back-to-top');
+  const topMarker = document.querySelector('#top');
+  const footer = document.querySelector('footer');
+
+  // Hide "back to top" until the viewport passes the initial/top viewport.
+  if (btpButton && topMarker) {
+    const topObserver = new IntersectionObserver(([entry]) => {
+      btpButton.setAttribute('aria-hidden', String(entry.isIntersecting));
+    });
+    topObserver.observe(topMarker);
+  }
+
+  // Add class to "back to top" once the footer is in the viewport.
+  if (btpButton && footer) {
+    const footerObserver = new IntersectionObserver(([entry]) => {
+      btpButton.classList.toggle('at-footer', entry.isIntersecting);
+    });
+    footerObserver.observe(footer);
+  }
+</script>

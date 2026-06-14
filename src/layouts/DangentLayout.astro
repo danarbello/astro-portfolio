@@ -21,6 +21,9 @@ const { title, description, pubDate } = Astro.props.frontmatter;
         <a href="/dangents" class="standalone bold small--extra">Back to Dangents</a>
         <h1 class="largest">{title}</h1>
         <p class="large">{description}</p>
+        <span class="dangent__byline small--extra">
+          {new Date(pubDate).toLocaleDateString('en-GB', { month: 'long', day: 'numeric', year: 'numeric' })}
+        </span>
       </section>
       <section class="compact">
         <slot />

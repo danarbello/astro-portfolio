@@ -30,3 +30,12 @@
 .dangent__header .largest {
   margin-bottom: 1rem;
 }
+/* Date */
+.dangent__byline {
+  position: absolute;
+  right: 0;
+  bottom: -.5rem;
+  z-index: 1;
+  padding-left: 1ch;
+  background-color: var(--color-white);
+}

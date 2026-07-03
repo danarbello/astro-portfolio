@@ -42,10 +42,7 @@ const posts = Object.values(
           </div>
           <p class="small marginless">
             {post.frontmatter.description}
-            <span class="smallest">
-              • {new Date(post.frontmatter.pubDate).getFullYear()} ◦
-              {post.frontmatter.tags?.join(' ◦ ')}
-            </span>
+            <span class="smallest"> {new Date(post.frontmatter.pubDate).getFullYear()} ◦ {post.frontmatter.tags?.join(' ◦ ')}</span>
           </p>
         </li>
       ))}

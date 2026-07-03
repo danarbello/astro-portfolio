@@ -1,0 +1,56 @@
+---
+layout: ../../layouts/CaseStudyLayout.astro
+title: "Connecting a Fresh Design System to an Established Drupal Platform"
+description: ""
+agency: "Chromatic"
+client: "MaineHealth"
+role: "Tech Lead + Integration Consultant"
+date: "2026"
+siteviewer: ""
+logo: "/images/logos/mainehealth.svg"
+weight: 7
+---
+
+## Overview
+
+This project brought together three studios;— ICS handling visual design, Southleft building a front-end design system in Fractal, and myself leading the Drupal integration;— with MaineHealth (a multi-hospital health system serving Maine and New Hampshire) as the primary stakeholder throughout.
+
+I consulted with MaineHealth's senior developer directly, leading the evolution of their page building features and CMS architecture, and serving as the integration layer: taking what Southleft delivered as a static component library and wiring it into a Drupal instance at scale. That included a significant change in the content editor experience, a change to how content editors build pages, and a set of custom systems for managing provider data automatically (without human intervention).
+
+## Connecting Fractal to Drupal
+
+MaineHealth had an existing Drupal site and an internal technical team with institutional knowledge of their data, content workflows, and infrastructure. The engagement wasn't greenfield, so taking what was built in Fractal required a careful evolution to what they already had.
+
+Much of the work was helping the stakeholder understand the tradeoffs in major architectural decisions (platform version, page-building approach, paragraph configuration, all while considering a future expansion to translations) and then building the systems they'd actually have to live with after the project ended. That meant favoring approaches that were maintainable by their team, not just elegant in isolation.
+
+The design system they just paid for had to work in real life, not just sit pretty in a shop window.
+
+And because we were doing this on an aggressive timeline, in parallel with the Fractal development, we needed regular release access to the theme. Southleft bundled the assets (CSS and JavaScript), so I suggested an NPM package be made for the design system and then setup a script to fetch the bundled assets and automatically place and parse them within the Drupal directory. This way Drupal would focus on content and functionality, while Fractal would focus on the theme. To do this with as little file management entanglement I opted away from Single Directory Components to instead rely on the tried-and-true traditional Paragraphs implementation and smart preprocessing with reusable fields and reusable helper functions.
+
+<p class="smaller">A better quality of life for both content editors and engineering maintainers.</p>
+
+## Page Building: Layout Builder → Layout Paragraphs + Mercury Editor
+
+The most significant architectural change was migrating the content editing experience from Drupal's core Layout Builder with inline blocks to a Paragraphs-based content model (using Layout Paragraphs and Mercury Editor [a happy marriage I like to acronym as LP+ME ❤️]).
+
+This was a meaningful decision for MaineHealth's editorial team — the interface, the publishing workflow, and the underlying content structure all changed but not in any major way that would require any new training. The reasons were practical:
+
+- Mercury Editor provides a cleaner, more focused in-context editing experience that is similar to Layout Builder. However sidebar UI
+- Paragraphs as the content unit (versus inline blocks) gave us a more portable, revision-friendly data model
+- **Most important of all:** Paragraphs is inherently translatable because of its structured-data nature — while inline blocks are not so much ([see my recorded talk](/dangents/drupalcon-atlanta) about this if its news to you). Moreover, this would allow MaineHealth to integrate their TransPerfect account into the CMS via the Translation Management module.
+
+Configuring this well required more than flipping a switch. The paragraph type library had to be curated — which types appear in the "Add component" menu, in which contexts, and with what field configuration. Getting this wrong means editors either can't find what they need or can create combinations that break layout. The goal was a focused, predictable authoring environment.
+
+## Prefilled Paragraph Instances: The PDMS Sync
+
+All of that is great, but their provider directory alone accounts for over 2,600 profiles. Not only that, its content is primarily — though not  — populated from an external Provider Data Management System (PDMS). This runs hourly and through the Migrate module.
+
+The challenge then became, how do you provide the new page building features for these dynamically-fed types of content? Well, you prefill paragraph instances on all nodes based on contextual field data. For instance, each provider needed a listing of locations they were available at (adjacent to an interactive Google Map). Making editors hand-place that for 2,600 was not an option. So, I developed a script to add a locations listing map to the page building layout automatically — that ran immediately after the PDMS process completed.
+
+Fed automatically, but also totally editable within the page by human hand.
+
+<p class="smaller">As a safety measure, any field data fed via canonical data in the PDMS Migrate process controls what happens to these prefilled paragraphs. That means deletion is supressed. A "Hide paragraph" flag lets editors suppress content from the live site while leaving the underlying paragraph intact. The sync service never touches this field, so editor choices survive data updates. This also provides helpful UI features to let the editor know the paragraph is being hidden in every other view.</p>
+
+## Outcome
+
+While the project was short it was nonetheless sweet, bestowing MaineHealth's team with a new design system implemented on their Drupal instance without drastic change to their preëxisting workflows. When change was needed, it was done so with a focus on user experience and providing a positive evolution of their platform making them future-ready for optimizations and enhancements.

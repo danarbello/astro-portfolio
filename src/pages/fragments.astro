@@ -1,6 +1,6 @@
 ---
 import Basic from '../layouts/Basic.astro';
-import Fragment from '../components/Fragment.astro';
+import FragmentCard from '../components/Fragment.astro';
 import fragments from '../data/fragments.json';
 import '../styles/fragments.css';
 ---
@@ -16,10 +16,10 @@ import '../styles/fragments.css';
       fragments
         .sort((a, b) => b.year - a.year)
         .map((fragment) => (
-          <Fragment
+          <FragmentCard
             name={fragment.name}
             type={fragment.type}
-            year={fragment.year}
+            year={String(fragment.year)}
             agency={fragment.agency}
             client={fragment.client}
             description={fragment.description}

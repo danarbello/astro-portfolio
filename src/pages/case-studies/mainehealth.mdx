@@ -35,17 +35,17 @@ The most significant architectural change was migrating the content editing expe
 
 This was a meaningful decision for MaineHealth's editorial team — the interface, the publishing workflow, and the underlying content structure all changed but not in any major way that would require any new training. The reasons were practical:
 
-- Mercury Editor provides a cleaner, more focused in-context editing experience that is similar to Layout Builder. However sidebar UI
-- Paragraphs as the content unit (versus inline blocks) gave us a more portable, revision-friendly data model
+- Mercury Editor provides a cleaner, more focused in-context editing experience that is similar to Layout Builder but additionally provisions toggle-able node edit view adjacent to the Layout Paragraphs build UI.
+- Paragraphs as the content unit (versus inline blocks) gave us a more portable, revision-friendly data model.
 - **Most important of all:** Paragraphs is inherently translatable because of its structured-data nature — while inline blocks are not so much ([see my recorded talk](/dangents/drupalcon-atlanta) about this if its news to you). Moreover, this would allow MaineHealth to integrate their TransPerfect account into the CMS via the Translation Management module.
 
 Configuring this well required more than flipping a switch. The paragraph type library had to be curated — which types appear in the "Add component" menu, in which contexts, and with what field configuration. Getting this wrong means editors either can't find what they need or can create combinations that break layout. The goal was a focused, predictable authoring environment.
 
 ## Prefilled Paragraph Instances: The PDMS Sync
 
-All of that is great, but their provider directory alone accounts for over 2,600 profiles. Not only that, its content is primarily — though not  — populated from an external Provider Data Management System (PDMS). This runs hourly and through the Migrate module.
+All of that is great, but their provider directory alone accounts for over 2,600 profiles. Not only that, its content is primarily populated from an external Provider Data Management System (PDMS). This runs hourly and through the Migrate module.
 
-The challenge then became, how do you provide the new page building features for these dynamically-fed types of content? Well, you prefill paragraph instances on all nodes based on contextual field data. For instance, each provider needed a listing of locations they were available at (adjacent to an interactive Google Map). Making editors hand-place that for 2,600 was not an option. So, I developed a script to add a locations listing map to the page building layout automatically — that ran immediately after the PDMS process completed.
+The challenge then became, how do you provide the new page building features for these dynamically-fed types of content without disallowing manual editing? Well, you prefill paragraph instances on all nodes based on contextual field data. For instance, each provider needed a listing of locations they were available at (adjacent to an interactive Google Map). Making editors hand-place that for 2,600 was not an option. So, I developed a script to add a locations listing map to the page building layout automatically — that ran immediately after the PDMS process completed.
 
 Fed automatically, but also totally editable within the page by human hand.
 

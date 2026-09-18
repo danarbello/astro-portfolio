@@ -1,0 +1,20 @@
+---
+import Basic from '../layouts/Blank.astro';
+import { Image } from 'astro:assets';
+import backgroundImage from '../assets/images/jade-birthday-background-flowers.png';
+---
+
+<Basic>
+  <section>
+    <div class="container" style="position:relative;padding:1rem 2rem 2rem;background-color:#ffffffe6;border-radius:.5rem;">
+      <div class="tada-emoji">🌸</div>
+      <h1 class="largest black" style="color:#ff55a3">save the date for Jade's 18<sup>th</sup> birthday party</h1>
+      <ul class="medium">
+        <li>🝰 10 October 2026</li>
+        <li>⏲ 2:00 PM to ꀤꂷꀧꉖꀟ</li>
+        <li>⌂ 1734 Verner Ave | <a target="_blank" href="https://maps.app.goo.gl/j496t33MoF1moX5w8" style="color:#ff55a3;background-image:unset;font-weight:bold">getting there ☞</a></li>
+      </ul>
+    </div>
+  </section>
+  <Image src={backgroundImage} alt="chromolithography of four arrangements of flowers from 1876" class="background-image" />
+</Basic>

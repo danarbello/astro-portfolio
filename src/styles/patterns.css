@@ -67,6 +67,9 @@ details summary::after {
   right: 0;
   font-size: 61.803%;
 }
+.details--super-obvious summary {
+  color: var(--color-black);
+}
 details summary:hover,
 details[open] summary {
   color: var(--color-black);

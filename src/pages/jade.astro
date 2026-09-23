@@ -1,20 +1,36 @@
 ---
 import Basic from '../layouts/Blank.astro';
+import '../styles/patterns.css';
 import { Image } from 'astro:assets';
 import backgroundImage from '../assets/images/jade-birthday-background-flowers.png';
+
+const metadata = {
+  title: "Jade's 18th Birthday",
+  description: "Save the date — October 10, 2026",
+};
 ---
 
-<Basic>
+<Basic metadata={metadata}>
   <section>
     <div class="container" style="position:relative;padding:1rem 2rem 2rem;background-color:#ffffffe6;border-radius:.5rem;">
-      <div class="tada-emoji">🌸</div>
-      <h1 class="largest black" style="color:#ff55a3">save the date for Jade's 18<sup>th</sup> birthday party</h1>
+      <h1 class="largest black" style="color:#ff55a3">Jade's blooming into adulthood 🌸</h1>
       <ul class="medium">
         <li>🝰 10 October 2026</li>
-        <li>⏲ 2:00 PM to ꀤꂷꀧꉖꀟ</li>
+        <li>⏲ 2:00 PM to 🤷‍♀️</li>
         <li>⌂ 1734 Verner Ave | <a target="_blank" href="https://maps.app.goo.gl/j496t33MoF1moX5w8" style="color:#ff55a3;background-image:unset;font-weight:bold">getting there ☞</a></li>
+        <li>Pastel attire suggested</li>
       </ul>
+      <details class="details--super-obvious">
+        <summary>Some gift ideas</summary>
+        <ul>
+          <li>General anime/nerd stuff: e.g., Dungeon Meshi, Neon Genesis, Akira, Vocaloid, Fnaf, Arcane, Blue Eyed Samuari, Cyberpunk 2077</li>
+          <li>Handmade things</li>
+          <li>Anything Kikuo is nice :3</li>
+          <li>Sewing supplies</li>
+          <li>💵 that <span style="color:green">green</span></li>
+        </ul>
+      </details>
     </div>
+    <Image src={backgroundImage} alt="chromolithography of four arrangements of flowers from 1876" class="background-image" />
   </section>
-  <Image src={backgroundImage} alt="chromolithography of four arrangements of flowers from 1876" class="background-image" />
 </Basic>
